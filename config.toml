@@ -1,13 +1,13 @@
-Title = "Harsh Shandilya"
-baseurl = "https://msfjarvis.website"
+Title = "baalajimaestro"
+baseurl = "https://baalajimaestro.ooo"
 languageCode = "en-us"
-title = "Harsh Shandilya"
+title = "baalajimaestro"
 theme = "hugo-coder-portfolio"
 
 [params]
-  author = "Harsh Shandilya"
-  description = "Android Lover | OSS freak"
-  avatarurl = "https://avatars3.githubusercontent.com/u/13348378?v=3"
+  author = "Baalaji Balasubramani"
+  description = "Just a dot."
+  avatarurl = "https://avatars1.githubusercontent.com/u/34187410?s=460&v=4"
 
 [menu]
   [[menu.main]]
@@ -21,21 +21,17 @@ theme = "hugo-coder-portfolio"
   [[menu.main]]
     name = "downloads"
     weight = 2
-    url = "https://download.msfjarvis.website"
+    url = "https://downloads.baalajimaestro.ooo"
 
 [[params.social]]
   name = "GitHub"
   weight = 1
-  url = "https://github.com/MSF-Jarvis"
+  url = "https://github.com/baalajimaestro"
 [[params.social]]
-  name = "Twitter"
+  name = "Instagram"
   weight = 2
-  url = "https://twitter.com/MSF_Jarvis"
+  url = "https://instagram.com/baalajimaestro"
 [[params.social]]
   name = "LinkedIn"
   weight = 3
-  url = "https://linkedin.com/in/harsh-shandilya-557334121"
-[[params.social]]
-  name = "GPG"
-  weight = 4
-  url = "/msfjarvis.gpg"
+  url = "https://www.linkedin.com/in/baalaji-balasubramani-b01a02165/"
