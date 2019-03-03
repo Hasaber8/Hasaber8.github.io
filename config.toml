@@ -19,10 +19,9 @@ theme = "hugo-coder-portfolio"
     weight = 1
     url = "/projects"
   [[menu.main]]
-    name = "downloads"
+    name = "jenkins"
     weight = 2
-    url = "https://downloads.baalajimaestro.ooo"
-
+    url = "https://jenkins.baalajimaestro.ooo"
 [[params.social]]
   name = "GitHub"
   weight = 1
