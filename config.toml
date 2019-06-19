@@ -2,35 +2,47 @@ Title = "baalajimaestro"
 baseurl = "https://baalajimaestro.ooo"
 languageCode = "en-us"
 title = "baalajimaestro"
-theme = "hugo-coder-portfolio"
+theme = "hello-friend-ng"
 
 [params]
   author = "Baalaji Balasubramani"
-  description = "Just a dot."
+  homeSubtitle = "Just a dot."
   avatarurl = "https://avatars1.githubusercontent.com/u/34187410?s=460&v=4"
-
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+  copyright = "Copyrights Reserved. Maestro Creativescape"
+  [params.logo]
+    logoText     = "$ baalajimaestro"
+    logoHomeLink = "/"
+[languages]
+    [languages.en]
+      subtitle  = "Hello Friend NG Theme"
+      weight    = 1
+      copyright = 'Maestro Creativescape'
 [menu]
   [[menu.main]]
     name = "contact"
     weight = 0
     url = "/contact"
   [[menu.main]]
-    name = "projects"
-    weight = 1
-    url = "/projects"
-  [[menu.main]]
-    name = "jenkins"
+    name = "posts"
     weight = 2
-    url = "https://jenkins.baalajimaestro.ooo"
+    url = "/posts"
+  [[menu.main]]
+    name = "about me"
+    weight = 1
+    url = "/about"
 [[params.social]]
-  name = "GitHub"
+  name = "github"
   weight = 1
   url = "https://github.com/baalajimaestro"
 [[params.social]]
-  name = "Instagram"
+  name = "instagram"
   weight = 2
   url = "https://instagram.com/baalajimaestro"
 [[params.social]]
-  name = "LinkedIn"
+  name = "linkedin"
   weight = 3
   url = "https://www.linkedin.com/in/baalaji-balasubramani-b01a02165/"
