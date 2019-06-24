@@ -1,3 +1,0 @@
-dist: xenial
-language: go
-script: bash ./push.sh

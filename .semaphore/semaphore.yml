@@ -1,0 +1,16 @@
+version: v1.0
+name: MaestroCI Auto Builder
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: "MaestroCI"
+    task:
+      secrets:
+        - name: api-keys
+      jobs:
+      - name: Build
+        commands:
+          - checkout
+          - bash ./push.sh
