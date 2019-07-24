@@ -1,5 +1,8 @@
 #!/bin/bash
 
+cd themes
+git clone https://github.com/rhazdon/hugo-theme-hello-friend-ng hello-friend-ng
+cd ..
 curl -sLo hugo_0.55.6_Linux-64bit.deb https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.deb
 sudo dpkg -i hugo_0.55.6_Linux-64bit.deb
 rm -rf hugo_0.55.6_Linux-64bit.deb
