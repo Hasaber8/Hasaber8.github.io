@@ -28,11 +28,15 @@ theme = "hello-friend-ng"
     url = "/contact"
   [[menu.main]]
     name = "posts"
-    weight = 2
+    weight = 3
     url = "/posts"
   [[menu.main]]
     name = "about me"
     weight = 1
+    url = "/about"
+  [[menu.main]]
+    name = "builds/jenkins"
+    weight = 2
     url = "/about"
 [[params.social]]
   name = "github"
