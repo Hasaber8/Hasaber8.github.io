@@ -12,13 +12,16 @@ theme = "hello-friend-ng"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
+  keywords = "homepage, blog programming"
+  contentTypeName = "posts"
+  defaultTheme = "dark"
   copyright = "Copyrights Reserved. Maestro Creativescape"
   [params.logo]
     logoText     = "$ baalajimaestro"
     logoHomeLink = "/"
 [languages]
     [languages.en]
-      subtitle  = "Hello Friend NG Theme"
+      subtitle  = ""
       weight    = 1
       copyright = 'Maestro Creativescape'
 [menu]
@@ -37,16 +40,24 @@ theme = "hello-friend-ng"
   [[menu.main]]
     name = "builds/jenkins"
     weight = 2
-    url = "/about"
+    url = "https://builds.baalajimaestro.me"
 [[params.social]]
-  name = "github"
-  weight = 1
-  url = "https://github.com/baalajimaestro"
+      name = "GitHub"
+      icon = "fab fa-github fa-2x"
+      url = "https://github.com/baalajimaestro"
 [[params.social]]
-  name = "instagram"
-  weight = 2
-  url = "https://instagram.com/baalajimaestro"
+      name = "Instagram"
+      icon = "fab fa-instagram fa-2x"
+      url = "https://instagram.com/baalajimaestro"
 [[params.social]]
-  name = "linkedin"
-  weight = 3
-  url = "https://www.linkedin.com/in/baalaji-balasubramani-b01a02165/"
+      name = "Keybase"
+      icon = "fab fa-keybase fa-2x"
+      url = "https://keybase.io/baalajimaestro"
+[[params.social]]
+      name = "DEV.to"
+      icon = "fab fa-dev fa-2x"
+      url = "https://dev.to/baalajimaestro"
+[[params.social]]
+      name = "GPG"
+      icon = "fas fa-key fa-2x"
+      url = "https://keybase.io/baalajimaestro/pgp_keys.asc?fingerprint=2f3e6c399e361e3b3eab9714749b6f0230ade7b7"

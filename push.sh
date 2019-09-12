@@ -1,11 +1,11 @@
 #!/bin/bash
 
 cd themes
-git clone https://github.com/rhazdon/hugo-theme-hello-friend-ng hello-friend-ng
+git clone https://github.com/baalajimaestro/modified-hello-friend-ng hello-friend-ng
 cd ..
-curl -sLo hugo_0.55.6_Linux-64bit.deb https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.deb
-sudo dpkg -i hugo_0.55.6_Linux-64bit.deb
-rm -rf hugo_0.55.6_Linux-64bit.deb
+curl -sLo hugo_0.58.1_Linux-64bit.deb https://github.com/gohugoio/hugo/releases/download/v0.58.1/hugo_0.58.1_Linux-64bit.deb
+sudo dpkg -i hugo_0.58.1_Linux-64bit.deb
+rm -rf hugo_0.58.1_Linux-64bit.deb
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Build the project.
@@ -21,7 +21,7 @@ hugo -d ../public
 # Go To Public folder
 cd $PUBLIC
 # Add changes to git.
-git config --global user.email "baalajimaestro@computer4u.com"
+git config --global user.email "baalajimaestro@raphielgang.org"
 git config --global user.name "baalajimaestro"
 git add .
 # Commit changes.
