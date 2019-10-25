@@ -31,16 +31,20 @@ theme = "hello-friend-ng"
     url = "/contact"
   [[menu.main]]
     name = "posts"
-    weight = 3
+    weight = 4
     url = "/posts"
   [[menu.main]]
     name = "about me"
     weight = 1
     url = "/about"
   [[menu.main]]
-    name = "builds/jenkins"
+    name = "builds"
     weight = 2
     url = "https://builds.baalajimaestro.me"
+  [[menu.main]]
+      name = "bugtracker"
+      weight = 3
+      url = "https://bugtracker.baalajimaestro.me"
 [[params.social]]
       name = "GitHub"
       icon = "fab fa-github fa-2x"
