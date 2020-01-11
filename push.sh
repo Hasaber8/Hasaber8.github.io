@@ -3,9 +3,9 @@
 cd themes
 git clone https://github.com/baalajimaestro/modified-hello-friend-ng hello-friend-ng
 cd ..
-curl -sLo hugo_0.58.1_Linux-64bit.deb https://github.com/gohugoio/hugo/releases/download/v0.58.1/hugo_0.58.1_Linux-64bit.deb
-sudo dpkg -i hugo_0.58.1_Linux-64bit.deb
-rm -rf hugo_0.58.1_Linux-64bit.deb
+curl -sLo hugo_0.62.2_Linux-64bit.deb https://github.com/gohugoio/hugo/releases/download/v0.62.2/hugo_0.62.2_Linux-64bit.deb
+sudo dpkg -i hugo_0.62.2_Linux-64bit.deb
+rm -rf hugo_0.62.2_Linux-64bit.deb
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Build the project.
