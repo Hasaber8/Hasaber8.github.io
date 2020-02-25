@@ -14,6 +14,7 @@ theme = "hello-friend-ng"
   dateformNumTime = "2006-01-02 15:04 -0700"
   keywords = "homepage, blog programming"
   contentTypeName = "posts"
+  googleAnalytics = "UA-149264131-1"
   defaultTheme = "dark"
   copyright = "Copyrights Reserved. Maestro Creativescape"
   [params.logo]
