@@ -34,7 +34,7 @@
 <meta itemprop="description" content="Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Which can be installed on your Windows/MacOS X/Linux computer!  Installation  For Windows Computers go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions basically keep clicking ok until the installation is done, don’t change anything you don’t know. For Linux Computers just open terminal and type “sudo apt-get install git” and enter, git will be installed in 1-2 minutes according to you internet connection.">
 <meta itemprop="datePublished" content="2020-05-28T21:24:00&#43;05:30" />
 <meta itemprop="dateModified" content="2020-05-28T21:24:00&#43;05:30" />
-<meta itemprop="wordCount" content="226">
+<meta itemprop="wordCount" content="791">
 
 
 
@@ -103,7 +103,7 @@
     <main class="post">
 
         <div class="post-info">
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>2 minutes
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>4 minutes
 
             
 
@@ -131,24 +131,73 @@
 <li>Before anything you have to configure git for your Email it must be a GitHub/GitLab/BitBucket registered email, so when you push a commit (more on this later), your name will come up as the commit author.</li>
 <li>The following commit will help you do that “git config &ndash;global user.name &ldquo;Your Name&rdquo; &amp;  “git config &ndash;global user.email <a href="mailto:you@example.com">you@example.com</a>”</li>
 </ol>
+<p><img src="https://user-images.githubusercontent.com/43720061/83187201-68bc2000-a14b-11ea-90ec-c0506e4fc1d1.png" alt="Screenshot 2020-05-27 at 17 13 25"></p>
 <h3 id="basic-git-commands-">Basic Git commands:-</h3>
 <ul>
 <li>git init</li>
 <li>git status</li>
 <li>git add</li>
 <li>git commit</li>
-<li>git rm</li>
-<li>git log</li>
-<li>.gitignore files</li>
-<li>git pull</li>
 <li>git push</li>
+<li>git log</li>
 <li>git clone</li>
 </ul>
+<h3 id="baby-steps">Baby steps</h3>
 <ol>
 <li>Let’s start by making an empty folder name git-basics.</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mkdir git-basics <span style="color:#f92672">&amp;&amp;</span> cd git-basics
-</code></pre></div>
+</code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83187390-b769ba00-a14b-11ea-9408-ac87200c33c8.png" alt="Screenshot 2020-05-29 at 01 28 04"></p>
+<ol start="2">
+<li>Lets understand what git init do before using it!
+The git init command is the first command that you will run on Git. The git init command is used to create a new blank repository. It is used to make an existing project as a Git project. The below command will create a new subdirectory named .git that holds all necessary repository files.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git init
+</code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83187900-8342c900-a14c-11ea-9b54-f8cb2f0495ea.png" alt="Screenshot 2020-05-29 at 01 34 05"></p>
+<ol start="3">
+<li>Now to understand how &ldquo;git add&rdquo; works you can either copy paste a file into the folder we made or make a readme.md file, ill be making a readme.md file in this example. The &ldquo;git add&rdquo; command is used to add file contents to the git structure. This command updates the current content of the folder and prepare it for the commit!</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git add . <span style="color:#f92672">(</span>The prefix changes according to the files you want to add, <span style="color:#66d9ef">if</span> you want to add all the file changes in the next commit you use the prefix <span style="color:#e6db74">&#34;.&#34;</span> , <span style="color:#66d9ef">if</span> you want to just add a specific file you use the file name as the prefix.<span style="color:#f92672">)</span>
+</code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83188773-d49f8800-a14d-11ea-8e07-2e8bc5cd309c.png" alt="Screenshot 2020-05-29 at 01 43 07"></p>
+<ol start="4">
+<li>Now we commit the changes we have made! But before that here what &ldquo;git commit&rdquo; does; It is used to record the changes in the repository. It is the next command after the git add. Every commit contains the index data and the commit message.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git commit -m <span style="color:#e6db74">&#34;My First Commit!&#34;</span> <span style="color:#f92672">(</span>-m subcommand is <span style="color:#66d9ef">for</span> the commit message, there are many more subcommands in <span style="color:#e6db74">&#34;git commit&#34;</span> which we will cover later on in another guide xD<span style="color:#f92672">)</span>
+</code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83189692-fa795c80-a14e-11ea-8011-9cd0ba2fe246.png" alt="Screenshot 2020-05-29 at 01 51 35"></p>
+<ol start="5">
+<li>Now that we have made our first commit , its time we push it, for this make a empty repo on Github.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/43720061/83191770-33670080-a152-11ea-9d85-7fddab42b0de.gif" alt="ezgif com-video-to-gif"></p>
+<ol start="6">
+<li>Now we push the commit to the empty repo we made. The push term refers to upload local repository content to a remote repository(in our case it&rsquo;s Github). Pushing is an act of transfer commits from your local repository to a remote repository. &ldquo;git push&rdquo; has many subcommands about which we will learn later on in another guide.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git push &lt;<span style="color:#e6db74">&#34;Link to your empty remote repository&#34;</span>&gt; HEAD:master
+</code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83192377-0ff08580-a153-11ea-8162-f7bbfdd9fbff.png" alt="Screenshot 2020-05-29 at 02 20 59"></p>
+<ol start="7">
+<li>With this you have successfully pushed your first commit! I hope, this wont be your last commit xD.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/43720061/83192562-59d96b80-a153-11ea-84ec-432e342c944a.png" alt="Screenshot 2020-05-29 at 02 22 57"></p>
+<ol start="8">
+<li>The advantage of a version control system is that it records changes. These records allow us to retrieve the data like commits, figuring out bugs, updates. But, all of this history will be useless if we cannot navigate it. At this point, we need the &ldquo;git log&rdquo; command.
+&ldquo;Git log&rdquo; is a utility tool to review and read a history of everything that happens to a repository. Multiple options can be used with a git log to make history more specific.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git log
+</code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83192952-e2f0a280-a153-11ea-9aca-83f4f0fe44de.png" alt="Screenshot 2020-05-29 at 02 26 58"></p>
+<ol start="9">
+<li>Last basic command everyone should know (according to me) is &ldquo;git clone&rdquo;
+The git clone is a command-line utility which is used to make a local copy of a remote repository so you can work on it locally. It accesses the repository through a remote URL.
+Usually, the original repository is located on a remote server, often from a Git service like GitHub, Bitbucket, or GitLab. The remote repository URL is referred to the origin.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git clone &lt;<span style="color:#e6db74">&#34;Link of the repo you want to clone&#34;</span>&gt;
+</code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83193346-77f39b80-a154-11ea-94a2-05bc064a61b0.png" alt="Screenshot 2020-05-29 at 02 30 56"></p>
+<h3 id="important-note-">Important Note:-</h3>
+<p>There are alot of command we haven&rsquo;t touched in this guide, but we will be doing that in fute in-depth guides!</p>
+<p>Thank you note:-</p>
+<ol>
+<li><a href="https://www.javatpoint.com/git">https://www.javatpoint.com/git</a> for their excellent in-depth notes on git.</li>
+<li><a href="https://github.com/baalajimaestro">https://github.com/baalajimaestro</a></li>
+</ol>
+
             </div>
         </article>
 
@@ -156,7 +205,7 @@
 
         <div class="post-info">
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>226 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>791 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-05-28 15:54 &#43;0000</p>
         </div>
