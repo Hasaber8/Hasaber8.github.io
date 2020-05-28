@@ -6,8 +6,48 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Rohan Hasabe</copyright>
-        <lastBuildDate>Mon, 24 Jun 2019 03:30:00 +0530</lastBuildDate>
+        <lastBuildDate>Thu, 28 May 2020 21:24:00 +0530</lastBuildDate>
         <atom:link href="https://hasaber.me/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Git Basics</title>
+            <link>https://hasaber.me/posts/git-basics/</link>
+            <pubDate>Thu, 28 May 2020 21:24:00 +0530</pubDate>
+            
+            <guid>https://hasaber.me/posts/git-basics/</guid>
+            <description>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Which can be installed on your Windows/MacOS X/Linux computer!  Installation  For Windows Computers go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions basically keep clicking ok until the installation is done, don’t change anything you don’t know. For Linux Computers just open terminal and type “sudo apt-get install git” and enter, git will be installed in 1-2 minutes according to you internet connection.</description>
+            <content type="html"><![CDATA[<h3 id="git-is-a-free-and-open-source-distributed-version-control-system-designed-to-handle-everything-from-small-to-very-large-projects-with-speed-and-efficiency--which-can-be-installed-on-your-windowsmacos-xlinux-computer">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.  Which can be installed on your Windows/MacOS X/Linux computer! </h3>
+<h3 id="installation">Installation</h3>
+<ol>
+<li>For Windows Computers go ahead and download the Git client from <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> , just accept all the permissions basically keep clicking ok until the installation is done, don’t change anything you don’t know.</li>
+<li>For Linux Computers just open terminal and type “sudo apt-get install git” and enter, git will be installed in 1-2 minutes according to you internet connection.</li>
+<li>For MacOS X Computers open terminal and type “brew install git” (Install homebrew if you don&rsquo;t already have it)</li>
+</ol>
+<h3 id="setup">Setup</h3>
+<ol>
+<li>Open the Git Bash client if you are on Windows, for Linux/MacOS X just open up the terminal.</li>
+<li>Before anything you have to configure git for your Email it must be a GitHub/GitLab/BitBucket registered email, so when you push a commit (more on this later), your name will come up as the commit author.</li>
+<li>The following commit will help you do that “git config &ndash;global user.name &ldquo;Your Name&rdquo; &amp;  “git config &ndash;global user.email <a href="mailto:you@example.com">you@example.com</a>”</li>
+</ol>
+<h3 id="basic-git-commands-">Basic Git commands:-</h3>
+<ul>
+<li>git init</li>
+<li>git status</li>
+<li>git add</li>
+<li>git commit</li>
+<li>git rm</li>
+<li>git log</li>
+<li>.gitignore files</li>
+<li>git pull</li>
+<li>git push</li>
+<li>git clone</li>
+</ul>
+<ol>
+<li>Let’s start by making an empty folder name git-basics.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mkdir git-basics <span style="color:#f92672">&amp;&amp;</span> cd git-basics
+</code></pre></div>]]></content>
+        </item>
         
         <item>
             <title>Opensource and Monetization</title>
@@ -43,46 +83,6 @@ So where are people going wrong in their attempts to monetise their works?</p>
 <p>Red Hat promises really great customer support for their premium enterprise Linux Distribution. People who rely on their servers a lot usually pay for this paid support since this ensures their servers never breaks down. This all happens while their linux source code is fully opensource.</p>
 <p>Open source software is highly regarded thanks to its security, reliability, and vibrant communities that support it. Moreover, OSS helps companies avoid reinventing the wheel, and can even be used within proprietary software. Altogether, these factors have made OSS quite popular. Today, people are willing to pay for open source software to ensure legal protection, technical support, and professional services. With paid open source technologies, companies can offer the best of both worlds: transparent technology with the support and features of commercial software.</p>
 ]]></content>
-        </item>
-        
-        <item>
-            <title>Git Basics</title>
-            <link>https://hasaber.me/posts/git-basics/</link>
-            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-            
-            <guid>https://hasaber.me/posts/git-basics/</guid>
-            <description>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Which can be installed on your Windows/MacOS X/Linux computer!  Installation  For Windows Computers go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions basically keep clicking ok until the installation is done, don’t change anything you don’t know. For Linux Computers just open terminal and type “sudo apt-get install git” and enter, git will be installed in 1-2 minutes according to you internet connection.</description>
-            <content type="html"><![CDATA[<h3 id="git-is-a-free-and-open-source-distributed-version-control-system-designed-to-handle-everything-from-small-to-very-large-projects-with-speed-and-efficiency--which-can-be-installed-on-your-windowsmacos-xlinux-computer">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.  Which can be installed on your Windows/MacOS X/Linux computer! </h3>
-<h3 id="installation">Installation</h3>
-<ol>
-<li>For Windows Computers go ahead and download the Git client from <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> , just accept all the permissions basically keep clicking ok until the installation is done, don’t change anything you don’t know.</li>
-<li>For Linux Computers just open terminal and type “sudo apt-get install git” and enter, git will be installed in 1-2 minutes according to you internet connection.</li>
-<li>For MacOS X Computers open terminal and type “brew install git” (Install homebrew if you don&rsquo;t already have it)</li>
-</ol>
-<h3 id="setup">Setup</h3>
-<ol>
-<li>Open the Git Bash client if you are on Windows, for Linux/MacOS X just open up the terminal.</li>
-<li>Before anything you have to configure git for your Email it must be a GitHub/GitLab/BitBucket registered email, so when you push a commit (more on this later), your name will come up as the commit author.</li>
-<li>The following commit will help you do that “git config &ndash;global user.name &ldquo;Your Name&rdquo; &amp;  “git config &ndash;global user.email <a href="mailto:you@example.com">you@example.com</a>”</li>
-</ol>
-<h3 id="basic-git-commands-">Basic Git commands:-</h3>
-<ul>
-<li>git init</li>
-<li>git status</li>
-<li>git add</li>
-<li>git commit</li>
-<li>git rm</li>
-<li>git log</li>
-<li>.gitignore files</li>
-<li>git pull</li>
-<li>git push</li>
-<li>git clone</li>
-</ul>
-<ol>
-<li>Let’s start by making an empty folder name git-basics.</li>
-</ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mkdir git-basics <span style="color:#f92672">&amp;&amp;</span> cd git-basics
-</code></pre></div>]]></content>
         </item>
         
     </channel>

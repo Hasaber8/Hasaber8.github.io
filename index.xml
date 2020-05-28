@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Rohan Hasabe</copyright>
-    <lastBuildDate>Mon, 24 Jun 2019 03:30:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2020 21:24:00 +0530</lastBuildDate>
     
 	<atom:link href="https://hasaber.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git Basics</title>
+      <link>https://hasaber.me/posts/git-basics/</link>
+      <pubDate>Thu, 28 May 2020 21:24:00 +0530</pubDate>
+      
+      <guid>https://hasaber.me/posts/git-basics/</guid>
+      <description>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Which can be installed on your Windows/MacOS X/Linux computer!  Installation  For Windows Computers go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions basically keep clicking ok until the installation is done, don’t change anything you don’t know. For Linux Computers just open terminal and type “sudo apt-get install git” and enter, git will be installed in 1-2 minutes according to you internet connection.</description>
+    </item>
     
     <item>
       <title>Opensource and Monetization</title>
@@ -42,15 +51,6 @@ If you ﬁnd some­one with the user­name Hasaber8 on any platform, you can be 
       
       <guid>https://hasaber.me/contact/</guid>
       <description>I would be available on Telegram almost all time except my sleep xD. Best would be ping me there for anything. If you don&amp;rsquo;t have Telegram, no problemo, you can reach me out on Instagram. For any formal correspondence, Email which has become too formal: [rohanhasabe8@gmail.com](mailto: rohanhasabe8@gmail.com)</description>
-    </item>
-    
-    <item>
-      <title>Git Basics</title>
-      <link>https://hasaber.me/posts/git-basics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://hasaber.me/posts/git-basics/</guid>
-      <description>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Which can be installed on your Windows/MacOS X/Linux computer!  Installation  For Windows Computers go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions basically keep clicking ok until the installation is done, don’t change anything you don’t know. For Linux Computers just open terminal and type “sudo apt-get install git” and enter, git will be installed in 1-2 minutes according to you internet connection.</description>
     </item>
     
   </channel>
