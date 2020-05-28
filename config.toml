@@ -1,14 +1,14 @@
-Title = "baalajimaestro"
-baseurl = "https://baalajimaestro.me"
+Title = "Hasaber8"
+baseurl = "https://hasaber.me"
 languageCode = "en-us"
-title = "baalajimaestro"
+title = "Hasaber8"
 theme = "hello-friend-ng"
-googleAnalytics = "UA-149264131-1"
+googleAnalytics = "UA-91633838-1"
 
 [params]
-  author = "Baalaji Balasubramani"
+  author = "Rohan Hasabe"
   homeSubtitle = "Just a dot."
-  avatarurl = "https://avatars1.githubusercontent.com/u/34187410?s=460&v=4"
+  avatarurl = "https://avatars2.githubusercontent.com/u/43720061?s=400&u=9893e986660349c8dc83203e473639c82ebe6dc7&v=4"
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
@@ -16,15 +16,15 @@ googleAnalytics = "UA-149264131-1"
   keywords = "homepage, blog programming"
   contentTypeName = "posts"
   defaultTheme = "dark"
-  copyright = "Copyrights Reserved. Maestro Creativescape"
+  copyright = "Copyrights Reserved. Rohan Hasabe"
   [params.logo]
-    logoText     = "$ baalajimaestro"
+    logoText     = "$ Hasaber8"
     logoHomeLink = "/"
 [languages]
     [languages.en]
       subtitle  = ""
       weight    = 1
-      copyright = 'Maestro Creativescape'
+      copyright = 'Rohan Hasabe'
 [menu]
   [[menu.main]]
     name = "contact"
@@ -38,31 +38,11 @@ googleAnalytics = "UA-149264131-1"
     name = "about me"
     weight = 1
     url = "/about"
-  [[menu.main]]
-    name = "builds"
-    weight = 2
-    url = "https://builds.baalajimaestro.me"
-  [[menu.main]]
-      name = "bugtracker"
-      weight = 3
-      url = "https://bugtracker.baalajimaestro.me"
 [[params.social]]
       name = "GitHub"
       icon = "fab fa-github fa-2x"
-      url = "https://github.com/baalajimaestro"
+      url = "https://github.com/Hasaber8"
 [[params.social]]
       name = "Instagram"
       icon = "fab fa-instagram fa-2x"
-      url = "https://instagram.com/baalajimaestro"
-[[params.social]]
-      name = "Keybase"
-      icon = "fab fa-keybase fa-2x"
-      url = "https://keybase.io/baalajimaestro"
-[[params.social]]
-      name = "DEV.to"
-      icon = "fab fa-dev fa-2x"
-      url = "https://dev.to/baalajimaestro"
-[[params.social]]
-      name = "GPG"
-      icon = "fas fa-key fa-2x"
-      url = "https://keybase.io/baalajimaestro/pgp_keys.asc?fingerprint=2f3e6c399e361e3b3eab9714749b6f0230ade7b7"
+      url = "https://instagram.com/Hasaber8"
