@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hasaber8</title>
+    <link>https://hasaber.me/</link>
+    <description>Recent content on Hasaber8</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Rohan Hasabe</copyright>
+    <lastBuildDate>Mon, 24 Jun 2019 03:30:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://hasaber.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Opensource and Monetization</title>
+      <link>https://hasaber.me/posts/opensource-and-monetisation/</link>
+      <pubDate>Mon, 24 Jun 2019 03:30:00 +0530</pubDate>
+      
+      <guid>https://hasaber.me/posts/opensource-and-monetisation/</guid>
+      <description>Seems like these don’t go hand in hand, does it?
+Lemme view it from my perspective.
+Recently there was an android kernel developer who tried to monetize his kernel in the most inappropriate way possible. It became disastrous and he became a meme in that process. He was forced to leave development, forever.
+So, is monetizing opensource software cancerous?
+Red Hat is the global leader in open source software solutions — and has a clear strategy in how to generate revenue.</description>
+    </item>
+    
+    <item>
+      <title>$whoami</title>
+      <link>https://hasaber.me/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hasaber.me/about/</guid>
+      <description>I am Rohan Hasabe, a 18 year old, popularly known around the internet world as Hasaber8 .
+If you ﬁnd some­one with the user­name Hasaber8 on any platform, you can be mostly sure its me</description>
+    </item>
+    
+    <item>
+      <title>Contact Me</title>
+      <link>https://hasaber.me/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hasaber.me/contact/</guid>
+      <description>I would be available on Telegram almost all time except my sleep xD. Best would be ping me there for anything. If you don&amp;rsquo;t have Telegram, no problemo, you can reach me out on Instagram. For any formal correspondence, Email which has become too formal: [rohanhasabe8@gmail.com](mailto: rohanhasabe8@gmail.com)</description>
+    </item>
+    
+    <item>
+      <title>Git Basics</title>
+      <link>https://hasaber.me/posts/git-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hasaber.me/posts/git-basics/</guid>
+      <description>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Which can be installed on your Windows/MacOS X/Linux computer!  Installation  For Windows Computers go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions basically keep clicking ok until the installation is done, don’t change anything you don’t know. For Linux Computers just open terminal and type “sudo apt-get install git” and enter, git will be installed in 1-2 minutes according to you internet connection.</description>
+    </item>
+    
+  </channel>
+</rss>

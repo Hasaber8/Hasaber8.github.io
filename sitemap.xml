@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://hasaber.me/</loc>
+    <lastmod>2019-06-24T03:30:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hasaber.me/posts/opensource-and-monetisation/</loc>
+    <lastmod>2019-06-24T03:30:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hasaber.me/posts/</loc>
+    <lastmod>2019-06-24T03:30:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hasaber.me/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hasaber.me/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hasaber.me/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hasaber.me/posts/git-basics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hasaber.me/tags/</loc>
+  </url>
+  
+</urlset>
