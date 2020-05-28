@@ -18,18 +18,18 @@ date: 2020-05-28 22:00 +0000
 3. The following commit will help you do that “git config --global user.name "Your Name" &  “git config --global user.email you@example.com”
 
 ###  Basic Git commands:-
-        * git init
-  	* git status
-  	* git add
-  	* git commit
-  	* git rm
-  	* git log
-  	* .gitignore files
-  	* git pull
-        * git push
-  	* git clone
+* git init
+* git status
+* git add
+* git commit
+* git rm
+* git log
+* .gitignore files
+* git pull
+* git push
+* git clone
 
 1. Let’s start by making an empty folder name git-basics.
-              ```bash
-	      $ mkdir git-basic && cd git-basic
-	      ```
+```bash
+$ mkdir git-basics && cd git-basics
+```
