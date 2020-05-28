@@ -66,22 +66,23 @@ So where are people going wrong in their attempts to monetise their works?</p>
 <li>The following commit will help you do that “git config &ndash;global user.name &ldquo;Your Name&rdquo; &amp;  “git config &ndash;global user.email <a href="mailto:you@example.com">you@example.com</a>”</li>
 </ol>
 <h3 id="basic-git-commands-">Basic Git commands:-</h3>
-<pre><code>    * git init
-* git status
-* git add
-* git commit
-* git rm
-* git log
-* .gitignore files
-* git pull
-    * git push
-* git clone
-</code></pre>
+<ul>
+<li>git init</li>
+<li>git status</li>
+<li>git add</li>
+<li>git commit</li>
+<li>git rm</li>
+<li>git log</li>
+<li>.gitignore files</li>
+<li>git pull</li>
+<li>git push</li>
+<li>git clone</li>
+</ul>
 <ol>
-<li>Let’s start by making an empty folder name git-basics.
-<code>bash $ mkdir git-basic &amp;&amp; cd git-basic</code></li>
+<li>Let’s start by making an empty folder name git-basics.</li>
 </ol>
-]]></content>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mkdir git-basics <span style="color:#f92672">&amp;&amp;</span> cd git-basics
+</code></pre></div>]]></content>
         </item>
         
     </channel>
