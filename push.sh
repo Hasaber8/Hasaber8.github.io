@@ -34,7 +34,7 @@ git commit -m "$msg"
 # Push source and build repos.
 git remote rm origin
 git remote add origin https://hasaber8:${GH_PERSONAL_TOKEN}@github.com/Hasaber8/hasaber8.github.io
-git push origin master
+git push origin master -f
 
 # Come Back up to the Project Root
 cd ..
