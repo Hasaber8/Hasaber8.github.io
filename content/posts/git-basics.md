@@ -1,6 +1,6 @@
 ---
 title: "Git Basics"
-date: 2020-05-28 22:00 +0000
+date: 2020-05-28 21:24:00 +0530
 ---
 
 ### Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.  Which can be installed on your Windows/MacOS X/Linux computer! 
