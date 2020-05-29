@@ -27,9 +27,12 @@
 <ol>
 <li>Open the Git Bash client if you are on Windows, for Linux/MacOS X just open up the terminal.</li>
 <li>Before anything you have to configure git for your Email it must be a GitHub/GitLab/BitBucket registered email, so when you push a commit (more on this later), your name will come up as the commit author.</li>
-<li>The following commit will help you do that “git config &ndash;global user.name &ldquo;Your Name&rdquo; &amp;  “git config &ndash;global user.email <a href="mailto:you@example.com">you@example.com</a>”</li>
+<li>The following commit will help you do that</li>
 </ol>
-<p><img src="https://user-images.githubusercontent.com/43720061/83187201-68bc2000-a14b-11ea-90ec-c0506e4fc1d1.png" alt="Screenshot 2020-05-27 at 17 13 25"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">“git config --global user.name <span style="color:#e6db74">&#34;Your Name&#34;&#34; 
+</span></code></pre></div><p>&amp;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">“git config --global user.email <span style="color:#e6db74">&#34;you@example.com&#34;</span>”
+</code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83187201-68bc2000-a14b-11ea-90ec-c0506e4fc1d1.png" alt="Screenshot 2020-05-27 at 17 13 25"></p>
 <h3 id="basic-git-commands-">Basic Git commands:-</h3>
 <ul>
 <li>git init</li>
