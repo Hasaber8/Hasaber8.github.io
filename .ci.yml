@@ -10,7 +10,8 @@ blocks:
       secrets:
         - name: api-keys
       jobs:
-        - name: Build
-          commands:
-            - checkout
-            - bash ./push.sh
+      - name: Build
+        commands:
+          - checkout
+          - docker build . -t ci
+          - docker run -it -e GH_PERSONAL_TOKEN=${GH_PERSONAL_TOKEN} ci
