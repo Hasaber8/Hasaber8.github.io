@@ -6,8 +6,38 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Rohan Hasabe</copyright>
-        <lastBuildDate>Thu, 28 May 2020 21:24:00 +0530</lastBuildDate>
+        <lastBuildDate>Sun, 07 Jun 2020 19:51:00 +0530</lastBuildDate>
         <atom:link href="https://hasaber.me/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Violet PE June Changelog!</title>
+            <link>https://hasaber.me/posts/pe-violet-june-changelog/</link>
+            <pubDate>Sun, 07 Jun 2020 19:51:00 +0530</pubDate>
+            
+            <guid>https://hasaber.me/posts/pe-violet-june-changelog/</guid>
+            <description>Source Side changes:-  June security patch Fixed recorder crashes Improved network traffic indicator Improved volume panel on left side (for supported devices) Updated translations Fix vibration enabled when battery saver is enabled Implement quick QS brightness slider Updated some prebuilt system apps Other minor changes  Device Side changes:-  QC3 is fixed now!  Very Important Notice:-  From now on Hentai and PE will have completely different trees, feature and changelog, please don&amp;rsquo;t compare them!</description>
+            <content type="html"><![CDATA[<h3 id="source-side-changes-">Source Side changes:-</h3>
+<ul>
+<li>June security patch</li>
+<li>Fixed recorder crashes</li>
+<li>Improved network traffic indicator</li>
+<li>Improved volume panel on left side (for supported devices)</li>
+<li>Updated translations</li>
+<li>Fix vibration enabled when battery saver is enabled</li>
+<li>Implement quick QS brightness slider</li>
+<li>Updated some prebuilt system apps</li>
+<li>Other minor changes</li>
+</ul>
+<h3 id="device-side-changes-">Device Side changes:-</h3>
+<ul>
+<li>QC3 is fixed now!</li>
+</ul>
+<h3 id="very-important-notice-">Very Important Notice:-</h3>
+<ul>
+<li>From now on Hentai and PE will have completely different trees, feature and changelog, please don&rsquo;t compare them!</li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>Git Basics</title>
@@ -134,17 +164,6 @@ So where are people going wrong in their attempts to monetise their works?</p>
 <h4 id="paid-support">Paid Support</h4>
 <p>Red Hat promises really great customer support for their premium enterprise Linux Distribution. People who rely on their servers a lot usually pay for this paid support since this ensures their servers never breaks down. This all happens while their linux source code is fully opensource.</p>
 <p>Open source software is highly regarded thanks to its security, reliability, and vibrant communities that support it. Moreover, OSS helps companies avoid reinventing the wheel, and can even be used within proprietary software. Altogether, these factors have made OSS quite popular. Today, people are willing to pay for open source software to ensure legal protection, technical support, and professional services. With paid open source technologies, companies can offer the best of both worlds: transparent technology with the support and features of commercial software.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title></title>
-            <link>https://hasaber.me/posts/git-advanced/</link>
-            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-            
-            <guid>https://hasaber.me/posts/git-advanced/</guid>
-            <description>WIP! </description>
-            <content type="html"><![CDATA[<h3 id="wip">WIP!</h3>
 ]]></content>
         </item>
         
