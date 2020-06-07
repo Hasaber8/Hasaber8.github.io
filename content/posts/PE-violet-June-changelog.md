@@ -22,6 +22,6 @@ date: 2020-06-07 19:51:00 +0000
 ### Very Important Notice:-
 * From now on Hentai and PE will have completely different trees, feature and changelog, please don't compare them!
 
-You don't have to but if you want donate:- 
+You don't need to , but if you want donate:- 
 * PayPal:- https://www.paypal.me/rohanhasabe8
 * UPI-ID:- hasaberohan@icici
