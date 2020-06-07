@@ -17,4 +17,4 @@ git add .
 git commit -m "[HasabeCI]: Push Built Site"
 
 # Push source and build repos.
-git push origin master -f
+git push origin master
