@@ -1,6 +1,6 @@
 ---
 title: "Violet PE June Changelog!"
-date: 2020-06-07 19:51:00 +0000
+date: 2020-06-07 19:51:00 +0530
 ---
 
 ### Source Side changes:-
