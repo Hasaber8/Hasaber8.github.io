@@ -16,6 +16,8 @@ date: 2020-06-07 19:51:00 +0530
 
 ### Device Side changes:-
 * QC3 is fixed now!
+* OTA will only work if you are using AOSP recovery!
+* If you are using TWRP please download the full build!
 
 ### Very Important Notice:-
 * From now on Hentai and PE will have completely different trees, feature and changelog, please don't compare them!
