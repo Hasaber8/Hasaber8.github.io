@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Rohan Hasabe</copyright>
-    <lastBuildDate>Thu, 28 May 2020 21:24:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 19:51:00 +0530</lastBuildDate>
     
 	<atom:link href="https://hasaber.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Violet PE June Changelog!</title>
+      <link>https://hasaber.me/posts/pe-violet-june-changelog/</link>
+      <pubDate>Sun, 07 Jun 2020 19:51:00 +0530</pubDate>
+      
+      <guid>https://hasaber.me/posts/pe-violet-june-changelog/</guid>
+      <description>Source Side changes:-  June security patch Fixed recorder crashes Improved network traffic indicator Improved volume panel on left side (for supported devices) Updated translations Fix vibration enabled when battery saver is enabled Implement quick QS brightness slider Updated some prebuilt system apps Other minor changes  Device Side changes:-  QC3 is fixed now! OTA will only work if you are using AOSP recovery! If you are using TWRP please download the full build!</description>
+    </item>
     
     <item>
       <title>Git Basics</title>
