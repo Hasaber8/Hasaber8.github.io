@@ -6,8 +6,18 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Rohan Hasabe</copyright>
-        <lastBuildDate>Sun, 07 Jun 2020 19:51:00 +0530</lastBuildDate>
+        <lastBuildDate>Fri, 12 Jun 2020 13:51:00 +0530</lastBuildDate>
         <atom:link href="https://hasaber.me/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Git Advanced Part 1</title>
+            <link>https://hasaber.me/posts/git-advanced-1/</link>
+            <pubDate>Fri, 12 Jun 2020 13:51:00 +0530</pubDate>
+            
+            <guid>https://hasaber.me/posts/git-advanced-1/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
         
         <item>
             <title>Violet PE June Changelog!</title>
@@ -136,7 +146,7 @@ Usually, the original repository is located on a remote server, often from a Git
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git clone &lt;<span style="color:#e6db74">&#34;Link of the repo you want to clone&#34;</span>&gt;
 </code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83193346-77f39b80-a154-11ea-94a2-05bc064a61b0.png" alt="Screenshot 2020-05-29 at 02 30 56"></p>
 <h3 id="important-note-">Important Note:-</h3>
-<p>There are alot of command we haven&rsquo;t touched in this guide, but we will be doing that in fute in-depth guides!</p>
+<p>There are alot of command we haven&rsquo;t touched in this guide, but we will be doing that in future in-depth guides!</p>
 <p>Thank you note:-</p>
 <ol>
 <li><a href="https://www.javatpoint.com/git">https://www.javatpoint.com/git</a> for their excellent in-depth notes on git.</li>

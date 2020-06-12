@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Rohan Hasabe</copyright>
-    <lastBuildDate>Sun, 07 Jun 2020 19:51:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2020 13:51:00 +0530</lastBuildDate>
     
 	<atom:link href="https://hasaber.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git Advanced Part 1</title>
+      <link>https://hasaber.me/posts/git-advanced-1/</link>
+      <pubDate>Fri, 12 Jun 2020 13:51:00 +0530</pubDate>
+      
+      <guid>https://hasaber.me/posts/git-advanced-1/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Violet PE June Changelog!</title>
