@@ -8,8 +8,17 @@ date: 2020-05-28 21:24:00 +0530
 ### Installation
 
 1. For Windows Computers go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions basically keep clicking ok until the installation is done, don’t change anything you don’t know.
-2. For Linux Computers just open terminal and type “sudo apt-get install git” and enter, git will be installed in 1-2 minutes according to you internet connection.
-3. For MacOS X Computers open terminal and type “brew install git” (Install homebrew if you don't already have it)
+2. For Linux Computers just open terminal and type
+```bash
+ “sudo apt-get install git” 
+```
+and enter, git will be installed in 1-2 minutes according to you internet connection.
+
+3. For MacOS X Computers open terminal and type 
+```bash
+“brew install git”
+```
+ (Install homebrew if you don't already have it)
 
 ### Setup
 
