@@ -53,14 +53,20 @@
             <pubDate>Thu, 28 May 2020 21:24:00 +0530</pubDate>
             
             <guid>https://hasaber.me/posts/git-basics/</guid>
-            <description>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Which can be installed on your Windows/MacOS X/Linux computer!  Installation  For Windows Computers go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions basically keep clicking ok until the installation is done, don’t change anything you don’t know. For Linux Computers just open terminal and type “sudo apt-get install git” and enter, git will be installed in 1-2 minutes according to you internet connection.</description>
+            <description>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Which can be installed on your Windows/MacOS X/Linux computer!  Installation  For Windows Computers go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions basically keep clicking ok until the installation is done, don’t change anything you don’t know. For Linux Computers just open terminal and type  “sudo apt-get install git” and enter, git will be installed in 1-2 minutes according to you internet connection.</description>
             <content type="html"><![CDATA[<h3 id="git-is-a-free-and-open-source-distributed-version-control-system-designed-to-handle-everything-from-small-to-very-large-projects-with-speed-and-efficiency--which-can-be-installed-on-your-windowsmacos-xlinux-computer">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.  Which can be installed on your Windows/MacOS X/Linux computer! </h3>
 <h3 id="installation">Installation</h3>
 <ol>
 <li>For Windows Computers go ahead and download the Git client from <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> , just accept all the permissions basically keep clicking ok until the installation is done, don’t change anything you don’t know.</li>
-<li>For Linux Computers just open terminal and type “sudo apt-get install git” and enter, git will be installed in 1-2 minutes according to you internet connection.</li>
-<li>For MacOS X Computers open terminal and type “brew install git” (Install homebrew if you don&rsquo;t already have it)</li>
+<li>For Linux Computers just open terminal and type</li>
 </ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> “sudo apt-get install git” 
+</code></pre></div><p>and enter, git will be installed in 1-2 minutes according to you internet connection.</p>
+<ol start="3">
+<li>For MacOS X Computers open terminal and type</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">“brew install git”
+</code></pre></div><p>(Install homebrew if you don&rsquo;t already have it)</p>
 <h3 id="setup">Setup</h3>
 <ol>
 <li>Open the Git Bash client if you are on Windows, for Linux/MacOS X just open up the terminal.</li>
