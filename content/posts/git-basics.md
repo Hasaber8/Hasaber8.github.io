@@ -106,7 +106,7 @@ $ git clone <"Link of the repo you want to clone">
 ![Screenshot 2020-05-29 at 02 30 56](https://user-images.githubusercontent.com/43720061/83193346-77f39b80-a154-11ea-94a2-05bc064a61b0.png)
 
 ### Important Note:-
-There are alot of command we haven't touched in this guide, but we will be doing that in fute in-depth guides!
+There are alot of command we haven't touched in this guide, but we will be doing that in future in-depth guides!
 
 Thank you note:- 
 1. https://www.javatpoint.com/git for their excellent in-depth notes on git.
