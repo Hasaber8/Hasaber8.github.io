@@ -13,12 +13,12 @@
     
     
     <item>
-      <title>Git Advanced Part 1</title>
-      <link>https://hasaber.me/posts/git-advanced-1/</link>
+      <title>Git Advanced</title>
+      <link>https://hasaber.me/posts/git-advanced/</link>
       <pubDate>Fri, 12 Jun 2020 13:51:00 +0530</pubDate>
       
-      <guid>https://hasaber.me/posts/git-advanced-1/</guid>
-      <description></description>
+      <guid>https://hasaber.me/posts/git-advanced/</guid>
+      <description>In the last guide we learnt about the following basic git commands:-  git init git status git add git commit git push git log git clone  Now we will learn about More advanced Git commands:-  .gitignore files Working with branches  git branch git checkout git merge git pull   Github basics  Why and What Pull Requests?   Advanced topics  git cherry-pick   Useful Git commands  </description>
     </item>
     
     <item>
