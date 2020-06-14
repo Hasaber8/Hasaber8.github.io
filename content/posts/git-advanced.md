@@ -1,6 +1,6 @@
 ---
 title: "Git Advanced"
-date: 2020-06-12 13:51:00 +0530
+date: 2020-06-14 13:51:00 +0530
 ---
 
 ### In the last guide we learnt about the following basic git commands:-
@@ -24,3 +24,5 @@ date: 2020-06-12 13:51:00 +0530
 * Advanced topics
   * git cherry-pick
 * Useful Git commands
+
+### Baby steps
