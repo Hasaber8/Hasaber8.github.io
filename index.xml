@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Rohan Hasabe</copyright>
-    <lastBuildDate>Fri, 12 Jun 2020 13:51:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 19:51:00 +0530</lastBuildDate>
     
 	<atom:link href="https://hasaber.me/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Git Advanced</title>
-      <link>https://hasaber.me/posts/git-advanced/</link>
-      <pubDate>Fri, 12 Jun 2020 13:51:00 +0530</pubDate>
-      
-      <guid>https://hasaber.me/posts/git-advanced/</guid>
-      <description>In the last guide we learnt about the following basic git commands:-  git init git status git add git commit git push git log git clone  Now we will learn about More advanced Git commands:-  .gitignore files Working with branches  git branch git checkout git merge git pull   Github basics  Why and What Pull Requests?   Advanced topics  git cherry-pick   Useful Git commands  </description>
-    </item>
     
     <item>
       <title>Violet PE June Changelog!</title>

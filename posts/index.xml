@@ -6,51 +6,8 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Rohan Hasabe</copyright>
-        <lastBuildDate>Fri, 12 Jun 2020 13:51:00 +0530</lastBuildDate>
+        <lastBuildDate>Sun, 07 Jun 2020 19:51:00 +0530</lastBuildDate>
         <atom:link href="https://hasaber.me/posts/index.xml" rel="self" type="application/rss+xml" />
-        
-        <item>
-            <title>Git Advanced</title>
-            <link>https://hasaber.me/posts/git-advanced/</link>
-            <pubDate>Fri, 12 Jun 2020 13:51:00 +0530</pubDate>
-            
-            <guid>https://hasaber.me/posts/git-advanced/</guid>
-            <description>In the last guide we learnt about the following basic git commands:-  git init git status git add git commit git push git log git clone  Now we will learn about More advanced Git commands:-  .gitignore files Working with branches  git branch git checkout git merge git pull   Github basics  Why and What Pull Requests?   Advanced topics  git cherry-pick   Useful Git commands  </description>
-            <content type="html"><![CDATA[<h3 id="in-the-last-guide-we-learnt-about-the-following-basic-git-commands-">In the last guide we learnt about the following basic git commands:-</h3>
-<ul>
-<li>git init</li>
-<li>git status</li>
-<li>git add</li>
-<li>git commit</li>
-<li>git push</li>
-<li>git log</li>
-<li>git clone</li>
-</ul>
-<h3 id="now-we-will-learn-about-more-advanced-git-commands-">Now we will learn about More advanced Git commands:-</h3>
-<ul>
-<li>.gitignore files</li>
-<li>Working with branches
-<ul>
-<li>git branch</li>
-<li>git checkout</li>
-<li>git merge</li>
-<li>git pull</li>
-</ul>
-</li>
-<li>Github basics
-<ul>
-<li>Why and What Pull Requests?</li>
-</ul>
-</li>
-<li>Advanced topics
-<ul>
-<li>git cherry-pick</li>
-</ul>
-</li>
-<li>Useful Git commands</li>
-</ul>
-]]></content>
-        </item>
         
         <item>
             <title>Violet PE June Changelog!</title>
