@@ -14,7 +14,7 @@ cd /public
 git add .
 
 # Commit changes.
-git commit -m "[HasabeCI]: Push Built Site"
+git commit -m "[HasabeCI]: Push Built Site" -s
 
 # Push source and build repos.
 git push origin master
