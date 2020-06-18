@@ -3,7 +3,7 @@ title: "Violet PE June Update-2 Changelog!"
 date: 2020-06-18 13:51:00 +0530
 ---
 
-# Device Side changes:-
+### Device Side changes:-
 * Camera Improvements.
 * Audio Improvements.
 * Removed MODEM throttle configs so your whatsapp call doesn't die at 50C.
@@ -11,7 +11,7 @@ date: 2020-06-18 13:51:00 +0530
 * No more random System UI crashes.
 * Network indicatior fixed
 
-# Very Important Notice:-
+### Very Important Notice:-
 * From now on Hentai and PE will have completely different trees, feature and changelog, please don't compare them!
 
 ### You don't need to , but if you want donate:- 
