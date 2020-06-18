@@ -7,18 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Rohan Hasabe</copyright>
-    <lastBuildDate>Sun, 14 Jun 2020 13:51:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2020 13:51:00 +0530</lastBuildDate>
     
 	<atom:link href="https://hasaber.me/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Git Advanced</title>
-      <link>https://hasaber.me/posts/git-advanced/</link>
-      <pubDate>Sun, 14 Jun 2020 13:51:00 +0530</pubDate>
+      <title>Violet PE June Update-2 Changelog!</title>
+      <link>https://hasaber.me/posts/pe-violet-june-update-2-changelog/</link>
+      <pubDate>Thu, 18 Jun 2020 13:51:00 +0530</pubDate>
       
-      <guid>https://hasaber.me/posts/git-advanced/</guid>
-      <description>In the last guide we learnt about the following basic git commands:-  git init git status git add git commit git push git log git clone  Now we will learn about More advanced Git commands:-  .gitignore files Working with branches  git branch git checkout git merge git pull   Github basics  Why and What Pull Requests?   Advanced topics  git cherry-pick   Useful Git commands  Baby steps </description>
+      <guid>https://hasaber.me/posts/pe-violet-june-update-2-changelog/</guid>
+      <description>Device Side changes:-  Camera Improvements. Audio Improvements. Removed MODEM throttle configs so your whatsapp call doesn&amp;rsquo;t die at 50C. Updated kernel! No more random System UI crashes. Network indicatior fixed  Very Important Notice:-  From now on Hentai and PE will have completely different trees, feature and changelog, please don&amp;rsquo;t compare them!  You don&amp;rsquo;t need to , but if you want donate:-  PayPal:- https://www.paypal.me/rohanhasabe8 UPI-ID:- hasaberohan@icici  </description>
     </item>
     
     <item>
