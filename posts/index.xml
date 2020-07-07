@@ -10,14 +10,13 @@
         <atom:link href="https://hasaber.me/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>Motorola One Power Custom Rom Flashing Guide</title>
+            <title>Motorola One Power aka Chef Custom Rom Flashing Guide</title>
             <link>https://hasaber.me/posts/chef-flashing-guide/</link>
             <pubDate>Tue, 07 Jul 2020 10:24:00 +0530</pubDate>
             
             <guid>https://hasaber.me/posts/chef-flashing-guide/</guid>
-            <description>Motorola One Power aka Chef Custom rom flashing guide! In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!) Prerequisite:-  Download LineageOS builds for chef from here:- (https://download.lineageos.org/chef) As Google apps are not included with the Rom download them from here:- (https://opengapps.org/), select ARM64 Android10 Nano Gapps. Official TWRP builds from:- (https://dl.twrp.me/chef/twrp-3.4.0-0-chef.img.html) Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK.</description>
-            <content type="html"><![CDATA[<h1 id="motorola-one-power-aka-chef-custom-rom-flashing-guide">Motorola One Power aka Chef Custom rom flashing guide!</h1>
-<h3 id="in-this-guide-we-will-be-installing-lineageos-official-build-same-guide-can-be-used-to-flash-any-other-custom-rom">In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!)</h3>
+            <description>In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!) Prerequisite:-  Download LineageOS builds for chef from here:- (https://download.lineageos.org/chef) As Google apps are not included with the Rom download them from here:- (https://opengapps.org/), select ARM64 Android10 Nano Gapps. Official TWRP builds from:- (https://dl.twrp.me/chef/twrp-3.4.0-0-chef.img.html) Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK. (https://drive.google.com/file/d/1_3NEgeTVujvFAfRs8Gdd0Ft0yRf9YjyJ/view?usp=sharing)    I expect you people already have necessary adb and fastboot drivers installed.</description>
+            <content type="html"><![CDATA[<h3 id="in-this-guide-we-will-be-installing-lineageos-official-build-same-guide-can-be-used-to-flash-any-other-custom-rom">In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!)</h3>
 <h2 id="prerequisite-">Prerequisite:-</h2>
 <ol>
 <li>Download LineageOS builds for chef from here:- (<a href="https://download.lineageos.org/chef">https://download.lineageos.org/chef</a>)</li>
