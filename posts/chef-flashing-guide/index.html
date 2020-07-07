@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Motorola One Power aka Chef Custom rom flashing guide! In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!) Prerequisite:-  Download LineageOS builds for chef from here:- (https://download.lineageos.org/chef) As Google apps are not included with the Rom download them from here:- (https://opengapps.org/), select ARM64 Android10 Nano Gapps. Official TWRP builds from:- (https://dl.twrp.me/chef/twrp-3.4.0-0-chef.img.html) Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK." />
+<meta name="keywords" content="homepage, blog programming" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://hasaber.me/posts/chef-flashing-guide/" />
+
+
+    <title>
+        
+            Motorola One Power Custom Rom Flashing Guide :: Hasaber8 
+        
+    </title>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" crossorigin="anonymous" />
+
+
+
+
+<link rel="stylesheet" href="/main.dede02da9537a98158079c023e83573e18127834838ef08172acce888341a797.css">
+
+
+
+
+
+
+<meta itemprop="name" content="Motorola One Power Custom Rom Flashing Guide">
+<meta itemprop="description" content="Motorola One Power aka Chef Custom rom flashing guide! In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!) Prerequisite:-  Download LineageOS builds for chef from here:- (https://download.lineageos.org/chef) As Google apps are not included with the Rom download them from here:- (https://opengapps.org/), select ARM64 Android10 Nano Gapps. Official TWRP builds from:- (https://dl.twrp.me/chef/twrp-3.4.0-0-chef.img.html) Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK.">
+<meta itemprop="datePublished" content="2020-07-07T10:24:00&#43;05:30" />
+<meta itemprop="dateModified" content="2020-07-07T10:24:00&#43;05:30" />
+<meta itemprop="wordCount" content="317">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Motorola One Power Custom Rom Flashing Guide"/>
+<meta name="twitter:description" content="Motorola One Power aka Chef Custom rom flashing guide! In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!) Prerequisite:-  Download LineageOS builds for chef from here:- (https://download.lineageos.org/chef) As Google apps are not included with the Rom download them from here:- (https://opengapps.org/), select ARM64 Android10 Nano Gapps. Official TWRP builds from:- (https://dl.twrp.me/chef/twrp-3.4.0-0-chef.img.html) Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK."/>
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2020-07-07 10:24:00 &#43;0530 &#43;0530" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ Hasaber8</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://hasaber.me/about">about me</a></li><li><a href="https://hasaber.me/posts">posts</a></li><li><a href="https://hasaber.me/contact">contact</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>2 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="https://hasaber.me/posts/chef-flashing-guide/">Motorola One Power Custom Rom Flashing Guide</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <h1 id="motorola-one-power-aka-chef-custom-rom-flashing-guide">Motorola One Power aka Chef Custom rom flashing guide!</h1>
+<h3 id="in-this-guide-we-will-be-installing-lineageos-official-build-same-guide-can-be-used-to-flash-any-other-custom-rom">In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!)</h3>
+<h2 id="prerequisite-">Prerequisite:-</h2>
+<ol>
+<li>Download LineageOS builds for chef from here:- (<a href="https://download.lineageos.org/chef">https://download.lineageos.org/chef</a>)</li>
+<li>As Google apps are not included with the Rom download them from here:- (<a href="https://opengapps.org/),">https://opengapps.org/),</a> select ARM64 Android10 Nano Gapps.</li>
+<li>Official TWRP builds from:- (<a href="https://dl.twrp.me/chef/twrp-3.4.0-0-chef.img.html">https://dl.twrp.me/chef/twrp-3.4.0-0-chef.img.html</a>)</li>
+<li>Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK. (<a href="https://drive.google.com/file/d/1_3NEgeTVujvFAfRs8Gdd0Ft0yRf9YjyJ/view?usp=sharing">https://drive.google.com/file/d/1_3NEgeTVujvFAfRs8Gdd0Ft0yRf9YjyJ/view?usp=sharing</a>)</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/43720061/86805570-9a52d000-c095-11ea-8375-878d876ab01d.png" alt="Screenshot 2020-07-07 at 19 08 56"></p>
+<ul>
+<li>
+<h3 id="i-expect-you-people-already-have-necessary-adb-and-fastboot-drivers-installed">I expect you people already have necessary adb and fastboot drivers installed.</h3>
+</li>
+</ul>
+<h2 id="flashing-process-">Flashing process:-</h2>
+<ol>
+<li>As you can see I&rsquo;m on stock rom</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/43720061/86801637-de43d600-c091-11ea-82b8-bb268b1c8efc.jpg" alt="IMG_20200707_190606"></p>
+<ol start="2">
+<li>Reboot the device to fastboot and type the folow command to boot into twrp</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fastboot boot &lt;twrp.img&gt;
+</code></pre></div><ol start="3">
+<li>Once you are in twrp go ahead and wipe your data</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/43720061/86809655-b6587080-c099-11ea-80bc-350f6498860b.jpg" alt="IMG_20200707_191008"></p>
+<ol start="4">
+<li>Once data is wiped go back to fastboot, and again boot into twrp</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fastboot boot &lt;twrp.img&gt;
+</code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/86809874-f7508500-c099-11ea-85fb-3bd938d19b10.png" alt="Screenshot 2020-07-07 at 19 11 06"></p>
+<ol start="5">
+<li>Once in TWRP copy the Copy-Partition Zip to yuor device, and flash it</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/43720061/86810013-1ea75200-c09a-11ea-97ba-2422362705ee.png" alt="Screenshot 2020-07-07 at 19 11 19"></p>
+<ol start="6">
+<li>Once flashed go ahead and wipe only the following partitions:-</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/43720061/86810284-6332ed80-c09a-11ea-9b83-49add0f36802.jpg" alt="IMG_20200707_191238"></p>
+<ol start="7">
+<li>Once the partitions are wiped, reboot to fastboot, and again boot into twrp</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fastboot boot &lt;twrp.img&gt;
+</code></pre></div><ol start="8">
+<li>Now copy the Rom and Gapps files onto your device</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/43720061/86810668-c9b80b80-c09a-11ea-9a1b-0017c7f849a8.png" alt="Screenshot 2020-07-07 at 19 13 56"></p>
+<h3 id="important-step">Important Step</h3>
+<ol start="9">
+<li>
+<p>First just flash the LineageOS rom file, let it get installed and then again reboot to fastboot and then to twrp.</p>
+</li>
+<li>
+<p>Now flash the gapps files! (YOU DONT HAVE TO FLASH GAPPS WITH PIXEL EXPERIENCE ROM AS GAPPS ARE ALREADY INCLUDED IN ROM FILE)</p>
+</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/43720061/86810996-113e9780-c09b-11ea-808b-3c7f390116a1.jpg" alt="IMG_20200707_192024"></p>
+<ol start="11">
+<li>We are done flashing! Now reboot to system and enjoy your Custom Rom!</li>
+</ol>
+<h3 id="the-step-from-here-on-are-just-for-lineageos">The step from here on are just for LineageOS!</h3>
+<ol start="12">
+<li>Now reboot to fastboot and from there select the RECOVERY MODE option and boot into LineageOS recovery, in there select Factory reset option and reboot to system, and we are finally done!</li>
+</ol>
+<h3 id="if-you-did-everything-correct-you-will-boot-into-the-rom">If you did everything correct you will boot into the rom!</h3>
+<p><img src="https://user-images.githubusercontent.com/43720061/86811764-e86ad200-c09b-11ea-8926-fcee2e744188.jpg" alt="IMG_20200707_193358"></p>
+<h2 id="if-you-have-any-further-doubts-or-issues-join-the-motorola-one-power-group-on-telegram--httpstmechefmain">If you have any further doubts or issues join the Motorola One Power Group on Telegram:- (https://t.me/chefmain)</h2>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>317 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-07-07 04:54 &#43;0000</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://hasaber.me/posts/pe-violet-june-update-2-changelog/">
+                                <span class="button__text">Violet PE June Update-2 Changelog!</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+            <span>Rohan Hasabe</span>
+            <span> <a href="https://hasaber.me/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-91633838-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+    </body>
+</html>

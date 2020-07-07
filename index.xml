@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Rohan Hasabe</copyright>
-    <lastBuildDate>Thu, 18 Jun 2020 13:51:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2020 10:24:00 +0530</lastBuildDate>
     
 	<atom:link href="https://hasaber.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Motorola One Power Custom Rom Flashing Guide</title>
+      <link>https://hasaber.me/posts/chef-flashing-guide/</link>
+      <pubDate>Tue, 07 Jul 2020 10:24:00 +0530</pubDate>
+      
+      <guid>https://hasaber.me/posts/chef-flashing-guide/</guid>
+      <description>Motorola One Power aka Chef Custom rom flashing guide! In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!) Prerequisite:-  Download LineageOS builds for chef from here:- (https://download.lineageos.org/chef) As Google apps are not included with the Rom download them from here:- (https://opengapps.org/), select ARM64 Android10 Nano Gapps. Official TWRP builds from:- (https://dl.twrp.me/chef/twrp-3.4.0-0-chef.img.html) Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK.</description>
+    </item>
     
     <item>
       <title>Violet PE June Update-2 Changelog!</title>
