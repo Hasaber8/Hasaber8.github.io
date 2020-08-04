@@ -93,7 +93,7 @@
             <pubDate>Thu, 18 Jun 2020 13:51:00 +0530</pubDate>
             
             <guid>https://hasaber.me/posts/pe-violet-june-update-2-changelog/</guid>
-            <description>Device Side changes:-  Camera Improvements. Audio Improvements. Removed MODEM throttle configs so your whatsapp call doesn&amp;rsquo;t die at 50C. Updated kernel! No more random System UI crashes. Network indicatior fixed  Very Important Notice:-  From now on Hentai and PE will have completely different trees, feature and changelog, please don&amp;rsquo;t compare them!  You don&amp;rsquo;t need to , but if you want donate:-  PayPal:- https://www.paypal.me/rohanhasabe8 UPI-ID:- hasaberohan@icici  </description>
+            <description>Device Side changes:-  Camera Improvements. Audio Improvements. Removed MODEM throttle configs so your whatsapp call doesn&amp;rsquo;t die at 50C. Updated kernel! No more random System UI crashes. Network indicatior fixed  Very Important Notice:-  From now on Hentai and PE will have completely different trees, feature and changelog, please don&amp;rsquo;t compare them!!!!  You don&amp;rsquo;t need to , but if you want donate:-  PayPal:- https://www.paypal.me/rohanhasabe8 UPI-ID:- hasaberohan@icici  </description>
             <content type="html"><![CDATA[<h3 id="device-side-changes-">Device Side changes:-</h3>
 <ul>
 <li>Camera Improvements.</li>
@@ -105,7 +105,7 @@
 </ul>
 <h3 id="very-important-notice-">Very Important Notice:-</h3>
 <ul>
-<li>From now on Hentai and PE will have completely different trees, feature and changelog, please don&rsquo;t compare them!</li>
+<li>From now on Hentai and PE will have completely different trees, feature and changelog, please don&rsquo;t compare them!!!!</li>
 </ul>
 <h3 id="you-dont-need-to--but-if-you-want-donate-">You don&rsquo;t need to , but if you want donate:-</h3>
 <ul>
@@ -160,7 +160,7 @@
             <pubDate>Thu, 28 May 2020 21:24:00 +0530</pubDate>
             
             <guid>https://hasaber.me/posts/git-basics/</guid>
-            <description>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Which can be installed on your Windows/MacOS X/Linux computer!  Installation  For Windows Computers go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions basically keep clicking ok until the installation is done, don’t change anything you don’t know. For Linux Computers just open terminal and type  “sudo apt-get install git” and enter, git will be installed in 1-2 minutes according to you internet connection.</description>
+            <description>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Which can be installed on your Windows/MacOS X/Linux computer!  Installation  For Windows Computers go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions basically keep clicking ok until the installation is done, don’t change anything you don’t know. For Linux Computers just open terminal and type  “sudo apt-get install git” click enter, git will be installed in 1-2 minutes according to you internet connection.</description>
             <content type="html"><![CDATA[<h3 id="git-is-a-free-and-open-source-distributed-version-control-system-designed-to-handle-everything-from-small-to-very-large-projects-with-speed-and-efficiency--which-can-be-installed-on-your-windowsmacos-xlinux-computer">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.  Which can be installed on your Windows/MacOS X/Linux computer! </h3>
 <h3 id="installation">Installation</h3>
 <ol>
@@ -168,15 +168,15 @@
 <li>For Linux Computers just open terminal and type</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> “sudo apt-get install git” 
-</code></pre></div><p>and enter, git will be installed in 1-2 minutes according to you internet connection.</p>
+</code></pre></div><p>click enter, git will be installed in 1-2 minutes according to you internet connection.</p>
 <ol start="3">
 <li>For MacOS X Computers open terminal and type</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">“brew install git”
-</code></pre></div><p>(Install homebrew if you don&rsquo;t already have it)</p>
+</code></pre></div><p>(Install homebrew if you don&rsquo;t have it already.)</p>
 <h3 id="setup">Setup</h3>
 <ol>
-<li>Open the Git Bash client if you are on Windows, for Linux/MacOS X just open up the terminal.</li>
+<li>Open the Git Bash client(from step 1 of installation) if you are on Windows, for Linux/MacOS X just open up the terminal.</li>
 <li>Before anything you have to configure git for your Email it must be a GitHub/GitLab/BitBucket registered email, so when you push a commit (more on this later), your name will come up as the commit author.</li>
 <li>The following commit will help you do that</li>
 </ol>
@@ -196,25 +196,25 @@
 </ul>
 <h3 id="baby-steps">Baby steps</h3>
 <ol>
-<li>Let’s start by making an empty folder name git-basics.</li>
+<li>Let’s start by making an empty folder named git-basics.</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mkdir git-basics <span style="color:#f92672">&amp;&amp;</span> cd git-basics
 </code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83187390-b769ba00-a14b-11ea-9408-ac87200c33c8.png" alt="Screenshot 2020-05-29 at 01 28 04"></p>
 <ol start="2">
 <li>Lets understand what git init do before using it!
-The git init command is the first command that you will run on Git. The git init command is used to create a new blank repository. It is used to make an existing project as a Git project. The below command will create a new subdirectory named .git that holds all necessary repository files.</li>
+The git init command is the first command that you will run on Git. The git init command is used to create a new blank repository. It is used to make an existing project as a Git project. The below command will create a new subdirectory named &ldquo;.git&rdquo; that holds all necessary repository files.</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git init
 </code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83187900-8342c900-a14c-11ea-9b54-f8cb2f0495ea.png" alt="Screenshot 2020-05-29 at 01 34 05"></p>
 <ol start="3">
-<li>Now to understand how &ldquo;git add&rdquo; works you can either copy paste a file into the folder we made or make a readme.md file, ill be making a readme.md file in this example. The &ldquo;git add&rdquo; command is used to add file contents to the git structure. This command updates the current content of the folder and prepare it for the commit!</li>
+<li>Now to understand how &ldquo;git add&rdquo; works you can either copy paste a file into the folder we made or make a readme.md file, I will be making a readme.md file in this example. The &ldquo;git add&rdquo; command is used to add file contents to the git structure. This command updates the current content of the folder and prepare it for the commit!</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git add . <span style="color:#f92672">(</span>The prefix changes according to the files you want to add, <span style="color:#66d9ef">if</span> you want to add all the file changes in the next commit you use the prefix <span style="color:#e6db74">&#34;.&#34;</span> , <span style="color:#66d9ef">if</span> you want to just add a specific file you use the file name as the prefix.<span style="color:#f92672">)</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git add . <span style="color:#f92672">(</span>The prefix changes according to the files you want to add, <span style="color:#66d9ef">if</span> you want to add all the file changes in the next commit you use the prefix <span style="color:#e6db74">&#34;.&#34;</span> , <span style="color:#66d9ef">if</span> you want to just add a specific file you use the <span style="color:#e6db74">&#34;file&#34;</span> name as the prefix.<span style="color:#f92672">)</span>
 </code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83188773-d49f8800-a14d-11ea-8e07-2e8bc5cd309c.png" alt="Screenshot 2020-05-29 at 01 43 07"></p>
 <ol start="4">
-<li>Now we commit the changes we have made! But before that here what &ldquo;git commit&rdquo; does; It is used to record the changes in the repository. It is the next command after the git add. Every commit contains the index data and the commit message.</li>
+<li>Now we commit the changes we have made! But before that here here&rsquo;s what &ldquo;git commit&rdquo; does; It is used to record the changes in the repository. It is the next command after the git add. Every commit contains the index data and the commit message.</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git commit -m <span style="color:#e6db74">&#34;My First Commit!&#34;</span> <span style="color:#f92672">(</span>-m subcommand is <span style="color:#66d9ef">for</span> the commit message, there are many more subcommands in <span style="color:#e6db74">&#34;git commit&#34;</span> which we will cover later on in another guide xD<span style="color:#f92672">)</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git commit -m <span style="color:#e6db74">&#34;My First Commit!&#34;</span> <span style="color:#f92672">(</span>-m subcommand is <span style="color:#66d9ef">for</span> the commit message, there are many more subcommands in <span style="color:#e6db74">&#34;git commit&#34;</span> which we will cover later on in another guide.<span style="color:#f92672">)</span>
 </code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83189692-fa795c80-a14e-11ea-8011-9cd0ba2fe246.png" alt="Screenshot 2020-05-29 at 01 51 35"></p>
 <ol start="5">
 <li>Now that we have made our first commit , its time we push it, for this make a empty repo on Github.</li>
@@ -226,24 +226,24 @@ The git init command is the first command that you will run on Git. The git init
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git push &lt;<span style="color:#e6db74">&#34;Link to your empty remote repository&#34;</span>&gt; HEAD:master
 </code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83192377-0ff08580-a153-11ea-8162-f7bbfdd9fbff.png" alt="Screenshot 2020-05-29 at 02 20 59"></p>
 <ol start="7">
-<li>With this you have successfully pushed your first commit! I hope, this wont be your last commit xD.</li>
+<li>With this you have successfully pushed your first commit! I hope, this wont be your last commit.</li>
 </ol>
 <p><img src="https://user-images.githubusercontent.com/43720061/83192562-59d96b80-a153-11ea-84ec-432e342c944a.png" alt="Screenshot 2020-05-29 at 02 22 57"></p>
 <ol start="8">
-<li>The advantage of a version control system is that it records changes. These records allow us to retrieve the data like commits, figuring out bugs, updates. But, all of this history will be useless if we cannot navigate it. At this point, we need the &ldquo;git log&rdquo; command.
-&ldquo;Git log&rdquo; is a utility tool to review and read a history of everything that happens to a repository. Multiple options can be used with a git log to make history more specific.</li>
+<li>The advantage of a version control system is that it records changes. These records allow us to retrieve the data like commits, figuring out bugs, updates, etc. But, all of this history will be useless if we cannot navigate it. At this point, we need the &ldquo;git log&rdquo; command.
+&ldquo;Git log&rdquo; is a utility tool to review and read a history of everything that happens in a repository. Multiple options can be used with a git log to make history more specific.</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git log
 </code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83192952-e2f0a280-a153-11ea-9aca-83f4f0fe44de.png" alt="Screenshot 2020-05-29 at 02 26 58"></p>
 <ol start="9">
 <li>Last basic command everyone should know (according to me) is &ldquo;git clone&rdquo;
-The git clone is a command-line utility which is used to make a local copy of a remote repository so you can work on it locally. It accesses the repository through a remote URL.
+&ldquo;git clone&rdquo; is a command-line utility which is used to make a local copy of a remote repository so you can work on it locally. It accesses the repository through a remote URL.
 Usually, the original repository is located on a remote server, often from a Git service like GitHub, Bitbucket, or GitLab. The remote repository URL is referred to the origin.</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git clone &lt;<span style="color:#e6db74">&#34;Link of the repo you want to clone&#34;</span>&gt;
 </code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83193346-77f39b80-a154-11ea-94a2-05bc064a61b0.png" alt="Screenshot 2020-05-29 at 02 30 56"></p>
 <h3 id="important-note-">Important Note:-</h3>
-<p>There are alot of command we haven&rsquo;t touched in this guide, but we will be doing that in future in-depth guides!</p>
+<p>There are alot of commands we haven&rsquo;t touched in this guide, but we will be doing that in future in-depth guides!</p>
 <p>Thank you note:-</p>
 <ol>
 <li><a href="https://www.javatpoint.com/git">https://www.javatpoint.com/git</a> for their excellent in-depth notes on git.</li>
