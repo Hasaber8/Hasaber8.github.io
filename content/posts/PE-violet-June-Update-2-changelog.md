@@ -12,7 +12,7 @@ date: 2020-06-18 13:51:00 +0530
 * Network indicatior fixed
 
 ### Very Important Notice:-
-* From now on Hentai and PE will have completely different trees, feature and changelog, please don't compare them!
+* From now on Hentai and PE will have completely different trees, feature and changelog, please don't compare them!!!!
 
 ### You don't need to , but if you want donate:- 
 * PayPal:- https://www.paypal.me/rohanhasabe8
