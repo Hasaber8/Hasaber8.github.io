@@ -9,8 +9,8 @@ date: 2020-07-07 10:24:00 +0530
 
 1. Download LineageOS builds for chef from here:- (https://download.lineageos.org/chef)
 2. As Google apps are not included with the Rom download them from here:- (https://opengapps.org/), select ARM64 Android10 Nano Gapps.
-3. Official TWRP builds from:- (https://dl.twrp.me/chef/twrp-3.4.0-0-chef.img.html)
-4. Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK. (https://drive.google.com/file/d/1_3NEgeTVujvFAfRs8Gdd0Ft0yRf9YjyJ/view?usp=sharing)
+3. Official TWRP builds from:- (https://dl.twrp.me/chef/twrp-3.5.0_9-0-chef.img.html)
+4. Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK. (Get from telegram group)
 
 ![Screenshot 2020-07-07 at 19 08 56](https://user-images.githubusercontent.com/43720061/86805570-9a52d000-c095-11ea-8375-878d876ab01d.png)
 
