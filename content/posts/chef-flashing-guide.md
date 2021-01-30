@@ -17,11 +17,11 @@ date: 2020-07-07 10:24:00 +0530
 * ### I expect you people already have necessary adb and fastboot drivers installed.
 
 ## Flashing process:-
-1. As you can see I'm on stock rom
+1. As you can see I'm on stock rom.
 
 ![IMG_20200707_190606](https://user-images.githubusercontent.com/43720061/86801637-de43d600-c091-11ea-82b8-bb268b1c8efc.jpg)
 
-2. Reboot the device to fastboot and type the folow command to boot into twrp
+2. Reboot the device to fastboot and type the folow command to boot into twrp.
 ```bash
 fastboot boot <twrp.img>
 ```
@@ -30,13 +30,13 @@ fastboot boot <twrp.img>
 
 ![IMG_20200707_191008](https://user-images.githubusercontent.com/43720061/86809655-b6587080-c099-11ea-80bc-350f6498860b.jpg)
 
-4. Once data is wiped go back to fastboot, and again boot into twrp
+4. Once data is wiped go back to fastboot, and again boot into twrp.
 ```bash
 fastboot boot <twrp.img>
 ```
 ![Screenshot 2020-07-07 at 19 11 06](https://user-images.githubusercontent.com/43720061/86809874-f7508500-c099-11ea-85fb-3bd938d19b10.png)
 
-5. Once in TWRP copy the Copy-Partition Zip to yuor device, and flash it
+5. Once in TWRP copy the Copy-Partition Zip to yuor device, and flash it.
 
 ![Screenshot 2020-07-07 at 19 11 19](https://user-images.githubusercontent.com/43720061/86810013-1ea75200-c09a-11ea-97ba-2422362705ee.png)
 
@@ -44,12 +44,12 @@ fastboot boot <twrp.img>
 
 ![IMG_20200707_191238](https://user-images.githubusercontent.com/43720061/86810284-6332ed80-c09a-11ea-9b83-49add0f36802.jpg)
 
-7. Once the partitions are wiped, reboot to fastboot, and again boot into twrp
+7. Once the partitions are wiped, reboot to fastboot, and again boot into twrp.
 ```bash
 fastboot boot <twrp.img>
 ```
 
-8. Now copy the Rom and Gapps files onto your device
+8. Now copy the Rom and Gapps files onto your device.
 
 ![Screenshot 2020-07-07 at 19 13 56](https://user-images.githubusercontent.com/43720061/86810668-c9b80b80-c09a-11ea-9a1b-0017c7f849a8.png)
 
