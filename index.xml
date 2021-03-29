@@ -18,24 +18,6 @@
     </item>
     
     <item>
-      <title>Violet PE June Update-2 Changelog!</title>
-      <link>https://hasaber.me/posts/pe-violet-june-update-2-changelog/</link>
-      <pubDate>Thu, 18 Jun 2020 13:51:00 +0530</pubDate>
-      
-      <guid>https://hasaber.me/posts/pe-violet-june-update-2-changelog/</guid>
-      <description>Device Side changes:-  Camera Improvements. Audio Improvements. Removed MODEM throttle configs so your whatsapp call doesn&amp;rsquo;t die at 50C. Updated kernel! No more random System UI crashes. Network indicatior fixed  Very Important Notice:-  From now on Hentai and PE will have completely different trees, feature and changelog, please don&amp;rsquo;t compare them!!!!  You don&amp;rsquo;t need to , but if you want donate:-  PayPal:- https://www.paypal.me/rohanhasabe8 UPI-ID:- hasaberohan@icici  </description>
-    </item>
-    
-    <item>
-      <title>Violet PE June Changelog!</title>
-      <link>https://hasaber.me/posts/pe-violet-june-changelog/</link>
-      <pubDate>Sun, 07 Jun 2020 19:51:00 +0530</pubDate>
-      
-      <guid>https://hasaber.me/posts/pe-violet-june-changelog/</guid>
-      <description>Source Side changes:-  June security patch Fixed recorder crashes Improved network traffic indicator Improved volume panel on left side (for supported devices) Updated translations Fix vibration enabled when battery saver is enabled Implement quick QS brightness slider Updated some prebuilt system apps Other minor changes  Device Side changes:-  QC3 is fixed now! OTA will only work if you are using AOSP recovery! If you are using TWRP please download the full build!</description>
-    </item>
-    
-    <item>
       <title>Git Basics</title>
       <link>https://hasaber.me/posts/git-basics/</link>
       <pubDate>Thu, 28 May 2020 21:24:00 +0530</pubDate>
