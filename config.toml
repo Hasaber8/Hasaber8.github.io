@@ -47,3 +47,7 @@ googleAdsense = "ca-pub-4765917697850890"
       name = "Instagram"
       icon = "fab fa-instagram fa-2x"
       url = "https://instagram.com/Hasaber8"
+[[params.social]]
+      name = "Linkedin"
+      icon = "fab fa-linkedin fa-2x"
+      url = "https://www.linkedin.com/in/rohan-hasabe-489021193"
