@@ -41,9 +41,9 @@ googleAdsense = "ca-pub-4765917697850890"
     url = "/about"
 [[params.social]]
       name = "GitHub"
-      icon = "fab fa-github-square"
+      icon = "fab fa-github-square fa-2x"
       url = "https://github.com/Hasaber8"
 [[params.social]]
       name = "Linkedin"
-      icon = "fab fa-linkedin-in"
+      icon = "fab fa-linkedin-in fa-2x"
       url = "https://www.linkedin.com/in/rohan-hasabe-489021193"
