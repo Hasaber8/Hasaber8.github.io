@@ -18,6 +18,9 @@ googleAdsense = "ca-pub-4765917697850890"
   contentTypeName = "posts"
   defaultTheme = "dark"
   copyright = "Copyrights Reserved. Rohan Hasabe"
+  trademark = true
+  copyright = true
+  author = true
   [params.logo]
     logoText     = "$ Hasaber8"
     logoHomeLink = "/"
