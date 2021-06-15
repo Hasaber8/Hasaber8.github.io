@@ -1,6 +1,6 @@
-FROM alpine:edge
+FROM fedora:34
 
-RUN apk add git curl bash --no-cache --update
+RUN dnf -y update && dnf -y install curl git bash
 
 RUN curl -sLo hugo-0.83.1.tar.gz "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_extended_0.83.1_Linux-64bit.tar.gz" \
     && tar -xf hugo-0.83.1.tar.gz \
