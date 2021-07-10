@@ -148,11 +148,11 @@ disableHugoGeneratorInject = false
   # Social icons
   [[params.social]]
       name = "GitHub"
-      icon = "fab fa-github-square fa-2x"
+      icon = "lab la-github-square la-2x"
       url = "https://github.com/Hasaber8"
 [[params.social]]
       name = "Linkedin"
-      icon = "fab fa-linkedin-in fa-2x"
+      icon = "lab la-linkedin-in la-2x"
       url = "https://www.linkedin.com/in/rohan-hasabe-489021193"
   [[params.social]]
       name = "Twitter"
