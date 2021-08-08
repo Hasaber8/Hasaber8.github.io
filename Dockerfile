@@ -2,7 +2,7 @@ FROM fedora:34
 
 ENV HUGO_VERSION=0.87.0
 
-RUN dnf -y update && dnf -y install curl git bash
+RUN dnf -y -q update && dnf -y -q install curl git bash
 
 RUN curl -sLo hugo-${HUGO_VERSION}.tar.gz "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz" \
     && tar -xf hugo-${HUGO_VERSION}.tar.gz \
