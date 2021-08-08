@@ -1,6 +1,6 @@
 FROM fedora:34
 
-ENV HUGO_VERSION=0.83.1
+ENV HUGO_VERSION=0.87.0
 
 RUN dnf -y update && dnf -y install curl git bash
 
