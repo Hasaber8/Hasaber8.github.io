@@ -1,48 +1,152 @@
-Title = "Hasaber8"
 baseurl = "https://hasaber8.me"
 languageCode = "en-us"
 title = "Hasaber8"
 theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "Copyrights Reserved. Rohan Hasabe"
+
 googleAnalytics = "G-LYYQ192D3L"
-googleAdsense = "ca-pub-4765917697850890"
+# disqusShortname = ""
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "Rohan Hasabe"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
 
 [params]
-  author = "Rohan Hasabe"
-  homeSubtitle = "Just a dot."
-  avatarurl = "https://avatars2.githubusercontent.com/u/43720061?s=400&u=9893e986660349c8dc83203e473639c82ebe6dc7&v=4"
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
-  keywords = "homepage, blog programming"
-  contentTypeName = "posts"
-  defaultTheme = "dark"
-  copyright = "Copyrights Reserved. Rohan Hasabe"
-  trademark = true
-  copyright = true
-  author = true
+  dateformNumTime = "2006-01-02 15:04"
+  utterancesRepo = "Hasaber8/hasaber8.github.io"
+  utterancesTheme = "github-dark"
+  # Metadata mostly used in document's head
+  # 
+  description = "hasaber8's personal website"
+  keywords = "portfolio, blog, programming"
+  images = [""]
+
+  # Home subtitle of the index page.
+  #
+  homeSubtitle = "Just a dot."
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  #
+  disableReadOtherPosts = false
+
+  # Enable theme toggle
+  # 
+  # This options enables the theme toggle for the theme. 
+  # Per default, this option is off. 
+  # The theme is respecting the prefers-color-scheme of the operating systeme. 
+  # With this option on, the page user is able to set the scheme he wants. 
+  enableThemeToggle = false
+
+  # Sharing buttons
+  #
+  # There are a lot of buttons preconfigured. If you want to change them,
+  # generate the buttons here: https://sharingbuttons.io
+  # and add them into your own `layouts/partials/sharing-buttons.html`
+  #
+  enableSharingButtons = true
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  #
+  customCSS = []
+  customJS  = []
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  #
+  justifyContent = true  # Set "text-align: justify" to .post-content.
+
+  # Custom footer 
+  # If you want, you can easily override the default footer with your own content. 
+  #
+  [params.footer]
+    trademark = true
+    rss = true
+    copyright = true
+    author = true
+
+    topText = []
+    bottomText = [
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+      "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+    ]
+
+  # Colors for favicons
+  #
+  [params.favicon.color]
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
+
   [params.logo]
+    logoMark     = ">"
     logoText     = "$ Hasaber8"
     logoHomeLink = "/"
-[languages]
-    [languages.en]
-      subtitle  = ""
-      weight    = 1
-      copyright = 'Rohan Hasabe'
-[menu]
-  [[menu.main]]
-    name = "contact"
-    weight = 0
-    url = "/contact"
-  [[menu.main]]
-    name = "posts"
-    weight = 4
-    url = "/posts"
-  [[menu.main]]
-    name = "about me"
-    weight = 1
-    url = "/about"
-[[params.social]]
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+
+  # Commento is more than just a comments widget you can embed — 
+  # it’s a return to the roots of the internet. 
+  # An internet without the tracking and invasions of privacy. 
+  # An internet that is simple and lightweight. 
+  # An internet that is focused on interesting discussions, not ads. 
+  # A better internet.
+  # Uncomment this to enable Commento.
+  #
+  # [params.commento]
+  #   url = ""
+
+  # Uncomment this if you want a portrait on your start page
+  #
+  # [params.portrait]
+  #   path     = "/img/image.jpg"
+  #   alt      = "Portrait"
+  #   maxWidth = "50px"
+
+  # Social icons
+  [[params.social]]
       name = "GitHub"
       icon = "fab fa-github-square fa-2x"
       url = "https://github.com/Hasaber8"
@@ -50,3 +154,34 @@ googleAdsense = "ca-pub-4765917697850890"
       name = "Linkedin"
       icon = "fab fa-linkedin-in fa-2x"
       url = "https://www.linkedin.com/in/rohan-hasabe-489021193"
+  [[params.social]]
+      name = "Twitter"
+      icon = "lab la-twitter la-2x"
+      url = "https://twitter.com/hasaber8"
+  [[params.social]]
+      name = "Telegram"
+      icon = "lab la-telegram la-2x"
+      url = "https://t.me/Hasaber8"
+
+[languages]
+  [languages.en]
+      subtitle  = ""
+      weight    = 1
+      copyright = 'Rohan Hasabe'
+  [languages.fr]
+      subtitle  = ""
+      weight    = 1
+      copyright = 'Rohan Hasabe'
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "about me"
+    url        = "about/"
+  [[menu.main]]
+    identifier = "posts"
+    name       = "posts"
+    url        = "posts/"
+  [[menu.main]]
+    identifier = "contact"
+    name       = "contact"
+    url        = "contact/"
