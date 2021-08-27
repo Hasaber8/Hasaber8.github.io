@@ -56,13 +56,20 @@ disableHugoGeneratorInject = false
   utterancesTheme = "github-dark"
   # Metadata mostly used in document's head
   # 
-  description = "hasaber8's personal website"
+  description = "Hasaber8's personal website"
   keywords = "portfolio, blog, programming"
   images = [""]
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "Just a dot."
+  homeSubtitle = "W."
+
+  # Set a background for the homepage
+  # backgroundImage = "assets/images/background.jpg"
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  #
+  # gitUrl = ""
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   #
@@ -150,7 +157,7 @@ disableHugoGeneratorInject = false
       name = "GitHub"
       icon = "lab la-github-square la-2x"
       url = "https://github.com/Hasaber8"
-[[params.social]]
+  [[params.social]]
       name = "Linkedin"
       icon = "lab la-linkedin-in la-2x"
       url = "https://www.linkedin.com/in/rohan-hasabe-489021193"
