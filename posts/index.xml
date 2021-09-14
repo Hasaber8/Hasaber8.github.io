@@ -88,11 +88,11 @@
         </item>
         
         <item>
-            <title>Git Basics</title>
-            <link>https://hasaber8.me/posts/2020/05/git-basics/</link>
+            <title>Git Basics Part - 1 (UNO)</title>
+            <link>https://hasaber8.me/posts/2020/05/git-basics-part-1-uno/</link>
             <pubDate>Thu, 28 May 2020 21:24:00 +0000</pubDate>
             
-            <guid>https://hasaber8.me/posts/2020/05/git-basics/</guid>
+            <guid>https://hasaber8.me/posts/2020/05/git-basics-part-1-uno/</guid>
             <description>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer! About Version Control What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.</description>
             <content type="html"><![CDATA[<h2 id="git-is-a-free-and-open-source-distributed-version-control-system-designed-to-handle-everything-from-small-to-very-large-projects-with-speed-and-efficiency-which-can-be-installed-on-your-windowsmacos-xlinux-computer">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer!</h2>
 <h2 id="about-version-control">About Version Control</h2>
