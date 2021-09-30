@@ -22,7 +22,6 @@ click enter and git will be installed.
 ```bash
 “brew install git”
 ```
-
 ## Setup
 
 1. Open the Git Bash client(from step 1 of installation) if you are on Windows. For Linux/MacOS X just open up the terminal.
