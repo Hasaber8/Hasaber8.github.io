@@ -52,7 +52,7 @@ disableHugoGeneratorInject = false
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
-  utterancesRepo = "Hasaber8/hasaber8.github.io"
+  utterancesRepo = "Hasaber8/Hasaber8.github.io"
   utterancesTheme = "github-dark"
   # Metadata mostly used in document's head
   # 
