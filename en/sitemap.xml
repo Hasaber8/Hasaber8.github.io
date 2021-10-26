@@ -2,69 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://hasaber8.me/</loc>
+    <loc>https://hasaber8.me/</loc>
     <lastmod>2020-07-07T10:24:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://hasaber8.me/fr/"
+                href="https://hasaber8.me/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hasaber8.me/"
+                href="https://hasaber8.me/"
                 />
   </url><url>
-    <loc>http://hasaber8.me/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/</loc>
+    <loc>https://hasaber8.me/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/</loc>
     <lastmod>2020-07-07T10:24:00+00:00</lastmod>
   </url><url>
-    <loc>http://hasaber8.me/posts/</loc>
+    <loc>https://hasaber8.me/posts/</loc>
     <lastmod>2020-07-07T10:24:00+00:00</lastmod>
   </url><url>
-    <loc>http://hasaber8.me/posts/2020/05/git-basics-part-1-uno/</loc>
+    <loc>https://hasaber8.me/posts/2020/05/git-basics-part-1-uno/</loc>
     <lastmod>2020-05-28T21:24:00+00:00</lastmod>
   </url><url>
-    <loc>http://hasaber8.me/posts/2019/06/opensource-and-monetization/</loc>
+    <loc>https://hasaber8.me/posts/2019/06/opensource-and-monetization/</loc>
     <lastmod>2019-06-24T03:30:00+05:30</lastmod>
   </url><url>
-    <loc>http://hasaber8.me/about/</loc>
+    <loc>https://hasaber8.me/about/</loc>
   </url><url>
-    <loc>http://hasaber8.me/categories/</loc>
+    <loc>https://hasaber8.me/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://hasaber8.me/fr/categories/"
+                href="https://hasaber8.me/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hasaber8.me/categories/"
+                href="https://hasaber8.me/categories/"
                 />
   </url><url>
-    <loc>http://hasaber8.me/contact/</loc>
+    <loc>https://hasaber8.me/contact/</loc>
   </url><url>
-    <loc>http://hasaber8.me/series/</loc>
+    <loc>https://hasaber8.me/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://hasaber8.me/fr/series/"
+                href="https://hasaber8.me/fr/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hasaber8.me/series/"
+                href="https://hasaber8.me/series/"
                 />
   </url><url>
-    <loc>http://hasaber8.me/tags/</loc>
+    <loc>https://hasaber8.me/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://hasaber8.me/fr/tags/"
+                href="https://hasaber8.me/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hasaber8.me/tags/"
+                href="https://hasaber8.me/tags/"
                 />
   </url>
 </urlset>
