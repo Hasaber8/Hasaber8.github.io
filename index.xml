@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hasaber8</title>
-    <link>https://hasaber8.me/</link>
+    <link>http://hasaber8.me/</link>
     <description>Recent content on Hasaber8</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Rohan Hasabe</copyright>
-    <lastBuildDate>Tue, 07 Jul 2020 10:24:00 +0000</lastBuildDate><atom:link href="https://hasaber8.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Jul 2020 10:24:00 +0000</lastBuildDate><atom:link href="http://hasaber8.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Motorola One Power aka Chef Custom Rom Flashing Guide</title>
-      <link>https://hasaber8.me/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/</link>
+      <link>http://hasaber8.me/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/</link>
       <pubDate>Tue, 07 Jul 2020 10:24:00 +0000</pubDate>
       
-      <guid>https://hasaber8.me/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/</guid>
+      <guid>http://hasaber8.me/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/</guid>
       <description>In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!) Prerequisite:-  Download LineageOS builds for chef from here:- (https://download.lineageos.org/chef) As Google apps are not included with the Rom download them from here:- (https://opengapps.org/), select ARM64 Android10 Nano Gapps. Official TWRP builds from:- (https://dl.twrp.me/chef/twrp-3.5.0_9-0-chef.img.html) Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK. (Get from telegram group)    I expect you people already have necessary adb and fastboot drivers installed.</description>
     </item>
     
     <item>
       <title>Git Basics Part - 1 (UNO)</title>
-      <link>https://hasaber8.me/posts/2020/05/git-basics-part-1-uno/</link>
+      <link>http://hasaber8.me/posts/2020/05/git-basics-part-1-uno/</link>
       <pubDate>Thu, 28 May 2020 21:24:00 +0000</pubDate>
       
-      <guid>https://hasaber8.me/posts/2020/05/git-basics-part-1-uno/</guid>
+      <guid>http://hasaber8.me/posts/2020/05/git-basics-part-1-uno/</guid>
       <description>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer! About Version Control What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.</description>
     </item>
     
     <item>
       <title>Opensource and Monetization</title>
-      <link>https://hasaber8.me/posts/2019/06/opensource-and-monetization/</link>
+      <link>http://hasaber8.me/posts/2019/06/opensource-and-monetization/</link>
       <pubDate>Mon, 24 Jun 2019 03:30:00 +0530</pubDate>
       
-      <guid>https://hasaber8.me/posts/2019/06/opensource-and-monetization/</guid>
+      <guid>http://hasaber8.me/posts/2019/06/opensource-and-monetization/</guid>
       <description>Seems like these don’t go hand in hand, does it?
 Lemme view it from my perspective.
 Recently there was an android kernel developer who tried to monetize his kernel in the most inappropriate way possible. It became disastrous and he became a meme in that process. He was forced to leave development, forever.
@@ -41,20 +41,20 @@ Red Hat is the global leader in open source software solutions — and has a cle
     
     <item>
       <title>$whoami</title>
-      <link>https://hasaber8.me/about/</link>
+      <link>http://hasaber8.me/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hasaber8.me/about/</guid>
+      <guid>http://hasaber8.me/about/</guid>
       <description>Hey! I&amp;rsquo;m Rohan Hasabe, a 20 year old pursuing Bachelor&amp;rsquo;s of Engineering, Third Year focused in Information Technology from D.Y.Patil College Of Engineering. I&amp;rsquo;m popularly known around the internet world as Hasaber8 .
 If you ﬁnd some­one with the user­name Hasaber8 on any platform, you can be mostly sure its me.</description>
     </item>
     
     <item>
       <title>Contact Me</title>
-      <link>https://hasaber8.me/contact/</link>
+      <link>http://hasaber8.me/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hasaber8.me/contact/</guid>
+      <guid>http://hasaber8.me/contact/</guid>
       <description>I would be available on Telegram. Best would be ping me there for relevant things, please don&amp;rsquo;t spam me. If you don&amp;rsquo;t have Telegram, sorry! For any formal correspondence, Email : [hasaber8@gmail.com](mailto: hasaber8@gmail.com)</description>
     </item>
     
