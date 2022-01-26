@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Hasaber8</title>
-    <link>https://hasaber8.me/fr/series/</link>
+    <link>https://hasaber8.xyz/fr/series/</link>
     <description>Recent content in Series on Hasaber8</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Rohan Hasabe</copyright><atom:link href="https://hasaber8.me/fr/series/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Rohan Hasabe</copyright><atom:link href="https://hasaber8.xyz/fr/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

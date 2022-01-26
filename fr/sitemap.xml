@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://hasaber8.me/fr/categories/</loc>
+    <loc>https://hasaber8.xyz/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://hasaber8.me/categories/"
+                href="https://hasaber8.xyz/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://hasaber8.me/fr/categories/"
+                href="https://hasaber8.xyz/fr/categories/"
                 />
   </url><url>
-    <loc>https://hasaber8.me/fr/</loc>
+    <loc>https://hasaber8.xyz/fr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://hasaber8.me/"
+                href="https://hasaber8.xyz/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://hasaber8.me/fr/"
+                href="https://hasaber8.xyz/fr/"
                 />
   </url><url>
-    <loc>https://hasaber8.me/fr/series/</loc>
+    <loc>https://hasaber8.xyz/fr/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://hasaber8.me/series/"
+                href="https://hasaber8.xyz/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://hasaber8.me/fr/series/"
+                href="https://hasaber8.xyz/fr/series/"
                 />
   </url><url>
-    <loc>https://hasaber8.me/fr/tags/</loc>
+    <loc>https://hasaber8.xyz/fr/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://hasaber8.me/tags/"
+                href="https://hasaber8.xyz/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://hasaber8.me/fr/tags/"
+                href="https://hasaber8.xyz/fr/tags/"
                 />
   </url>
 </urlset>
