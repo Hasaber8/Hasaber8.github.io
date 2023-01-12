@@ -1,6 +1,6 @@
 baseurl = "https://hasaber8.xyz"
 languageCode = "en-us"
-title = "Hasaber8"
+title = "Rohan Hasabe"
 theme = "hello-friend-ng"
 
 PygmentsCodeFences = true
@@ -8,7 +8,6 @@ PygmentsStyle = "monokai"
 
 paginate  = 10
 rssLimit  = 10  # Maximum number of items in the RSS feed.
-copyright = "Copyrights Reserved. Rohan Hasabe"
 
 googleAnalytics = "G-LYYQ192D3L"
 # disqusShortname = ""
@@ -56,13 +55,13 @@ disableHugoGeneratorInject = false
   utterancesTheme = "github-dark"
   # Metadata mostly used in document's head
   # 
-  description = "Hasaber8's personal website"
+  description = "Rohan Hasabe's personal website"
   keywords = "portfolio, blog, programming"
   images = [""]
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "W."
+  homeSubtitle = "SDE Intern @ Esper.io"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -113,7 +112,6 @@ disableHugoGeneratorInject = false
     topText = []
     bottomText = [
       "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-      "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
     ]
 
   # Colors for favicons
@@ -172,10 +170,6 @@ disableHugoGeneratorInject = false
 
 [languages]
   [languages.en]
-      subtitle  = ""
-      weight    = 1
-      copyright = 'Rohan Hasabe'
-  [languages.fr]
       subtitle  = ""
       weight    = 1
       copyright = 'Rohan Hasabe'
