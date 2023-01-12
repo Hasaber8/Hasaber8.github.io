@@ -172,7 +172,6 @@ disableHugoGeneratorInject = false
   [languages.en]
       subtitle  = ""
       weight    = 1
-      copyright = 'Rohan Hasabe'
 [menu]
   [[menu.main]]
     identifier = "about"
