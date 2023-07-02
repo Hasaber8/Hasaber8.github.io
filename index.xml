@@ -5,21 +5,21 @@
     <link>https://hasaber8.xyz/</link>
     <description>Recent content on Rohan Hasabe</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 07 Jul 2020 10:24:00 +0000</lastBuildDate><atom:link href="https://hasaber8.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Jul 2020 10:24:00 +0530</lastBuildDate><atom:link href="https://hasaber8.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Motorola One Power aka Chef Custom Rom Flashing Guide</title>
       <link>https://hasaber8.xyz/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/</link>
-      <pubDate>Tue, 07 Jul 2020 10:24:00 +0000</pubDate>
+      <pubDate>Tue, 07 Jul 2020 10:24:00 +0530</pubDate>
       
       <guid>https://hasaber8.xyz/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/</guid>
-      <description>In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!) Prerequisite:-  Download LineageOS builds for chef from here:- (https://download.lineageos.org/chef) As Google apps are not included with the Rom download them from here:- (https://opengapps.org/), select ARM64 Android10 Nano Gapps. Official TWRP builds from:- (https://dl.twrp.me/chef/twrp-3.5.0_9-0-chef.img.html) Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK. (Get from telegram group)    I expect you people already have necessary adb and fastboot drivers installed.</description>
+      <description>In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!) Prerequisite:- Download LineageOS builds for chef from here:- (https://download.lineageos.org/chef) As Google apps are not included with the Rom download them from here:- (https://opengapps.org/), select ARM64 Android10 Nano Gapps. Official TWRP builds from:- (https://dl.twrp.me/chef/twrp-3.5.0_9-0-chef.img.html) Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK. (Get from telegram group) I expect you people already have necessary adb and fastboot drivers installed.</description>
     </item>
     
     <item>
       <title>Git Basics Part - 1 (UNO)</title>
       <link>https://hasaber8.xyz/posts/2020/05/git-basics-part-1-uno/</link>
-      <pubDate>Thu, 28 May 2020 21:24:00 +0000</pubDate>
+      <pubDate>Thu, 28 May 2020 21:24:00 +0530</pubDate>
       
       <guid>https://hasaber8.xyz/posts/2020/05/git-basics-part-1-uno/</guid>
       <description>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer! About Version Control What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.</description>
