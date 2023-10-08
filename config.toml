@@ -61,7 +61,7 @@ disableHugoGeneratorInject = false
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "SDE Intern @ Esper.io"
+  homeSubtitle = "SDE @ Esper.io"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -123,7 +123,7 @@ disableHugoGeneratorInject = false
 
   [params.logo]
     logoMark     = ">"
-    logoText     = "$ Hasaber8"
+    logoText     = "$ Hasaber6"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
