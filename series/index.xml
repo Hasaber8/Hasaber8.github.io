@@ -4,7 +4,8 @@
     <title>Series on Rohan Hasabe</title>
     <link>/series/</link>
     <description>Recent content in Series on Rohan Hasabe</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
