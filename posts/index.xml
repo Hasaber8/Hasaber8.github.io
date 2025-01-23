@@ -5,287 +5,38 @@
         <description>Recent content in Posts on Rohan Hasabe</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 07 Jul 2020 10:24:00 +0530</lastBuildDate>
+        <lastBuildDate>Thu, 23 Jan 2025 21:24:00 +0530</lastBuildDate>
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>Motorola One Power aka Chef Custom Rom Flashing Guide</title>
-            <link>/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/</link>
-            <pubDate>Tue, 07 Jul 2020 10:24:00 +0530</pubDate>
+            <title>High - Level Guide to Android APK: Structure, Compilation, and Analysis</title>
+            <link>/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/</link>
+            <pubDate>Thu, 23 Jan 2025 21:24:00 +0530</pubDate>
             
-            <guid>/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/</guid>
-            <description>&lt;h3 id=&#34;in-this-guide-we-will-be-installing-lineageos-official-build-same-guide-can-be-used-to-flash-any-other-custom-rom&#34;&gt;In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!)&lt;/h3&gt;
-&lt;h2 id=&#34;prerequisite-&#34;&gt;Prerequisite:-&lt;/h2&gt;
+            <guid>/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/</guid>
+            <description>&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Download LineageOS builds for chef from here:- (&lt;a href=&#34;https://download.lineageos.org/chef&#34;&gt;https://download.lineageos.org/chef&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;As Google apps are not included with the Rom download them from here:- (&lt;a href=&#34;https://opengapps.org/)&#34;&gt;https://opengapps.org/)&lt;/a&gt;, select ARM64 Android10 Nano Gapps.&lt;/li&gt;
-&lt;li&gt;Official TWRP builds from:- (&lt;a href=&#34;https://dl.twrp.me/chef/twrp-3.5.0_9-0-chef.img.html&#34;&gt;https://dl.twrp.me/chef/twrp-3.5.0_9-0-chef.img.html&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK. (Get from telegram group)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img alt=&#34;Screenshot 2020-07-07 at 19 08 56&#34; src=&#34;https://user-images.githubusercontent.com/43720061/86805570-9a52d000-c095-11ea-8375-878d876ab01d.png&#34;&gt;&lt;/p&gt;</description>
-            <content type="html"><![CDATA[<h3 id="in-this-guide-we-will-be-installing-lineageos-official-build-same-guide-can-be-used-to-flash-any-other-custom-rom">In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!)</h3>
-<h2 id="prerequisite-">Prerequisite:-</h2>
-<ol>
-<li>Download LineageOS builds for chef from here:- (<a href="https://download.lineageos.org/chef">https://download.lineageos.org/chef</a>)</li>
-<li>As Google apps are not included with the Rom download them from here:- (<a href="https://opengapps.org/)">https://opengapps.org/)</a>, select ARM64 Android10 Nano Gapps.</li>
-<li>Official TWRP builds from:- (<a href="https://dl.twrp.me/chef/twrp-3.5.0_9-0-chef.img.html">https://dl.twrp.me/chef/twrp-3.5.0_9-0-chef.img.html</a>)</li>
-<li>Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK. (Get from telegram group)</li>
-</ol>
-<p><img alt="Screenshot 2020-07-07 at 19 08 56" src="https://user-images.githubusercontent.com/43720061/86805570-9a52d000-c095-11ea-8375-878d876ab01d.png"></p>
-<ul>
-<li>
-<h3 id="i-expect-you-people-already-have-necessary-adb-and-fastboot-drivers-installed">I expect you people already have necessary adb and fastboot drivers installed.</h3>
-</li>
-</ul>
-<h2 id="flashing-process-">Flashing process:-</h2>
-<ol>
-<li>As you can see I&rsquo;m on stock rom.</li>
-</ol>
-<p><img alt="IMG_20200707_190606" src="https://user-images.githubusercontent.com/43720061/86801637-de43d600-c091-11ea-82b8-bb268b1c8efc.jpg"></p>
-<ol start="2">
-<li>Reboot the device to fastboot and type the folow command to boot into twrp.</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>fastboot boot &lt;twrp.img&gt;
-</span></span></code></pre></div><ol start="3">
-<li>Once you are in twrp go ahead and wipe your data</li>
-</ol>
-<p><img alt="IMG_20200707_191008" src="https://user-images.githubusercontent.com/43720061/86809655-b6587080-c099-11ea-80bc-350f6498860b.jpg"></p>
-<ol start="4">
-<li>Once data is wiped go back to fastboot, and again boot into twrp.</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>fastboot boot &lt;twrp.img&gt;
-</span></span></code></pre></div><p><img alt="Screenshot 2020-07-07 at 19 11 06" src="https://user-images.githubusercontent.com/43720061/86809874-f7508500-c099-11ea-85fb-3bd938d19b10.png"></p>
-<ol start="5">
-<li>Once in TWRP copy the Copy-Partition Zip to yuor device, and flash it.</li>
-</ol>
-<p><img alt="Screenshot 2020-07-07 at 19 11 19" src="https://user-images.githubusercontent.com/43720061/86810013-1ea75200-c09a-11ea-97ba-2422362705ee.png"></p>
-<ol start="6">
-<li>Once flashed go ahead and wipe only the following partitions:-</li>
-</ol>
-<p><img alt="IMG_20200707_191238" src="https://user-images.githubusercontent.com/43720061/86810284-6332ed80-c09a-11ea-9b83-49add0f36802.jpg"></p>
-<ol start="7">
-<li>Once the partitions are wiped, reboot to fastboot, and again boot into twrp.</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>fastboot boot &lt;twrp.img&gt;
-</span></span></code></pre></div><ol start="8">
-<li>Now copy the Rom and Gapps files onto your device.</li>
-</ol>
-<p><img alt="Screenshot 2020-07-07 at 19 13 56" src="https://user-images.githubusercontent.com/43720061/86810668-c9b80b80-c09a-11ea-9a1b-0017c7f849a8.png"></p>
-<h3 id="important-step">Important Step</h3>
-<ol start="9">
-<li>
-<p>First just flash the LineageOS rom file, let it get installed and then again reboot to fastboot and then to twrp.</p>
-</li>
-<li>
-<p>Now flash the gapps files! (YOU DONT HAVE TO FLASH GAPPS WITH PIXEL EXPERIENCE ROM AS GAPPS ARE ALREADY INCLUDED IN ROM FILE)</p>
-</li>
-</ol>
-<p><img alt="IMG_20200707_192024" src="https://user-images.githubusercontent.com/43720061/86810996-113e9780-c09b-11ea-808b-3c7f390116a1.jpg"></p>
-<ol start="11">
-<li>We are done flashing! Now reboot to system and enjoy your Custom Rom!</li>
-</ol>
-<h3 id="the-step-from-here-on-are-just-for-lineageos">The step from here on are just for LineageOS!</h3>
-<ol start="12">
-<li>Now reboot to fastboot and from there select the RECOVERY MODE option and boot into LineageOS recovery, in there select Factory reset option and reboot to system, and we are finally done!</li>
-</ol>
-<h3 id="if-you-did-everything-correct-you-will-boot-into-the-rom">If you did everything correct you will boot into the rom!</h3>
-<p><img alt="IMG_20200707_193358" src="https://user-images.githubusercontent.com/43720061/86811764-e86ad200-c09b-11ea-8926-fcee2e744188.jpg"></p>
-<h2 id="if-you-have-any-further-doubts-or-issues-join-the-motorola-one-power-group-on-telegram--httpstmehasaber8chat">If you have any further doubts or issues join the Motorola One Power Group on Telegram:- (<a href="https://t.me/Hasaber8chat">https://t.me/Hasaber8chat</a>)</h2>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Git Basics Part - 1 (UNO)</title>
-            <link>/posts/2020/05/git-basics-part-1-uno/</link>
-            <pubDate>Thu, 28 May 2020 21:24:00 +0530</pubDate>
-            
-            <guid>/posts/2020/05/git-basics-part-1-uno/</guid>
-            <description>&lt;h2 id=&#34;git-is-a-free-and-open-source-distributed-version-control-system-designed-to-handle-everything-from-small-to-very-large-projects-with-speed-and-efficiency-which-can-be-installed-on-your-windowsmacos-xlinux-computer&#34;&gt;Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer!&lt;/h2&gt;
-&lt;h2 id=&#34;about-version-control&#34;&gt;About Version Control&lt;/h2&gt;
-&lt;h4 id=&#34;what-is-version-control-and-why-should-you-care-version-control-is-a-system-that-records-changes-to-a-file-or-set-of-files-over-time-so-that-you-can-recall-specific-versions-later-for-the-examples-in-this-book-you-will-use-software-source-code-as-the-files-being-version-controlled-though-in-reality-you-can-do-this-with-nearly-any-type-of-file-on-a-computer&#34;&gt;What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.&lt;/h4&gt;
-&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;For Windows Computers, go ahead and download the Git client from &lt;a href=&#34;https://git-scm.com/download/win&#34;&gt;https://git-scm.com/download/win&lt;/a&gt; , just accept all the permissions (basically keep clicking ok until the installation is done), don’t change anything you don’t know.&lt;/p&gt;</description>
-            <content type="html"><![CDATA[<h2 id="git-is-a-free-and-open-source-distributed-version-control-system-designed-to-handle-everything-from-small-to-very-large-projects-with-speed-and-efficiency-which-can-be-installed-on-your-windowsmacos-xlinux-computer">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer!</h2>
-<h2 id="about-version-control">About Version Control</h2>
-<h4 id="what-is-version-control-and-why-should-you-care-version-control-is-a-system-that-records-changes-to-a-file-or-set-of-files-over-time-so-that-you-can-recall-specific-versions-later-for-the-examples-in-this-book-you-will-use-software-source-code-as-the-files-being-version-controlled-though-in-reality-you-can-do-this-with-nearly-any-type-of-file-on-a-computer">What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.</h4>
-<h2 id="installation">Installation</h2>
-<ol>
-<li>
-<p>For Windows Computers, go ahead and download the Git client from <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> , just accept all the permissions (basically keep clicking ok until the installation is done), don’t change anything you don’t know.</p>
-</li>
-<li>
-<p>For Linux Computers, just open terminal and type</p>
-</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> “sudo apt-get install git” 
-</span></span></code></pre></div><p>click enter and git will be installed.</p>
-<ol start="3">
-<li>For MacOS X Computers (Install homebrew if you don&rsquo;t have it already), open terminal and type</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>“brew install git”
-</span></span></code></pre></div><h2 id="setup">Setup</h2>
-<ol>
-<li>
-<p>Open the Git Bash client(from step 1 of installation) if you are on Windows. For Linux/MacOS X just open up the terminal.</p>
-</li>
-<li>
-<p>Before proceeding you have to configure git to your Email. It must be a GitHub/GitLab/BitBucket registered email, so when you push a commit (more on this later), your name will come up as the commit author.</p>
-</li>
-<li>
-<p>The following commit will help you do that</p>
-</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>“git config --global user.name <span style="color:#e6db74">&#34;Your Name&#34;&#34; 
-</span></span></span></code></pre></div><p>&amp;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>“git config --global user.email <span style="color:#e6db74">&#34;you@example.com&#34;</span>”
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-27 at 17 13 25" src="https://user-images.githubusercontent.com/43720061/83187201-68bc2000-a14b-11ea-90ec-c0506e4fc1d1.png"></p>
-<h2 id="basic-git-commands-">Basic Git commands:-</h2>
-<ul>
-<li>git init</li>
-<li>git status</li>
-<li>git add</li>
-<li>git commit</li>
-<li>git push</li>
-<li>git log</li>
-<li>git clone</li>
-</ul>
-<h2 id="baby-steps">Baby steps</h2>
-<ol>
-<li>Let’s start by making an empty folder named git-basics.</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ mkdir git-basics <span style="color:#f92672">&amp;&amp;</span> cd git-basics
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 01 28 04" src="https://user-images.githubusercontent.com/43720061/83187390-b769ba00-a14b-11ea-9408-ac87200c33c8.png"></p>
-<ol start="2">
-<li>
-<p>Let&rsquo;s understand what git init does before using it!</p>
-<p>The git init command is the first command that you will run on Git. The git init command is used to create a new blank repository. It is used to make an existing project as a    Git project. The command given below will create a new subdirectory named &ldquo;.git&rdquo; that holds all necessary repository files.</p>
-</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git init
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 01 34 05" src="https://user-images.githubusercontent.com/43720061/83187900-8342c900-a14c-11ea-9b54-f8cb2f0495ea.png"></p>
-<ol start="3">
-<li>
-<p>Next is the &lsquo;git add&rsquo; command.</p>
-<p>Now to understand how &ldquo;git add&rdquo; works you can either copy-paste a file into the folder we made or make a readme.md file. I have made a readme.md file in this example.            The &ldquo;git add&rdquo; command is used to add file contents to the git structure. This command updates the current content of the folder and prepare it for the commit!</p>
-</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git add . <span style="color:#f92672">(</span>The prefix changes according to the files you want to add. If you want to add all the file changes in the next commit, use the prefix <span style="color:#e6db74">&#34;.&#34;</span> . If you want to just add a specific file, use the <span style="color:#e6db74">&#34;file&#34;</span> name as the prefix.<span style="color:#f92672">)</span>
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 01 43 07" src="https://user-images.githubusercontent.com/43720061/83188773-d49f8800-a14d-11ea-8e07-2e8bc5cd309c.png"></p>
-<ol start="4">
-<li>
-<p>Now we commit the changes we have made!</p>
-<p>But before that, here&rsquo;s what &ldquo;git commit&rdquo; does; it is used to record the changes in the repository. It is the next command after the git add. Every commit contains the      index data and the commit message.</p>
-</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git commit -m <span style="color:#e6db74">&#34;My First Commit!&#34;</span> <span style="color:#f92672">(</span>-m subcommand is <span style="color:#66d9ef">for</span> the commit message. There are many more subcommands in <span style="color:#e6db74">&#34;git commit&#34;</span> which we will cover later on in another guide.<span style="color:#f92672">)</span>
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 01 51 35" src="https://user-images.githubusercontent.com/43720061/83189692-fa795c80-a14e-11ea-8011-9cd0ba2fe246.png"></p>
-<ol start="5">
-<li>
-<p>We have made our first commit , its time we push it. For this make an empty repository on Github:
-<img alt="ezgif com-video-to-gif" src="https://user-images.githubusercontent.com/43720061/83191770-33670080-a152-11ea-9d85-7fddab42b0de.gif"></p>
-</li>
-<li>
-<p>Now we push the commit to the empty repository we made. The term &lsquo;push&rsquo; refers to uploading the local repository content to a remote repository(in our case it&rsquo;s Github). Pushing is an act of transferring commits from your local repository to a remote repository. &ldquo;git push&rdquo; has many subcommands about which we will learn later on in another guide.</p>
-</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git push &lt;<span style="color:#e6db74">&#34;Link to your empty remote repository&#34;</span>&gt; HEAD:master
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 02 20 59" src="https://user-images.githubusercontent.com/43720061/83192377-0ff08580-a153-11ea-8162-f7bbfdd9fbff.png"></p>
-<ol start="7">
-<li>With this you have successfully pushed your first commit! I hope, this wont be your last commit!</li>
-</ol>
-<p><img alt="Screenshot 2020-05-29 at 02 22 57" src="https://user-images.githubusercontent.com/43720061/83192562-59d96b80-a153-11ea-84ec-432e342c944a.png"></p>
-<ol start="8">
-<li>The advantage of a version control system is that it records changes. These records allow us to retrieve the data like commits, figuring out bugs, updates, etc. But, all of this history will be useless if we cannot navigate through it. At this point, we need the &ldquo;git log&rdquo; command.
-&ldquo;Git log&rdquo; is a utility tool to review and read the history of everything that happens in a repository. Multiple options can be used with a git log to make history more specific.</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git log
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 02 26 58" src="https://user-images.githubusercontent.com/43720061/83192952-e2f0a280-a153-11ea-9aca-83f4f0fe44de.png"></p>
-<ol start="9">
-<li>Last basic command everyone should know is &ldquo;git clone&rdquo; .</li>
-</ol>
-<p>&ldquo;git clone&rdquo; is a command-line utility which is used to make a local copy of a remote repository so you can work on it locally. It accesses the repository through a remote URL.
-Usually, the original repository is located on a remote server, often from a Git service like GitHub, Bitbucket, or GitLab. The remote repository URL is referred to as the origin.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git clone &lt;<span style="color:#e6db74">&#34;Link of the repo you want to clone&#34;</span>&gt;
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 02 30 56" src="https://user-images.githubusercontent.com/43720061/83193346-77f39b80-a154-11ea-94a2-05bc064a61b0.png"></p>
-<h2 id="important-note-">Important Note:-</h2>
-<p>There are alot of commands we haven&rsquo;t touched in this guide, but we will be covering that in-depth in the future.</p>
-<p>Thank you note:-</p>
-<ol>
-<li><a href="https://www.javatpoint.com/git">https://www.javatpoint.com/git</a> for their excellent in-depth notes on git.</li>
-<li><a href="https://github.com/baalajimaestro">https://github.com/baalajimaestro</a></li>
-</ol>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Opensource and Monetization</title>
-            <link>/posts/2019/06/opensource-and-monetization/</link>
-            <pubDate>Mon, 24 Jun 2019 03:30:00 +0530</pubDate>
-            
-            <guid>/posts/2019/06/opensource-and-monetization/</guid>
-            <description>&lt;p&gt;Seems like these don’t go hand in hand, does it?&lt;/p&gt;
-&lt;p&gt;Lemme view it from my perspective.&lt;/p&gt;
-&lt;p&gt;Recently there was an android kernel developer who tried to monetize his kernel in the most inappropriate way possible. It became disastrous and he became a meme in that process. He was forced to leave development, forever.&lt;/p&gt;
-&lt;p&gt;So, is monetizing opensource software cancerous?&lt;/p&gt;
-&lt;p&gt;Red Hat is the global leader in open source software solutions — and has a clear strategy in how to generate revenue. They package the popular open source operating system Linux as Red Hat Enterprise Linux and deliver it to enterprises with a promise of 10 years of support. Open source projects like Linux can literally change every day, so that’s a tall order.&lt;/p&gt;</description>
-            <content type="html"><![CDATA[<p>Seems like these don’t go hand in hand, does it?</p>
-<p>Lemme view it from my perspective.</p>
-<p>Recently there was an android kernel developer who tried to monetize his kernel in the most inappropriate way possible. It became disastrous and he became a meme in that process. He was forced to leave development, forever.</p>
-<p>So, is monetizing opensource software cancerous?</p>
-<p>Red Hat is the global leader in open source software solutions — and has a clear strategy in how to generate revenue. They package the popular open source operating system Linux as Red Hat Enterprise Linux and deliver it to enterprises with a promise of 10 years of support. Open source projects like Linux can literally change every day, so that’s a tall order.</p>
-<p>So how do they live in the opensource market?
-Is monetizing opensource stuff good?</p>
-<p>GPL, the most renowned license in the opensource world, permits monetising the code.
-So where are people going wrong in their attempts to monetise their works?</p>
-<p>Greed is good, yes read it again, greed is good. Money rules life.</p>
-<p>Lets see possible ways to monetize an opensource project.</p>
-<h4 id="advertising">Advertising</h4>
-<p>Monetize download links with ads, you must have seen a few people doing this. The download link is url shortened and is sent to the public.</p>
-<p>Ads on the project website can also be a possible way to monetise your project.</p>
-<h4 id="paid-features">Paid Features</h4>
-<p>Lemme cite an example of this case. The pretty famous Hyperion Launcher for android is opensource. But it does have features like gestures and widgets which needs the hyperion supreme package, the paid version. The developer earns in the case where people pay for using all the cool features which are locked.</p>
-<p>(( Lawnchair laughs ))</p>
-<h4 id="dual-licensing">Dual Licensing</h4>
-<p>Dual licensing allows companies to release commercial software (with a commercial license) that’s derived from free OSS commonly distributed under the GNU General Public (GPL) license. A company releases identical products under a commercial license and under a free license like GPL. MySQL is a pretty good example of this case, where they produce community edition under GPL and enterprise edition under their own commercial license</p>
-<h4 id="paid-support">Paid Support</h4>
-<p>Red Hat promises really great customer support for their premium enterprise Linux Distribution. People who rely on their servers a lot usually pay for this paid support since this ensures their servers never breaks down. This all happens while their linux source code is fully opensource.</p>
-<p>Open source software is highly regarded thanks to its security, reliability, and vibrant communities that support it. Moreover, OSS helps companies avoid reinventing the wheel, and can even be used within proprietary software. Altogether, these factors have made OSS quite popular. Today, people are willing to pay for open source software to ensure legal protection, technical support, and professional services. With paid open source technologies, companies can offer the best of both worlds: transparent technology with the support and features of commercial software.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title></title>
-            <link>/posts/1/01/</link>
-            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-            
-            <guid>/posts/1/01/</guid>
-            <description>&lt;h1 id=&#34;high---level-guide-to-android-apk-structure-compilation-and-analysis&#34;&gt;High - Level Guide to Android APK: Structure, Compilation, and Analysis&lt;/h1&gt;
-&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;/posts/1/01/#introduction-to-apks&#34;&gt;Introduction to APKs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/posts/1/01/#apk-structure&#34;&gt;APK Structure&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/posts/1/01/#compilation-process&#34;&gt;Compilation Process&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/posts/1/01/#android-runtime-evolution&#34;&gt;Android Runtime Evolution&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/posts/1/01/#apk-analysis&#34;&gt;APK Analysis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/posts/1/01/#size-optimization&#34;&gt;Size Optimization&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/posts/1/01/#best-practices&#34;&gt;Best Practices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#introduction-to-apks&#34;&gt;Introduction to APKs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#apk-structure&#34;&gt;APK Structure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#compilation-process&#34;&gt;Compilation Process&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#android-runtime-evolution&#34;&gt;Android Runtime Evolution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#apk-analysis&#34;&gt;APK Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#size-optimization&#34;&gt;Size Optimization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#best-practices&#34;&gt;Best Practices&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.&lt;/p&gt;
 &lt;h2 id=&#34;what-is-an-apks&#34;&gt;What is an APKs&lt;/h2&gt;
 &lt;p&gt;An APK (Android Package) is the package file format used by the Android operating system for distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.&lt;/p&gt;</description>
-            <content type="html"><![CDATA[<h1 id="high---level-guide-to-android-apk-structure-compilation-and-analysis">High - Level Guide to Android APK: Structure, Compilation, and Analysis</h1>
-<h2 id="table-of-contents">Table of Contents</h2>
+            <content type="html"><![CDATA[<h2 id="table-of-contents">Table of Contents</h2>
 <ol>
-<li><a href="/posts/1/01/#introduction-to-apks">Introduction to APKs</a></li>
-<li><a href="/posts/1/01/#apk-structure">APK Structure</a></li>
-<li><a href="/posts/1/01/#compilation-process">Compilation Process</a></li>
-<li><a href="/posts/1/01/#android-runtime-evolution">Android Runtime Evolution</a></li>
-<li><a href="/posts/1/01/#apk-analysis">APK Analysis</a></li>
-<li><a href="/posts/1/01/#size-optimization">Size Optimization</a></li>
-<li><a href="/posts/1/01/#best-practices">Best Practices</a></li>
+<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#introduction-to-apks">Introduction to APKs</a></li>
+<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#apk-structure">APK Structure</a></li>
+<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#compilation-process">Compilation Process</a></li>
+<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#android-runtime-evolution">Android Runtime Evolution</a></li>
+<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#apk-analysis">APK Analysis</a></li>
+<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#size-optimization">Size Optimization</a></li>
+<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#best-practices">Best Practices</a></li>
 </ol>
 <h2 id="introduction">Introduction</h2>
 <p>This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.</p>
@@ -553,6 +304,253 @@ ZIP Alignment
 <li><a href="https://developer.android.com/tools/aapt2">https://developer.android.com/tools/aapt2</a></li>
 <li><a href="https://developer.android.com/tools/apkanalyzer">https://developer.android.com/tools/apkanalyzer</a></li>
 </ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Motorola One Power aka Chef Custom Rom Flashing Guide</title>
+            <link>/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/</link>
+            <pubDate>Tue, 07 Jul 2020 10:24:00 +0530</pubDate>
+            
+            <guid>/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/</guid>
+            <description>&lt;h3 id=&#34;in-this-guide-we-will-be-installing-lineageos-official-build-same-guide-can-be-used-to-flash-any-other-custom-rom&#34;&gt;In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!)&lt;/h3&gt;
+&lt;h2 id=&#34;prerequisite-&#34;&gt;Prerequisite:-&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Download LineageOS builds for chef from here:- (&lt;a href=&#34;https://download.lineageos.org/chef&#34;&gt;https://download.lineageos.org/chef&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;As Google apps are not included with the Rom download them from here:- (&lt;a href=&#34;https://opengapps.org/)&#34;&gt;https://opengapps.org/)&lt;/a&gt;, select ARM64 Android10 Nano Gapps.&lt;/li&gt;
+&lt;li&gt;Official TWRP builds from:- (&lt;a href=&#34;https://dl.twrp.me/chef/twrp-3.5.0_9-0-chef.img.html&#34;&gt;https://dl.twrp.me/chef/twrp-3.5.0_9-0-chef.img.html&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK. (Get from telegram group)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt=&#34;Screenshot 2020-07-07 at 19 08 56&#34; src=&#34;https://user-images.githubusercontent.com/43720061/86805570-9a52d000-c095-11ea-8375-878d876ab01d.png&#34;&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h3 id="in-this-guide-we-will-be-installing-lineageos-official-build-same-guide-can-be-used-to-flash-any-other-custom-rom">In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!)</h3>
+<h2 id="prerequisite-">Prerequisite:-</h2>
+<ol>
+<li>Download LineageOS builds for chef from here:- (<a href="https://download.lineageos.org/chef">https://download.lineageos.org/chef</a>)</li>
+<li>As Google apps are not included with the Rom download them from here:- (<a href="https://opengapps.org/)">https://opengapps.org/)</a>, select ARM64 Android10 Nano Gapps.</li>
+<li>Official TWRP builds from:- (<a href="https://dl.twrp.me/chef/twrp-3.5.0_9-0-chef.img.html">https://dl.twrp.me/chef/twrp-3.5.0_9-0-chef.img.html</a>)</li>
+<li>Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK. (Get from telegram group)</li>
+</ol>
+<p><img alt="Screenshot 2020-07-07 at 19 08 56" src="https://user-images.githubusercontent.com/43720061/86805570-9a52d000-c095-11ea-8375-878d876ab01d.png"></p>
+<ul>
+<li>
+<h3 id="i-expect-you-people-already-have-necessary-adb-and-fastboot-drivers-installed">I expect you people already have necessary adb and fastboot drivers installed.</h3>
+</li>
+</ul>
+<h2 id="flashing-process-">Flashing process:-</h2>
+<ol>
+<li>As you can see I&rsquo;m on stock rom.</li>
+</ol>
+<p><img alt="IMG_20200707_190606" src="https://user-images.githubusercontent.com/43720061/86801637-de43d600-c091-11ea-82b8-bb268b1c8efc.jpg"></p>
+<ol start="2">
+<li>Reboot the device to fastboot and type the folow command to boot into twrp.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>fastboot boot &lt;twrp.img&gt;
+</span></span></code></pre></div><ol start="3">
+<li>Once you are in twrp go ahead and wipe your data</li>
+</ol>
+<p><img alt="IMG_20200707_191008" src="https://user-images.githubusercontent.com/43720061/86809655-b6587080-c099-11ea-80bc-350f6498860b.jpg"></p>
+<ol start="4">
+<li>Once data is wiped go back to fastboot, and again boot into twrp.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>fastboot boot &lt;twrp.img&gt;
+</span></span></code></pre></div><p><img alt="Screenshot 2020-07-07 at 19 11 06" src="https://user-images.githubusercontent.com/43720061/86809874-f7508500-c099-11ea-85fb-3bd938d19b10.png"></p>
+<ol start="5">
+<li>Once in TWRP copy the Copy-Partition Zip to yuor device, and flash it.</li>
+</ol>
+<p><img alt="Screenshot 2020-07-07 at 19 11 19" src="https://user-images.githubusercontent.com/43720061/86810013-1ea75200-c09a-11ea-97ba-2422362705ee.png"></p>
+<ol start="6">
+<li>Once flashed go ahead and wipe only the following partitions:-</li>
+</ol>
+<p><img alt="IMG_20200707_191238" src="https://user-images.githubusercontent.com/43720061/86810284-6332ed80-c09a-11ea-9b83-49add0f36802.jpg"></p>
+<ol start="7">
+<li>Once the partitions are wiped, reboot to fastboot, and again boot into twrp.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>fastboot boot &lt;twrp.img&gt;
+</span></span></code></pre></div><ol start="8">
+<li>Now copy the Rom and Gapps files onto your device.</li>
+</ol>
+<p><img alt="Screenshot 2020-07-07 at 19 13 56" src="https://user-images.githubusercontent.com/43720061/86810668-c9b80b80-c09a-11ea-9a1b-0017c7f849a8.png"></p>
+<h3 id="important-step">Important Step</h3>
+<ol start="9">
+<li>
+<p>First just flash the LineageOS rom file, let it get installed and then again reboot to fastboot and then to twrp.</p>
+</li>
+<li>
+<p>Now flash the gapps files! (YOU DONT HAVE TO FLASH GAPPS WITH PIXEL EXPERIENCE ROM AS GAPPS ARE ALREADY INCLUDED IN ROM FILE)</p>
+</li>
+</ol>
+<p><img alt="IMG_20200707_192024" src="https://user-images.githubusercontent.com/43720061/86810996-113e9780-c09b-11ea-808b-3c7f390116a1.jpg"></p>
+<ol start="11">
+<li>We are done flashing! Now reboot to system and enjoy your Custom Rom!</li>
+</ol>
+<h3 id="the-step-from-here-on-are-just-for-lineageos">The step from here on are just for LineageOS!</h3>
+<ol start="12">
+<li>Now reboot to fastboot and from there select the RECOVERY MODE option and boot into LineageOS recovery, in there select Factory reset option and reboot to system, and we are finally done!</li>
+</ol>
+<h3 id="if-you-did-everything-correct-you-will-boot-into-the-rom">If you did everything correct you will boot into the rom!</h3>
+<p><img alt="IMG_20200707_193358" src="https://user-images.githubusercontent.com/43720061/86811764-e86ad200-c09b-11ea-8926-fcee2e744188.jpg"></p>
+<h2 id="if-you-have-any-further-doubts-or-issues-join-the-motorola-one-power-group-on-telegram--httpstmehasaber8chat">If you have any further doubts or issues join the Motorola One Power Group on Telegram:- (<a href="https://t.me/Hasaber8chat">https://t.me/Hasaber8chat</a>)</h2>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Git Basics Part - 1 (UNO)</title>
+            <link>/posts/2020/05/git-basics-part-1-uno/</link>
+            <pubDate>Thu, 28 May 2020 21:24:00 +0530</pubDate>
+            
+            <guid>/posts/2020/05/git-basics-part-1-uno/</guid>
+            <description>&lt;h2 id=&#34;git-is-a-free-and-open-source-distributed-version-control-system-designed-to-handle-everything-from-small-to-very-large-projects-with-speed-and-efficiency-which-can-be-installed-on-your-windowsmacos-xlinux-computer&#34;&gt;Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer!&lt;/h2&gt;
+&lt;h2 id=&#34;about-version-control&#34;&gt;About Version Control&lt;/h2&gt;
+&lt;h4 id=&#34;what-is-version-control-and-why-should-you-care-version-control-is-a-system-that-records-changes-to-a-file-or-set-of-files-over-time-so-that-you-can-recall-specific-versions-later-for-the-examples-in-this-book-you-will-use-software-source-code-as-the-files-being-version-controlled-though-in-reality-you-can-do-this-with-nearly-any-type-of-file-on-a-computer&#34;&gt;What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.&lt;/h4&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;For Windows Computers, go ahead and download the Git client from &lt;a href=&#34;https://git-scm.com/download/win&#34;&gt;https://git-scm.com/download/win&lt;/a&gt; , just accept all the permissions (basically keep clicking ok until the installation is done), don’t change anything you don’t know.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h2 id="git-is-a-free-and-open-source-distributed-version-control-system-designed-to-handle-everything-from-small-to-very-large-projects-with-speed-and-efficiency-which-can-be-installed-on-your-windowsmacos-xlinux-computer">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer!</h2>
+<h2 id="about-version-control">About Version Control</h2>
+<h4 id="what-is-version-control-and-why-should-you-care-version-control-is-a-system-that-records-changes-to-a-file-or-set-of-files-over-time-so-that-you-can-recall-specific-versions-later-for-the-examples-in-this-book-you-will-use-software-source-code-as-the-files-being-version-controlled-though-in-reality-you-can-do-this-with-nearly-any-type-of-file-on-a-computer">What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.</h4>
+<h2 id="installation">Installation</h2>
+<ol>
+<li>
+<p>For Windows Computers, go ahead and download the Git client from <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> , just accept all the permissions (basically keep clicking ok until the installation is done), don’t change anything you don’t know.</p>
+</li>
+<li>
+<p>For Linux Computers, just open terminal and type</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> “sudo apt-get install git” 
+</span></span></code></pre></div><p>click enter and git will be installed.</p>
+<ol start="3">
+<li>For MacOS X Computers (Install homebrew if you don&rsquo;t have it already), open terminal and type</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>“brew install git”
+</span></span></code></pre></div><h2 id="setup">Setup</h2>
+<ol>
+<li>
+<p>Open the Git Bash client(from step 1 of installation) if you are on Windows. For Linux/MacOS X just open up the terminal.</p>
+</li>
+<li>
+<p>Before proceeding you have to configure git to your Email. It must be a GitHub/GitLab/BitBucket registered email, so when you push a commit (more on this later), your name will come up as the commit author.</p>
+</li>
+<li>
+<p>The following commit will help you do that</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>“git config --global user.name <span style="color:#e6db74">&#34;Your Name&#34;&#34; 
+</span></span></span></code></pre></div><p>&amp;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>“git config --global user.email <span style="color:#e6db74">&#34;you@example.com&#34;</span>”
+</span></span></code></pre></div><p><img alt="Screenshot 2020-05-27 at 17 13 25" src="https://user-images.githubusercontent.com/43720061/83187201-68bc2000-a14b-11ea-90ec-c0506e4fc1d1.png"></p>
+<h2 id="basic-git-commands-">Basic Git commands:-</h2>
+<ul>
+<li>git init</li>
+<li>git status</li>
+<li>git add</li>
+<li>git commit</li>
+<li>git push</li>
+<li>git log</li>
+<li>git clone</li>
+</ul>
+<h2 id="baby-steps">Baby steps</h2>
+<ol>
+<li>Let’s start by making an empty folder named git-basics.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ mkdir git-basics <span style="color:#f92672">&amp;&amp;</span> cd git-basics
+</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 01 28 04" src="https://user-images.githubusercontent.com/43720061/83187390-b769ba00-a14b-11ea-9408-ac87200c33c8.png"></p>
+<ol start="2">
+<li>
+<p>Let&rsquo;s understand what git init does before using it!</p>
+<p>The git init command is the first command that you will run on Git. The git init command is used to create a new blank repository. It is used to make an existing project as a    Git project. The command given below will create a new subdirectory named &ldquo;.git&rdquo; that holds all necessary repository files.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git init
+</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 01 34 05" src="https://user-images.githubusercontent.com/43720061/83187900-8342c900-a14c-11ea-9b54-f8cb2f0495ea.png"></p>
+<ol start="3">
+<li>
+<p>Next is the &lsquo;git add&rsquo; command.</p>
+<p>Now to understand how &ldquo;git add&rdquo; works you can either copy-paste a file into the folder we made or make a readme.md file. I have made a readme.md file in this example.            The &ldquo;git add&rdquo; command is used to add file contents to the git structure. This command updates the current content of the folder and prepare it for the commit!</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git add . <span style="color:#f92672">(</span>The prefix changes according to the files you want to add. If you want to add all the file changes in the next commit, use the prefix <span style="color:#e6db74">&#34;.&#34;</span> . If you want to just add a specific file, use the <span style="color:#e6db74">&#34;file&#34;</span> name as the prefix.<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 01 43 07" src="https://user-images.githubusercontent.com/43720061/83188773-d49f8800-a14d-11ea-8e07-2e8bc5cd309c.png"></p>
+<ol start="4">
+<li>
+<p>Now we commit the changes we have made!</p>
+<p>But before that, here&rsquo;s what &ldquo;git commit&rdquo; does; it is used to record the changes in the repository. It is the next command after the git add. Every commit contains the      index data and the commit message.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git commit -m <span style="color:#e6db74">&#34;My First Commit!&#34;</span> <span style="color:#f92672">(</span>-m subcommand is <span style="color:#66d9ef">for</span> the commit message. There are many more subcommands in <span style="color:#e6db74">&#34;git commit&#34;</span> which we will cover later on in another guide.<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 01 51 35" src="https://user-images.githubusercontent.com/43720061/83189692-fa795c80-a14e-11ea-8011-9cd0ba2fe246.png"></p>
+<ol start="5">
+<li>
+<p>We have made our first commit , its time we push it. For this make an empty repository on Github:
+<img alt="ezgif com-video-to-gif" src="https://user-images.githubusercontent.com/43720061/83191770-33670080-a152-11ea-9d85-7fddab42b0de.gif"></p>
+</li>
+<li>
+<p>Now we push the commit to the empty repository we made. The term &lsquo;push&rsquo; refers to uploading the local repository content to a remote repository(in our case it&rsquo;s Github). Pushing is an act of transferring commits from your local repository to a remote repository. &ldquo;git push&rdquo; has many subcommands about which we will learn later on in another guide.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git push &lt;<span style="color:#e6db74">&#34;Link to your empty remote repository&#34;</span>&gt; HEAD:master
+</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 02 20 59" src="https://user-images.githubusercontent.com/43720061/83192377-0ff08580-a153-11ea-8162-f7bbfdd9fbff.png"></p>
+<ol start="7">
+<li>With this you have successfully pushed your first commit! I hope, this wont be your last commit!</li>
+</ol>
+<p><img alt="Screenshot 2020-05-29 at 02 22 57" src="https://user-images.githubusercontent.com/43720061/83192562-59d96b80-a153-11ea-84ec-432e342c944a.png"></p>
+<ol start="8">
+<li>The advantage of a version control system is that it records changes. These records allow us to retrieve the data like commits, figuring out bugs, updates, etc. But, all of this history will be useless if we cannot navigate through it. At this point, we need the &ldquo;git log&rdquo; command.
+&ldquo;Git log&rdquo; is a utility tool to review and read the history of everything that happens in a repository. Multiple options can be used with a git log to make history more specific.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git log
+</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 02 26 58" src="https://user-images.githubusercontent.com/43720061/83192952-e2f0a280-a153-11ea-9aca-83f4f0fe44de.png"></p>
+<ol start="9">
+<li>Last basic command everyone should know is &ldquo;git clone&rdquo; .</li>
+</ol>
+<p>&ldquo;git clone&rdquo; is a command-line utility which is used to make a local copy of a remote repository so you can work on it locally. It accesses the repository through a remote URL.
+Usually, the original repository is located on a remote server, often from a Git service like GitHub, Bitbucket, or GitLab. The remote repository URL is referred to as the origin.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git clone &lt;<span style="color:#e6db74">&#34;Link of the repo you want to clone&#34;</span>&gt;
+</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 02 30 56" src="https://user-images.githubusercontent.com/43720061/83193346-77f39b80-a154-11ea-94a2-05bc064a61b0.png"></p>
+<h2 id="important-note-">Important Note:-</h2>
+<p>There are alot of commands we haven&rsquo;t touched in this guide, but we will be covering that in-depth in the future.</p>
+<p>Thank you note:-</p>
+<ol>
+<li><a href="https://www.javatpoint.com/git">https://www.javatpoint.com/git</a> for their excellent in-depth notes on git.</li>
+<li><a href="https://github.com/baalajimaestro">https://github.com/baalajimaestro</a></li>
+</ol>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Opensource and Monetization</title>
+            <link>/posts/2019/06/opensource-and-monetization/</link>
+            <pubDate>Mon, 24 Jun 2019 03:30:00 +0530</pubDate>
+            
+            <guid>/posts/2019/06/opensource-and-monetization/</guid>
+            <description>&lt;p&gt;Seems like these don’t go hand in hand, does it?&lt;/p&gt;
+&lt;p&gt;Lemme view it from my perspective.&lt;/p&gt;
+&lt;p&gt;Recently there was an android kernel developer who tried to monetize his kernel in the most inappropriate way possible. It became disastrous and he became a meme in that process. He was forced to leave development, forever.&lt;/p&gt;
+&lt;p&gt;So, is monetizing opensource software cancerous?&lt;/p&gt;
+&lt;p&gt;Red Hat is the global leader in open source software solutions — and has a clear strategy in how to generate revenue. They package the popular open source operating system Linux as Red Hat Enterprise Linux and deliver it to enterprises with a promise of 10 years of support. Open source projects like Linux can literally change every day, so that’s a tall order.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Seems like these don’t go hand in hand, does it?</p>
+<p>Lemme view it from my perspective.</p>
+<p>Recently there was an android kernel developer who tried to monetize his kernel in the most inappropriate way possible. It became disastrous and he became a meme in that process. He was forced to leave development, forever.</p>
+<p>So, is monetizing opensource software cancerous?</p>
+<p>Red Hat is the global leader in open source software solutions — and has a clear strategy in how to generate revenue. They package the popular open source operating system Linux as Red Hat Enterprise Linux and deliver it to enterprises with a promise of 10 years of support. Open source projects like Linux can literally change every day, so that’s a tall order.</p>
+<p>So how do they live in the opensource market?
+Is monetizing opensource stuff good?</p>
+<p>GPL, the most renowned license in the opensource world, permits monetising the code.
+So where are people going wrong in their attempts to monetise their works?</p>
+<p>Greed is good, yes read it again, greed is good. Money rules life.</p>
+<p>Lets see possible ways to monetize an opensource project.</p>
+<h4 id="advertising">Advertising</h4>
+<p>Monetize download links with ads, you must have seen a few people doing this. The download link is url shortened and is sent to the public.</p>
+<p>Ads on the project website can also be a possible way to monetise your project.</p>
+<h4 id="paid-features">Paid Features</h4>
+<p>Lemme cite an example of this case. The pretty famous Hyperion Launcher for android is opensource. But it does have features like gestures and widgets which needs the hyperion supreme package, the paid version. The developer earns in the case where people pay for using all the cool features which are locked.</p>
+<p>(( Lawnchair laughs ))</p>
+<h4 id="dual-licensing">Dual Licensing</h4>
+<p>Dual licensing allows companies to release commercial software (with a commercial license) that’s derived from free OSS commonly distributed under the GNU General Public (GPL) license. A company releases identical products under a commercial license and under a free license like GPL. MySQL is a pretty good example of this case, where they produce community edition under GPL and enterprise edition under their own commercial license</p>
+<h4 id="paid-support">Paid Support</h4>
+<p>Red Hat promises really great customer support for their premium enterprise Linux Distribution. People who rely on their servers a lot usually pay for this paid support since this ensures their servers never breaks down. This all happens while their linux source code is fully opensource.</p>
+<p>Open source software is highly regarded thanks to its security, reliability, and vibrant communities that support it. Moreover, OSS helps companies avoid reinventing the wheel, and can even be used within proprietary software. Altogether, these factors have made OSS quite popular. Today, people are willing to pay for open source software to ensure legal protection, technical support, and professional services. With paid open source technologies, companies can offer the best of both worlds: transparent technology with the support and features of commercial software.</p>
 ]]></content>
         </item>
         
