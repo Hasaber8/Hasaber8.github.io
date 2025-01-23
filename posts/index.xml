@@ -16,32 +16,30 @@
             <guid>/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/</guid>
             <description>&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#introduction-to-apks&#34;&gt;Introduction to APKs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#what-is-an-apk&#34;&gt;Introduction to APKs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#apk-structure&#34;&gt;APK Structure&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#compilation-process&#34;&gt;Compilation Process&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#android-runtime-evolution&#34;&gt;Android Runtime Evolution&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#apk-analysis&#34;&gt;APK Analysis&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#size-optimization&#34;&gt;Size Optimization&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#best-practices&#34;&gt;Best Practices&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.&lt;/p&gt;
-&lt;h2 id=&#34;what-is-an-apks&#34;&gt;What is an APKs&lt;/h2&gt;
-&lt;p&gt;An APK (Android Package) is the package file format used by the Android operating system for distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.&lt;/p&gt;</description>
+&lt;h2 id=&#34;what-is-an-apk&#34;&gt;What is an APK&lt;/h2&gt;
+&lt;p&gt;An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<h2 id="table-of-contents">Table of Contents</h2>
 <ol>
-<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#introduction-to-apks">Introduction to APKs</a></li>
+<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#what-is-an-apk">Introduction to APKs</a></li>
 <li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#apk-structure">APK Structure</a></li>
 <li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#compilation-process">Compilation Process</a></li>
 <li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#android-runtime-evolution">Android Runtime Evolution</a></li>
 <li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#apk-analysis">APK Analysis</a></li>
 <li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#size-optimization">Size Optimization</a></li>
-<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#best-practices">Best Practices</a></li>
 </ol>
 <h2 id="introduction">Introduction</h2>
 <p>This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.</p>
-<h2 id="what-is-an-apks">What is an APKs</h2>
-<p>An APK (Android Package) is the package file format used by the Android operating system for distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.</p>
+<h2 id="what-is-an-apk">What is an APK</h2>
+<p>An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.</p>
 <h3 id="key-characteristics">Key Characteristics</h3>
 <ul>
 <li>Standard Android application package format</li>
@@ -127,7 +125,8 @@
 <li>Supports multiple configurations</li>
 </ul>
 <h2 id="compilation-process">Compilation Process</h2>
-<h3 id="from-source-to-apk">From Source to APK</h3>
+<h4 id="from-source-to-apk">From Source to APK</h4>
+<p><img alt="compilation process" src="https://github.com/user-attachments/assets/3c60090d-9804-417b-b2d1-727e578697b0"></p>
 <h4 id="1-source-code-compilation">1. Source Code Compilation</h4>
 <pre tabindex="0"><code>Source Files (.java, .kotlin)
         ↓
@@ -175,6 +174,7 @@ ZIP Alignment
 <li>Improved memory management</li>
 </ul>
 <h3 id="runtime-characteristics">Runtime Characteristics</h3>
+<p><img alt="runtime comparision" src="https://github.com/user-attachments/assets/dd068fc3-4c02-4f8f-a4c9-cf7ffdf58043"></p>
 <h4 id="dalvik-vs-art-comparison">Dalvik vs. ART Comparison</h4>
 <ul>
 <li>Compilation approach
@@ -254,6 +254,80 @@ ZIP Alignment
 <li>Library consolidation</li>
 <li>Unnecessary library removal</li>
 <li>Version optimization</li>
+</ul>
+<h3 id="real-world-example-photo-filter-app">Real-World Example: Photo Filter App</h3>
+<p>Initial APK Structure:</p>
+<ul>
+<li>Base APK size: 8.2MB</li>
+<li>Components:
+<ul>
+<li>Basic UI resources: 0.5MB</li>
+<li>Filter processing library (arm64-v8a): 4MB</li>
+<li>Sample filter images: 2.5MB</li>
+<li>Other resources: 1.2MB</li>
+</ul>
+</li>
+</ul>
+<p>After Optimization:</p>
+<ol>
+<li>Implemented resource shrinking
+<ul>
+<li>Removed unused sample images</li>
+<li>Compressed remaining images</li>
+</ul>
+</li>
+<li>Split native libraries by architecture</li>
+<li>Implemented dynamic feature delivery for filters</li>
+</ol>
+<p>Final Result:</p>
+<ul>
+<li>Base APK: 2.8MB</li>
+<li>Dynamic feature module (filters): 1.5MB</li>
+<li>Architecture-specific libraries: Download only what&rsquo;s needed</li>
+</ul>
+<h3 id="real-world-example-language-resource-organization-not-a-real-app-just-for-understanding">Real-World Example: Language Resource Organization (Not a real app, just for Understanding)</h3>
+<pre tabindex="0"><code>Common Structure Issue:
+/res
+  /drawable
+    - app_icon.png (1MB - high res)
+    - background.jpg (2MB)
+  /values
+    - strings.xml (English)
+  /values-es
+    - strings.xml (Spanish)
+  /values-fr
+    - strings.xml (French)
+  /values-de
+    - strings.xml (German)
+</code></pre><p>Optimized Structure:</p>
+<ol>
+<li>Implemented drawable density splits</li>
+<li>Used language packs for non-primary languages</li>
+<li>Optimized image assets</li>
+</ol>
+<p>Results:</p>
+<ul>
+<li>Original APK size: 4.8MB</li>
+<li>Optimized base APK (English only): 1.2MB</li>
+<li>Each language pack: ~200KB</li>
+<li>Users download only needed languages</li>
+</ul>
+<p>After Optimization:</p>
+<ol>
+<li>Implemented resource shrinking
+<ul>
+<li>Removed unused sample images</li>
+<li>Compressed remaining images</li>
+</ul>
+</li>
+<li>Split native libraries by architecture</li>
+<li>Implemented dynamic feature delivery for filters</li>
+</ol>
+<p>Final Result:</p>
+<ul>
+<li>Base APK: 2.8MB</li>
+<li>Dynamic feature module (filters): 1.5MB</li>
+<li>Architecture-specific libraries: Download only what&rsquo;s needed</li>
 </ul>
 <h2 id="best-practices-for-your-app">Best Practices for your app</h2>
 <h3 id="development-guidelines">Development Guidelines</h3>
