@@ -4,20 +4,19 @@ date: 2025-01-23 21:24:00 +0530
 ---
 
 ## Table of Contents
-1. [Introduction to APKs](#introduction-to-apks)
+1. [Introduction to APKs](#what-is-an-apk)
 2. [APK Structure](#apk-structure)
 3. [Compilation Process](#compilation-process)
 4. [Android Runtime Evolution](#android-runtime-evolution)
 5. [APK Analysis](#apk-analysis)
 6. [Size Optimization](#size-optimization)
-7. [Best Practices](#best-practices)
 
 ## Introduction
 This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.
 
-## What is an APKs
+## What is an APK
 
-An APK (Android Package) is the package file format used by the Android operating system for distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.
+An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.
 
 ### Key Characteristics
 - Standard Android application package format
@@ -88,7 +87,9 @@ An APK file is essentially a ZIP archive that contains multiple files and direct
 
 ## Compilation Process
 
-### From Source to APK
+#### From Source to APK
+
+![compilation process](https://github.com/user-attachments/assets/3c60090d-9804-417b-b2d1-727e578697b0)
 
 #### 1. Source Code Compilation
 ```
@@ -145,6 +146,8 @@ ZIP Alignment
 - Improved memory management
 
 ### Runtime Characteristics
+
+![runtime comparision](https://github.com/user-attachments/assets/dd068fc3-4c02-4f8f-a4c9-cf7ffdf58043)
 
 #### Dalvik vs. ART Comparison
 - Compilation approach
@@ -210,6 +213,69 @@ ZIP Alignment
 - Library consolidation
 - Unnecessary library removal
 - Version optimization
+
+### Real-World Example: Photo Filter App
+
+Initial APK Structure:
+- Base APK size: 8.2MB
+- Components:
+  - Basic UI resources: 0.5MB
+  - Filter processing library (arm64-v8a): 4MB
+  - Sample filter images: 2.5MB
+  - Other resources: 1.2MB
+
+After Optimization:
+1. Implemented resource shrinking
+   - Removed unused sample images
+   - Compressed remaining images
+2. Split native libraries by architecture
+3. Implemented dynamic feature delivery for filters
+
+Final Result:
+- Base APK: 2.8MB
+- Dynamic feature module (filters): 1.5MB
+- Architecture-specific libraries: Download only what's needed
+
+### Real-World Example: Language Resource Organization (Not a real app, just for Understanding)
+
+```
+Common Structure Issue:
+/res
+  /drawable
+    - app_icon.png (1MB - high res)
+    - background.jpg (2MB)
+  /values
+    - strings.xml (English)
+  /values-es
+    - strings.xml (Spanish)
+  /values-fr
+    - strings.xml (French)
+  /values-de
+    - strings.xml (German)
+```
+
+Optimized Structure:
+1. Implemented drawable density splits
+2. Used language packs for non-primary languages
+3. Optimized image assets
+
+Results:
+- Original APK size: 4.8MB
+- Optimized base APK (English only): 1.2MB
+- Each language pack: ~200KB
+- Users download only needed languages
+
+After Optimization:
+1. Implemented resource shrinking
+   - Removed unused sample images
+   - Compressed remaining images
+2. Split native libraries by architecture
+3. Implemented dynamic feature delivery for filters
+
+Final Result:
+- Base APK: 2.8MB
+- Dynamic feature module (filters): 1.5MB
+- Architecture-specific libraries: Download only what's needed
 
 ## Best Practices for your app
 
