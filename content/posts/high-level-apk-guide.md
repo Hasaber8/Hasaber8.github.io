@@ -120,6 +120,10 @@ APK Signing
 ZIP Alignment
 ```
 
+- D8: Modern converter from Java bytecode (.class) to DEX bytecode (.dex)
+- R8: Modern replacement for ProGuard, handling code optimization and obfuscation
+- Both tools are designed for modern Android development while maintaining compatibility with the DEX format
+
 ## Android Runtime Evolution
 
 ### Historical Progression
@@ -162,6 +166,20 @@ ZIP Alignment
 - Battery efficiency
   - Dalvik: More CPU usage during runtime
   - ART: More efficient CPU usage
+
+#### Format vs Runtime Separation:
+
+- The .dex format is independent of the runtime (Dalvik/ART)
+- ART reads and executes the same DEX bytecode format
+- This separation allowed Google to evolve the runtime without breaking compatibility
+
+#### Platform Architecture:
+
+- The DEX format remains fundamental to how Android organizes compiled code
+- Maintaining this format ensures compatibility across the entire Android ecosystem
+- Tools, workflows, and existing apps continue to work without disruption
+
+- The relationship between Dalvik and ART is not about replacement but evolution - ART improved how the bytecode is executed while preserving the crucial DEX format that is the foundation of Android's application architecture.
 
 ## APK Analysis
 
@@ -315,11 +333,12 @@ Understanding APK structure, compilation, and analysis is crucial for Android de
 - Efficient size management
 - Enhanced user experience
 
-### Citation
-- https://developer.android.com/tools/apkanalyzer
-- https://developer.android.com/studio/debug/apk-analyzer
-- https://developer.android.com/guide/topics/resources/providing-resources
-- https://developer.android.com/guide/components/fundamentals
-- https://developer.android.com/guide/topics/manifest/manifest-intro
-- https://developer.android.com/tools/aapt2
-- https://developer.android.com/tools/apkanalyzer
+## Citation
+```
+[1]: Android Developers. "APK Analyzer". Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/tools/apkanalyzer
+[2]: Android Developers. "Analyze your build with APK Analyzer". Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/studio/debug/apk-analyzer
+[3]: Android Developers. "App resources overview". Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/guide/topics/resources/providing-resources
+[4]: Android Developers. "Application Fundamentals". Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/guide/components/fundamentals
+[5]: Android Developers. "App Manifest Overview". Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/guide/topics/manifest/manifest-intro
+[6]: Android Developers. "AAPT2". Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/tools/aapt2
+```
