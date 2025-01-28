@@ -1,5 +1,5 @@
 ---
-title: "High - Level Guide to Android APK: Structure, Compilation, and Analysis"
+title: "High-Level Guide to Android APK: Structure, Compilation, and Analysis"
 date: 2025-01-23 21:24:00 +0530
 ---
 
