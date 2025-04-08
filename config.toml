@@ -1,185 +1,49 @@
-languageCode = "en-us"
-title = "Rohan Hasabe"
+# Base URL used when generating links to your pages
+baseURL = "https://hasaber8.github.io"
+# Theme configuration
 theme = "hugo-bearblog"
+# Basic metadata
+title = "Rohan Hasabe"
+author = "Rohan Hasabe"
+copyright = "Copyright © 2024, Rohan Hasabe."
+languageCode = "en-us"
 
-PygmentsCodeFences = true
-PygmentsStyle = "monokai"
-
-paginate  = 10
-rssLimit  = 10  # Maximum number of items in the RSS feed.
-
-# disqusShortname = ""
-
-archetypeDir = "archetypes"
-contentDir   = "content"
-dataDir      = "data"
-layoutDir    = "layouts"
-publishDir   = "public"
-
-buildDrafts  = false
-buildFuture  = false
-buildExpired = false
-canonifyURLs = true
-
+# Generate a nice robots.txt for SEO
 enableRobotsTXT = true
-enableGitInfo   = false
-enableEmoji     = true
-enableMissingTranslationPlaceholders = false
-disableRSS     = false
-disableSitemap = false
-disable404     = false
-disableHugoGeneratorInject = false
 
+# Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
 [permalinks]
-  posts = "/posts/:year/:month/:title/"
-
-[author]
-  name = "Rohan Hasabe"
-
-[blackfriday]
-  hrefTargetBlank = true
-
-[taxonomies]
-  tag      = "tags"
-  category = "categories"
-  series   = "series"
+  blog = "/:slug/"
+  tags = "/blog/:slug"
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
-  utterancesRepo = "Hasaber8/Hasaber8.github.io"
-  utterancesTheme = "github-dark"
-  # Metadata mostly used in document's head
-  # 
-  description = "Rohan Hasabe's personal website"
-  keywords = "portfolio, blog, programming"
-  images = [""]
+  # The "description" of your website. This is used in the meta data of your generated html.
+  description = "Rohan Hasabe's personal blog"
 
-  # Home subtitle of the index page.
-  #
-  homeSubtitle = "CS @ Northeastern University, Boston"
+  # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
+  # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
+  favicon = "images/favicon.png"
 
-  # Set a background for the homepage
-  # backgroundImage = "assets/images/background.jpg"
+  # These "images" are used for the structured data templates. This will show up, when
+  # services like Twitter or Slack want to generate a preview of a link to your site.
+  # See https://gohugo.io/templates/internal#twitter-cards and
+  # https://gohugo.io/templates/internal#open-graph.
+  images = ["images/share.png"]
 
-  # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  #
-  # gitUrl = ""
+  # Another "title" :-). This one is used as the site_name on the Hugo's internal
+  # opengraph structured data template.
+  # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
+  title = "Rohan Hasabe"
 
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  #
-  disableReadOtherPosts = false
+  # This theme will, by default, inject a made-with-line at the bottom of the page.
+  # You can turn it off, but we would really appreciate if you don’t :-).
+  # hideMadeWithLine = true
 
-  # Enable theme toggle
-  # 
-  # This options enables the theme toggle for the theme. 
-  # Per default, this option is off. 
-  # The theme is respecting the prefers-color-scheme of the operating systeme. 
-  # With this option on, the page user is able to set the scheme he wants. 
-  enableThemeToggle = false
-
-  # Sharing buttons
-  #
-  # There are a lot of buttons preconfigured. If you want to change them,
-  # generate the buttons here: https://sharingbuttons.io
-  # and add them into your own `layouts/partials/sharing-buttons.html`
-  #
-  enableSharingButtons = true
-
-  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
-  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
-  #
-  customCSS = []
-  customJS  = []
-
-  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
-  #
-  justifyContent = true  # Set "text-align: justify" to .post-content.
-
-  # Custom footer 
-  # If you want, you can easily override the default footer with your own content. 
-  #
-  [params.footer]
-    trademark = 2024
-    rss = true
-    copyright = true
-    author = true
-
-    topText = []
-    bottomText = [
-      "Powered by <a href=\"http://gohugo.io\">Hugo</a>"
-    ]
-
-  # Colors for favicons
-  #
-  [params.favicon.color]
-    mask = "#1b1c1d"
-    msapplication = "#1b1c1d"
-    theme = "#1b1c1d"
-
-  [params.logo]
-    logoMark     = ">"
-    logoText     = "$ Hasaber8"
-    logoHomeLink = "/"
-    # Set true to remove the logo cursor entirely.
-    # logoCursorDisabled = false
-    # Set to a valid CSS color to change the cursor in the logo.
-    # logoCursorColor    = "#67a2c9"
-    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
-    # logoCursorAnimate  = "2s"
-
-  # Commento is more than just a comments widget you can embed — 
-  # it’s a return to the roots of the internet. 
-  # An internet without the tracking and invasions of privacy. 
-  # An internet that is simple and lightweight. 
-  # An internet that is focused on interesting discussions, not ads. 
-  # A better internet.
-  # Uncomment this to enable Commento.
-  #
-  # [params.commento]
-  #   url = ""
-
-  # Uncomment this if you want a portrait on your start page
-  #
-  # [params.portrait]
-  #   path     = "/img/image.jpg"
-  #   alt      = "Portrait"
-  #   maxWidth = "50px"
-
-  # Social icons
-  [[params.social]]
-      name = "GitHub"
-      icon = "lab la-github-square la-2x"
-      url = "https://github.com/Hasaber8"
-  [[params.social]]
-      name = "Linkedin"
-      icon = "lab la-linkedin-in la-2x"
-      url = "https://www.linkedin.com/in/rohan-hasabe-489021193"
-  [[params.social]]
-      name = "Twitter"
-      icon = "lab la-twitter la-2x"
-      url = "https://twitter.com/hasaber8"
-  [[params.social]]
-      name = "Telegram"
-      icon = "lab la-telegram la-2x"
-      url = "https://t.me/Hasaber8"
-
-[languages]
-  [languages.en]
-      subtitle  = ""
-      weight    = 1
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name       = "about me"
-    url        = "about/"
-  [[menu.main]]
-    identifier = "posts"
-    name       = "posts"
-    url        = "posts/"
-  [[menu.main]]
-    identifier = "contact"
-    name       = "contact"
-    url        = "contact/"
+  # By default, this theme displays dates with a format like "02 Jan, 2006", but
+  # you can customize it by setting the `dateFormat` param in your site's config
+  # file. See [Hugo's Format function docs](https://gohugo.io/functions/format/)
+  # for details. An example TOML config that uses [ISO
+  # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
+  # dateFormat = "2006-01-02"
