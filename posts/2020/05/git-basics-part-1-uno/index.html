@@ -1,164 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Rohan Hasabe ">
-<meta name="description" content="Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer! About Version Control What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer. Installation For Windows Computers, go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions (basically keep clicking ok until the installation is done), don’t change anything you don’t know.
-" />
-<meta name="keywords" content="portfolio, blog, programming" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="" />
-<link rel="canonical" href="/posts/2020/05/git-basics-part-1-uno/" />
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer!
+  #
 
 
-    <title>
-        
-            Git Basics Part - 1 (UNO) :: Rohan Hasabe 
-        
-    </title>
+  About Version Control
+  #
 
 
+  What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.
+  #
 
-<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.7/css/fork-awesome.min.css" crossorigin="anonymous" />
 
-
-<link rel="stylesheet" href="/main.949191c1dcc9c4a887997048b240354e47152016d821198f89448496ba42e491.css" integrity="sha256-lJGRwdzJxKiHmXBIskA1TkcVIBbYIRmPiUSElrpC5JE=">
+  Installation
+  #
 
 
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <meta name="msapplication-TileColor" content="">
-
-
-
-  <meta itemprop="name" content="Git Basics Part - 1 (UNO)">
-  <meta itemprop="description" content="Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer! About Version Control What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer. Installation For Windows Computers, go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions (basically keep clicking ok until the installation is done), don’t change anything you don’t know.">
-  <meta itemprop="datePublished" content="2020-05-28T21:24:00+05:30">
-  <meta itemprop="dateModified" content="2020-05-28T21:24:00+05:30">
-  <meta itemprop="wordCount" content="860">
-  <meta itemprop="image" content="/">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="/">
-  <meta name="twitter:title" content="Git Basics Part - 1 (UNO)">
-  <meta name="twitter:description" content="Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer! About Version Control What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer. Installation For Windows Computers, go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions (basically keep clicking ok until the installation is done), don’t change anything you don’t know.">
-
-
-
-    <meta property="og:url" content="/posts/2020/05/git-basics-part-1-uno/">
+For Windows Computers, go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions (basically keep clicking ok until the installation is done), don’t change anything you don’t know.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="/posts/2020/05/git-basics-part-1-uno/">
   <meta property="og:site_name" content="Rohan Hasabe">
   <meta property="og:title" content="Git Basics Part - 1 (UNO)">
-  <meta property="og:description" content="Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer! About Version Control What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer. Installation For Windows Computers, go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions (basically keep clicking ok until the installation is done), don’t change anything you don’t know.">
+  <meta property="og:description" content="Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer! # About Version Control # What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer. # Installation # For Windows Computers, go ahead and download the Git client from https://git-scm.com/download/win , just accept all the permissions (basically keep clicking ok until the installation is done), don’t change anything you don’t know.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2020-05-28T21:24:00+05:30">
     <meta property="article:modified_time" content="2020-05-28T21:24:00+05:30">
     <meta property="og:image" content="/">
-
-
-
-
-
-
-    <meta property="article:published_time" content="2020-05-28 21:24:00 &#43;0530 &#43;0530" />
-
-
-
-
-
-
-
-
-
-
-
-
-    </head>
-
-    
-        <body>
-    
-    
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="/" style="text-decoration: none;">
-    <div class="logo">
+<title>Git Basics Part - 1 (UNO) | Rohan Hasabe</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="/posts/2020/05/git-basics-part-1-uno/">
+<link rel="stylesheet" href="/book.min.a7616cf2799b58bddffce9438e31fdbfc6393687cfc0950a4a17cd1cce7e35f6.css" >
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.a7da1272cdb9ab9d21d801f16dc02ed8b393d08c9096930f92f85c1bf4b02526.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
         
-            <span class="logo__mark">&gt;</span>
-            <span class="logo__text ">
-                $ Hasaber8</span>
-            <span class="logo__cursor" style=
-                  "
-                   
-                   ">
-            </span>
-        
-    </div>
-</a>
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Rohan Hasabe</span>
+  </a>
+</h2>
 
 
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="/about/">about me</a></li><li><a href="/contact/">contact</a></li><li><a href="/posts/">posts</a></li>
-    </ul>
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </nav>
 
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
-        </span>
-    </span>
-</header>
 
 
-            <div class="content">
-                
-  <main class="post">
 
-    <div class="post-info">
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
-          <circle cx="12" cy="12" r="10"></circle>
-          <polyline points="12 6 12 12 16 14"></polyline>
-        </svg>
-        5 minutes
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
         
-      </p>
-    </div>
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
 
-    <article>
-      <h1 class="post-title">
-        <a href="/posts/2020/05/git-basics-part-1-uno/">Git Basics Part - 1 (UNO)</a>
-      </h1>
+  <h3>Git Basics Part - 1 (UNO)</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#git-is-a-free-and-open-source-distributed-version-control-system-designed-to-handle-everything-from-small-to-very-large-projects-with-speed-and-efficiency-which-can-be-installed-on-your-windowsmacos-xlinux-computer">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer!</a></li>
+    <li><a href="#about-version-control">About Version Control</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#setup">Setup</a></li>
+    <li><a href="#basic-git-commands-">Basic Git commands:-</a></li>
+    <li><a href="#baby-steps">Baby steps</a></li>
+    <li><a href="#important-note-">Important Note:-</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
 
       
-
       
+<article class="markdown book-post">
+  <h1>
+    Git Basics Part - 1 (UNO)
+  </h1>
+  
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>May 28, 2020</span>
+  </div>
 
-      
 
-      <div class="post-content">
-        <h2 id="git-is-a-free-and-open-source-distributed-version-control-system-designed-to-handle-everything-from-small-to-very-large-projects-with-speed-and-efficiency-which-can-be-installed-on-your-windowsmacos-xlinux-computer">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer!</h2>
-<h2 id="about-version-control">About Version Control</h2>
-<h4 id="what-is-version-control-and-why-should-you-care-version-control-is-a-system-that-records-changes-to-a-file-or-set-of-files-over-time-so-that-you-can-recall-specific-versions-later-for-the-examples-in-this-book-you-will-use-software-source-code-as-the-files-being-version-controlled-though-in-reality-you-can-do-this-with-nearly-any-type-of-file-on-a-computer">What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.</h4>
-<h2 id="installation">Installation</h2>
+
+  
+
+  
+
+  
+
+
+  <div class="book-post-content"><h2 id="git-is-a-free-and-open-source-distributed-version-control-system-designed-to-handle-everything-from-small-to-very-large-projects-with-speed-and-efficiency-which-can-be-installed-on-your-windowsmacos-xlinux-computer">
+  Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer!
+  <a class="anchor" href="#git-is-a-free-and-open-source-distributed-version-control-system-designed-to-handle-everything-from-small-to-very-large-projects-with-speed-and-efficiency-which-can-be-installed-on-your-windowsmacos-xlinux-computer">#</a>
+</h2>
+<h2 id="about-version-control">
+  About Version Control
+  <a class="anchor" href="#about-version-control">#</a>
+</h2>
+<h4 id="what-is-version-control-and-why-should-you-care-version-control-is-a-system-that-records-changes-to-a-file-or-set-of-files-over-time-so-that-you-can-recall-specific-versions-later-for-the-examples-in-this-book-you-will-use-software-source-code-as-the-files-being-version-controlled-though-in-reality-you-can-do-this-with-nearly-any-type-of-file-on-a-computer">
+  What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.
+  <a class="anchor" href="#what-is-version-control-and-why-should-you-care-version-control-is-a-system-that-records-changes-to-a-file-or-set-of-files-over-time-so-that-you-can-recall-specific-versions-later-for-the-examples-in-this-book-you-will-use-software-source-code-as-the-files-being-version-controlled-though-in-reality-you-can-do-this-with-nearly-any-type-of-file-on-a-computer">#</a>
+</h4>
+<h2 id="installation">
+  Installation
+  <a class="anchor" href="#installation">#</a>
+</h2>
 <ol>
 <li>
 <p>For Windows Computers, go ahead and download the Git client from <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> , just accept all the permissions (basically keep clicking ok until the installation is done), don’t change anything you don’t know.</p>
@@ -173,7 +202,10 @@
 <li>For MacOS X Computers (Install homebrew if you don&rsquo;t have it already), open terminal and type</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>“brew install git”
-</span></span></code></pre></div><h2 id="setup">Setup</h2>
+</span></span></code></pre></div><h2 id="setup">
+  Setup
+  <a class="anchor" href="#setup">#</a>
+</h2>
 <ol>
 <li>
 <p>Open the Git Bash client(from step 1 of installation) if you are on Windows. For Linux/MacOS X just open up the terminal.</p>
@@ -188,8 +220,11 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>“git config --global user.name <span style="color:#e6db74">&#34;Your Name&#34;&#34; 
 </span></span></span></code></pre></div><p>&amp;</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>“git config --global user.email <span style="color:#e6db74">&#34;you@example.com&#34;</span>”
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-27 at 17 13 25" src="https://user-images.githubusercontent.com/43720061/83187201-68bc2000-a14b-11ea-90ec-c0506e4fc1d1.png"></p>
-<h2 id="basic-git-commands-">Basic Git commands:-</h2>
+</span></span></code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83187201-68bc2000-a14b-11ea-90ec-c0506e4fc1d1.png" alt="Screenshot 2020-05-27 at 17 13 25" /></p>
+<h2 id="basic-git-commands-">
+  Basic Git commands:-
+  <a class="anchor" href="#basic-git-commands-">#</a>
+</h2>
 <ul>
 <li>git init</li>
 <li>git status</li>
@@ -199,12 +234,15 @@
 <li>git log</li>
 <li>git clone</li>
 </ul>
-<h2 id="baby-steps">Baby steps</h2>
+<h2 id="baby-steps">
+  Baby steps
+  <a class="anchor" href="#baby-steps">#</a>
+</h2>
 <ol>
 <li>Let’s start by making an empty folder named git-basics.</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ mkdir git-basics <span style="color:#f92672">&amp;&amp;</span> cd git-basics
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 01 28 04" src="https://user-images.githubusercontent.com/43720061/83187390-b769ba00-a14b-11ea-9408-ac87200c33c8.png"></p>
+</span></span></code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83187390-b769ba00-a14b-11ea-9408-ac87200c33c8.png" alt="Screenshot 2020-05-29 at 01 28 04" /></p>
 <ol start="2">
 <li>
 <p>Let&rsquo;s understand what git init does before using it!</p>
@@ -212,7 +250,7 @@
 </li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git init
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 01 34 05" src="https://user-images.githubusercontent.com/43720061/83187900-8342c900-a14c-11ea-9b54-f8cb2f0495ea.png"></p>
+</span></span></code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83187900-8342c900-a14c-11ea-9b54-f8cb2f0495ea.png" alt="Screenshot 2020-05-29 at 01 34 05" /></p>
 <ol start="3">
 <li>
 <p>Next is the &lsquo;git add&rsquo; command.</p>
@@ -220,7 +258,7 @@
 </li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git add . <span style="color:#f92672">(</span>The prefix changes according to the files you want to add. If you want to add all the file changes in the next commit, use the prefix <span style="color:#e6db74">&#34;.&#34;</span> . If you want to just add a specific file, use the <span style="color:#e6db74">&#34;file&#34;</span> name as the prefix.<span style="color:#f92672">)</span>
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 01 43 07" src="https://user-images.githubusercontent.com/43720061/83188773-d49f8800-a14d-11ea-8e07-2e8bc5cd309c.png"></p>
+</span></span></code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83188773-d49f8800-a14d-11ea-8e07-2e8bc5cd309c.png" alt="Screenshot 2020-05-29 at 01 43 07" /></p>
 <ol start="4">
 <li>
 <p>Now we commit the changes we have made!</p>
@@ -228,250 +266,120 @@
 </li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git commit -m <span style="color:#e6db74">&#34;My First Commit!&#34;</span> <span style="color:#f92672">(</span>-m subcommand is <span style="color:#66d9ef">for</span> the commit message. There are many more subcommands in <span style="color:#e6db74">&#34;git commit&#34;</span> which we will cover later on in another guide.<span style="color:#f92672">)</span>
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 01 51 35" src="https://user-images.githubusercontent.com/43720061/83189692-fa795c80-a14e-11ea-8011-9cd0ba2fe246.png"></p>
+</span></span></code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83189692-fa795c80-a14e-11ea-8011-9cd0ba2fe246.png" alt="Screenshot 2020-05-29 at 01 51 35" /></p>
 <ol start="5">
 <li>
 <p>We have made our first commit , its time we push it. For this make an empty repository on Github:
-<img alt="ezgif com-video-to-gif" src="https://user-images.githubusercontent.com/43720061/83191770-33670080-a152-11ea-9d85-7fddab42b0de.gif"></p>
+<img src="https://user-images.githubusercontent.com/43720061/83191770-33670080-a152-11ea-9d85-7fddab42b0de.gif" alt="ezgif com-video-to-gif" /></p>
 </li>
 <li>
 <p>Now we push the commit to the empty repository we made. The term &lsquo;push&rsquo; refers to uploading the local repository content to a remote repository(in our case it&rsquo;s Github). Pushing is an act of transferring commits from your local repository to a remote repository. &ldquo;git push&rdquo; has many subcommands about which we will learn later on in another guide.</p>
 </li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git push &lt;<span style="color:#e6db74">&#34;Link to your empty remote repository&#34;</span>&gt; HEAD:master
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 02 20 59" src="https://user-images.githubusercontent.com/43720061/83192377-0ff08580-a153-11ea-8162-f7bbfdd9fbff.png"></p>
+</span></span></code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83192377-0ff08580-a153-11ea-8162-f7bbfdd9fbff.png" alt="Screenshot 2020-05-29 at 02 20 59" /></p>
 <ol start="7">
 <li>With this you have successfully pushed your first commit! I hope, this wont be your last commit!</li>
 </ol>
-<p><img alt="Screenshot 2020-05-29 at 02 22 57" src="https://user-images.githubusercontent.com/43720061/83192562-59d96b80-a153-11ea-84ec-432e342c944a.png"></p>
+<p><img src="https://user-images.githubusercontent.com/43720061/83192562-59d96b80-a153-11ea-84ec-432e342c944a.png" alt="Screenshot 2020-05-29 at 02 22 57" /></p>
 <ol start="8">
 <li>The advantage of a version control system is that it records changes. These records allow us to retrieve the data like commits, figuring out bugs, updates, etc. But, all of this history will be useless if we cannot navigate through it. At this point, we need the &ldquo;git log&rdquo; command.
 &ldquo;Git log&rdquo; is a utility tool to review and read the history of everything that happens in a repository. Multiple options can be used with a git log to make history more specific.</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git log
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 02 26 58" src="https://user-images.githubusercontent.com/43720061/83192952-e2f0a280-a153-11ea-9aca-83f4f0fe44de.png"></p>
+</span></span></code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83192952-e2f0a280-a153-11ea-9aca-83f4f0fe44de.png" alt="Screenshot 2020-05-29 at 02 26 58" /></p>
 <ol start="9">
 <li>Last basic command everyone should know is &ldquo;git clone&rdquo; .</li>
 </ol>
 <p>&ldquo;git clone&rdquo; is a command-line utility which is used to make a local copy of a remote repository so you can work on it locally. It accesses the repository through a remote URL.
 Usually, the original repository is located on a remote server, often from a Git service like GitHub, Bitbucket, or GitLab. The remote repository URL is referred to as the origin.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git clone &lt;<span style="color:#e6db74">&#34;Link of the repo you want to clone&#34;</span>&gt;
-</span></span></code></pre></div><p><img alt="Screenshot 2020-05-29 at 02 30 56" src="https://user-images.githubusercontent.com/43720061/83193346-77f39b80-a154-11ea-94a2-05bc064a61b0.png"></p>
-<h2 id="important-note-">Important Note:-</h2>
+</span></span></code></pre></div><p><img src="https://user-images.githubusercontent.com/43720061/83193346-77f39b80-a154-11ea-94a2-05bc064a61b0.png" alt="Screenshot 2020-05-29 at 02 30 56" /></p>
+<h2 id="important-note-">
+  Important Note:-
+  <a class="anchor" href="#important-note-">#</a>
+</h2>
 <p>There are alot of commands we haven&rsquo;t touched in this guide, but we will be covering that in-depth in the future.</p>
 <p>Thank you note:-</p>
 <ol>
 <li><a href="https://www.javatpoint.com/git">https://www.javatpoint.com/git</a> for their excellent in-depth notes on git.</li>
 <li><a href="https://github.com/baalajimaestro">https://github.com/baalajimaestro</a></li>
 </ol>
-
-      </div>
-    </article>
-
-    <hr />
-
-    <div class="post-info">
-      
+</div>
+</article>
+ 
       
 
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-          <polyline points="14 2 14 8 20 8"></polyline>
-          <line x1="16" y1="13" x2="8" y2="13"></line>
-          <line x1="16" y1="17" x2="8" y2="17"></line>
-          <polyline points="10 9 9 9 8 9"></polyline>
-        </svg>
-        860 Words
-      </p>
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
 
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="16" y1="2" x2="16" y2="6"></line>
-          <line x1="8" y1="2" x2="8" y2="6"></line>
-          <line x1="3" y1="10" x2="21" y2="10"></line>
-        </svg>
-        
-          2020-05-28 15:54
-        
 
-         
-          
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
         
-      </p>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
+
     
-    <hr /><script src="https://utteranc.es/client.js"
-repo="Hasaber8/Hasaber8.github.io"
-issue-term="pathname"
-theme="github-dark"
-crossorigin="anonymous"
-async>
-</script>
-      <hr />
-      <div class="sharing-buttons">
+    <aside class="book-toc">
+      <div class="book-toc-content">
         
-<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=%2fposts%2f2020%2f05%2fgit-basics-part-1-uno%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
-  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-    </div>
-  </div>
-</a>
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#git-is-a-free-and-open-source-distributed-version-control-system-designed-to-handle-everything-from-small-to-very-large-projects-with-speed-and-efficiency-which-can-be-installed-on-your-windowsmacos-xlinux-computer">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer!</a></li>
+    <li><a href="#about-version-control">About Version Control</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#setup">Setup</a></li>
+    <li><a href="#basic-git-commands-">Basic Git commands:-</a></li>
+    <li><a href="#baby-steps">Baby steps</a></li>
+    <li><a href="#important-note-">Important Note:-</a></li>
+  </ul>
+</nav>
 
 
-<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=%2fposts%2f2020%2f05%2fgit-basics-part-1-uno%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
-  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
-      <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Git%20Basics%20Part%20-%201%20%28UNO%29&amp;caption=Git%20Basics%20Part%20-%201%20%28UNO%29&amp;canonicalUrl=%2fposts%2f2020%2f05%2fgit-basics-part-1-uno%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
-  <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small">
-    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="mailto:?subject=Git%20Basics%20Part%20-%201%20%28UNO%29&amp;body=%2fposts%2f2020%2f05%2fgit-basics-part-1-uno%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
-  <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=%2fposts%2f2020%2f05%2fgit-basics-part-1-uno%2f&amp;media=%2fposts%2f2020%2f05%2fgit-basics-part-1-uno%2f;description=Git%20Basics%20Part%20-%201%20%28UNO%29" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
-  <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fposts%2f2020%2f05%2fgit-basics-part-1-uno%2f&amp;title=Git%20Basics%20Part%20-%201%20%28UNO%29&amp;summary=Git%20Basics%20Part%20-%201%20%28UNO%29&amp;source=%2fposts%2f2020%2f05%2fgit-basics-part-1-uno%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
-  <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=%2fposts%2f2020%2f05%2fgit-basics-part-1-uno%2f&amp;resubmit=true&amp;title=Git%20Basics%20Part%20-%201%20%28UNO%29" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
-  <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=%2fposts%2f2020%2f05%2fgit-basics-part-1-uno%2f;title=Git%20Basics%20Part%20-%201%20%28UNO%29" target="_blank" rel="noopener" aria-label="" title="Share on xing">
-  <div class="resp-sharing-button resp-sharing-button--xing resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="whatsapp://send?text=Git%20Basics%20Part%20-%201%20%28UNO%29%20%2fposts%2f2020%2f05%2fgit-basics-part-1-uno%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
-  <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=%2fposts%2f2020%2f05%2fgit-basics-part-1-uno%2f&amp;t=Git%20Basics%20Part%20-%201%20%28UNO%29" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
-  <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=Git%20Basics%20Part%20-%201%20%28UNO%29&amp;url=%2fposts%2f2020%2f05%2fgit-basics-part-1-uno%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
-  <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-    </div>
-  </div>
-</a>
-
+ 
       </div>
-
+    </aside>
     
-    <div class="pagination">
-        
-
-        <div class="pagination__buttons">
-            
-            <span class="button previous">
-                <a href="/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/">
-                    <span class="button__icon">←</span>
-                    <span class="button__text">Motorola One Power aka Chef Custom Rom Flashing Guide</span>
-                </a>
-            </span>
-            
-
-            
-            <span class="button next">
-                <a href="/posts/2019/06/opensource-and-monetization/">
-                    <span class="button__text">Opensource and Monetization</span>
-                    <span class="button__icon">→</span>
-                </a>
-            </span>
-            
-        </div>
-    </div>
-
-    
-    
-
-    
-
-    
-
   </main>
 
-            </div>
-
-            
-                <footer class="footer">
-    
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2024</span>
-            <span><a href="/">Rohan Hasabe</a></span>
-            <span></span>
-            <span><a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
-            
-        </div>
-    </div>
-    
-    
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
-        </div>
-
-        
-
-
-
-<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
-
-
-
-
-    </body>
+  
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

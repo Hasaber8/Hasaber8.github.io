@@ -1,178 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Rohan Hasabe ">
-<meta name="description" content="Table of Contents Introduction to APKs APK Structure Compilation Process Android Runtime Evolution APK Analysis Size Optimization Introduction This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.
-What is an APK An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.
-" />
-<meta name="keywords" content="portfolio, blog, programming" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="" />
-<link rel="canonical" href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/" />
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Table of Contents
+  #
 
 
-    <title>
-        
-            High-Level Guide to Android APK: Structure, Compilation, and Analysis :: Rohan Hasabe 
-        
-    </title>
+Introduction to APKs
+APK Structure
+Compilation Process
+Android Runtime Evolution
+APK Analysis
+Size Optimization
 
 
+  Introduction
+  #
 
-<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.7/css/fork-awesome.min.css" crossorigin="anonymous" />
+This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.
 
+  What is an APK
+  #
 
-<link rel="stylesheet" href="/main.949191c1dcc9c4a887997048b240354e47152016d821198f89448496ba42e491.css" integrity="sha256-lJGRwdzJxKiHmXBIskA1TkcVIBbYIRmPiUSElrpC5JE=">
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <meta name="msapplication-TileColor" content="">
-
-
-
-  <meta itemprop="name" content="High-Level Guide to Android APK: Structure, Compilation, and Analysis">
-  <meta itemprop="description" content="Table of Contents Introduction to APKs APK Structure Compilation Process Android Runtime Evolution APK Analysis Size Optimization Introduction This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.
-What is an APK An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.">
-  <meta itemprop="datePublished" content="2025-01-23T21:24:00+05:30">
-  <meta itemprop="dateModified" content="2025-01-23T21:24:00+05:30">
-  <meta itemprop="wordCount" content="1076">
-  <meta itemprop="image" content="/">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="/">
-  <meta name="twitter:title" content="High-Level Guide to Android APK: Structure, Compilation, and Analysis">
-  <meta name="twitter:description" content="Table of Contents Introduction to APKs APK Structure Compilation Process Android Runtime Evolution APK Analysis Size Optimization Introduction This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.
-What is an APK An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.">
-
-
-
-    <meta property="og:url" content="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/">
+An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/">
   <meta property="og:site_name" content="Rohan Hasabe">
   <meta property="og:title" content="High-Level Guide to Android APK: Structure, Compilation, and Analysis">
-  <meta property="og:description" content="Table of Contents Introduction to APKs APK Structure Compilation Process Android Runtime Evolution APK Analysis Size Optimization Introduction This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.
-What is an APK An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.">
+  <meta property="og:description" content="Table of Contents # Introduction to APKs APK Structure Compilation Process Android Runtime Evolution APK Analysis Size Optimization Introduction # This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.
+What is an APK # An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-01-23T21:24:00+05:30">
     <meta property="article:modified_time" content="2025-01-23T21:24:00+05:30">
     <meta property="og:image" content="/">
-
-
-
-
-
-
-    <meta property="article:published_time" content="2025-01-23 21:24:00 &#43;0530 &#43;0530" />
-
-
-
-
-
-
-
-
-
-
-
-
-    </head>
-
-    
-        <body>
-    
-    
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="/" style="text-decoration: none;">
-    <div class="logo">
+<title>High-Level Guide to Android APK: Structure, Compilation, and Analysis | Rohan Hasabe</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/">
+<link rel="stylesheet" href="/book.min.a7616cf2799b58bddffce9438e31fdbfc6393687cfc0950a4a17cd1cce7e35f6.css" >
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.a7da1272cdb9ab9d21d801f16dc02ed8b393d08c9096930f92f85c1bf4b02526.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
         
-            <span class="logo__mark">&gt;</span>
-            <span class="logo__text ">
-                $ Hasaber8</span>
-            <span class="logo__cursor" style=
-                  "
-                   
-                   ">
-            </span>
-        
-    </div>
-</a>
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Rohan Hasabe</span>
+  </a>
+</h2>
 
 
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="/about/">about me</a></li><li><a href="/contact/">contact</a></li><li><a href="/posts/">posts</a></li>
-    </ul>
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </nav>
 
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
-        </span>
-    </span>
-</header>
 
 
-            <div class="content">
-                
-  <main class="post">
 
-    <div class="post-info">
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
-          <circle cx="12" cy="12" r="10"></circle>
-          <polyline points="12 6 12 12 16 14"></polyline>
-        </svg>
-        6 minutes
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
         
-      </p>
-    </div>
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
 
-    <article>
-      <h1 class="post-title">
-        <a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/">High-Level Guide to Android APK: Structure, Compilation, and Analysis</a>
-      </h1>
+  <h3>High-Level Guide to Android APK: Structure, Compilation, and Analysis</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-contents">Table of Contents</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#what-is-an-apk">What is an APK</a>
+      <ul>
+        <li><a href="#key-characteristics">Key Characteristics</a></li>
+      </ul>
+    </li>
+    <li><a href="#apk-structure">APK Structure</a>
+      <ul>
+        <li><a href="#core-components">Core Components</a></li>
+      </ul>
+    </li>
+    <li><a href="#compilation-process">Compilation Process</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#android-runtime-evolution">Android Runtime Evolution</a>
+      <ul>
+        <li><a href="#historical-progression">Historical Progression</a></li>
+        <li><a href="#runtime-characteristics">Runtime Characteristics</a></li>
+      </ul>
+    </li>
+    <li><a href="#apk-analysis">APK Analysis</a>
+      <ul>
+        <li><a href="#using-apk-analyzer">Using APK Analyzer</a></li>
+        <li><a href="#there-are-three-ways-to-access-the-apk-analyzer-when-a-project-is-open">There are three ways to access the APK Analyzer when a project is open:</a></li>
+      </ul>
+    </li>
+    <li><a href="#size-optimization">Size Optimization</a>
+      <ul>
+        <li><a href="#optimization-strategies">Optimization Strategies</a></li>
+        <li><a href="#real-world-example-photo-filter-app">Real-World Example: Photo Filter App</a></li>
+        <li><a href="#real-world-example-language-resource-organization-not-a-real-app-just-for-understanding">Real-World Example: Language Resource Organization (Not a real app, just for Understanding)</a></li>
+      </ul>
+    </li>
+    <li><a href="#best-practices-for-your-app">Best Practices for your app</a>
+      <ul>
+        <li><a href="#development-guidelines">Development Guidelines</a></li>
+        <li><a href="#maintenance-guidelines">Maintenance Guidelines</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#citation">Citation</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
 
       
-
       
+<article class="markdown book-post">
+  <h1>
+    High-Level Guide to Android APK: Structure, Compilation, and Analysis
+  </h1>
+  
+  <div class="flex align-center text-small book-post-date">
+    <img src="/svg/calendar.svg" class="book-icon " alt="" />
+    <span>January 23, 2025</span>
+  </div>
 
-      
 
-      <div class="post-content">
-        <h2 id="table-of-contents">Table of Contents</h2>
+
+  
+
+  
+
+  
+
+
+  <div class="book-post-content"><h2 id="table-of-contents">
+  Table of Contents
+  <a class="anchor" href="#table-of-contents">#</a>
+</h2>
 <ol>
-<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#what-is-an-apk">Introduction to APKs</a></li>
-<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#apk-structure">APK Structure</a></li>
-<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#compilation-process">Compilation Process</a></li>
-<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#android-runtime-evolution">Android Runtime Evolution</a></li>
-<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#apk-analysis">APK Analysis</a></li>
-<li><a href="/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#size-optimization">Size Optimization</a></li>
+<li><a href="#what-is-an-apk">Introduction to APKs</a></li>
+<li><a href="#apk-structure">APK Structure</a></li>
+<li><a href="#compilation-process">Compilation Process</a></li>
+<li><a href="#android-runtime-evolution">Android Runtime Evolution</a></li>
+<li><a href="#apk-analysis">APK Analysis</a></li>
+<li><a href="#size-optimization">Size Optimization</a></li>
 </ol>
-<h2 id="introduction">Introduction</h2>
+<h2 id="introduction">
+  Introduction
+  <a class="anchor" href="#introduction">#</a>
+</h2>
 <p>This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.</p>
-<h2 id="what-is-an-apk">What is an APK</h2>
+<h2 id="what-is-an-apk">
+  What is an APK
+  <a class="anchor" href="#what-is-an-apk">#</a>
+</h2>
 <p>An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.</p>
-<h3 id="key-characteristics">Key Characteristics</h3>
+<h3 id="key-characteristics">
+  Key Characteristics
+  <a class="anchor" href="#key-characteristics">#</a>
+</h3>
 <ul>
 <li>Standard Android application package format</li>
 <li>Contains all application code and resources</li>
@@ -180,17 +242,29 @@ What is an APK An APK (Android Package) is the package file format used by the A
 <li>Required for app distribution via Play Store</li>
 <li>Essential for app installation on Android devices</li>
 </ul>
-<h2 id="apk-structure">APK Structure</h2>
+<h2 id="apk-structure">
+  APK Structure
+  <a class="anchor" href="#apk-structure">#</a>
+</h2>
 <p>An APK file is essentially a ZIP archive that contains multiple files and directories, each serving specific purposes.</p>
-<h3 id="core-components">Core Components</h3>
-<h4 id="1-meta-inf">1. META-INF/</h4>
+<h3 id="core-components">
+  Core Components
+  <a class="anchor" href="#core-components">#</a>
+</h3>
+<h4 id="1-meta-inf">
+  1. META-INF/
+  <a class="anchor" href="#1-meta-inf">#</a>
+</h4>
 <ul>
 <li>Contains package signature information</li>
 <li>MANIFEST.MF: File containing resource signatures</li>
 <li>CERT.RSA: The certificate of the application</li>
 <li>CERT.SF: List of all resources and SHA-1 digests</li>
 </ul>
-<h4 id="2-lib">2. lib/</h4>
+<h4 id="2-lib">
+  2. lib/
+  <a class="anchor" href="#2-lib">#</a>
+</h4>
 <ul>
 <li>Native libraries organized by architecture</li>
 <li>Contains .so files (shared libraries)</li>
@@ -203,7 +277,10 @@ What is an APK An APK (Android Package) is the package file format used by the A
 </ul>
 </li>
 </ul>
-<h4 id="3-res">3. res/</h4>
+<h4 id="3-res">
+  3. res/
+  <a class="anchor" href="#3-res">#</a>
+</h4>
 <ul>
 <li>Organized by resource type:
 <ul>
@@ -215,7 +292,10 @@ What is an APK An APK (Android Package) is the package file format used by the A
 </ul>
 </li>
 </ul>
-<h4 id="4-assets">4. assets/</h4>
+<h4 id="4-assets">
+  4. assets/
+  <a class="anchor" href="#4-assets">#</a>
+</h4>
 <ul>
 <li>Raw application assets</li>
 <li>Accessed through AssetManager</li>
@@ -229,7 +309,10 @@ What is an APK An APK (Android Package) is the package file format used by the A
 </ul>
 </li>
 </ul>
-<h4 id="5-androidmanifestxml">5. AndroidManifest.xml</h4>
+<h4 id="5-androidmanifestxml">
+  5. AndroidManifest.xml
+  <a class="anchor" href="#5-androidmanifestxml">#</a>
+</h4>
 <ul>
 <li>Binary XML file containing app metadata</li>
 <li>Declares:
@@ -243,35 +326,56 @@ What is an APK An APK (Android Package) is the package file format used by the A
 </ul>
 </li>
 </ul>
-<h4 id="6-classesdex">6. classes.dex</h4>
+<h4 id="6-classesdex">
+  6. classes.dex
+  <a class="anchor" href="#6-classesdex">#</a>
+</h4>
 <ul>
 <li>Dalvik Executable files</li>
 <li>Contains compiled application code</li>
 <li>Multiple DEX files possible (multidex)</li>
 </ul>
-<h4 id="7-resourcesarsc">7. resources.arsc</h4>
+<h4 id="7-resourcesarsc">
+  7. resources.arsc
+  <a class="anchor" href="#7-resourcesarsc">#</a>
+</h4>
 <ul>
 <li>Compiled resource file</li>
 <li>Contains binary resource data</li>
 <li>Mapping of resource IDs to values</li>
 <li>Supports multiple configurations</li>
 </ul>
-<h2 id="compilation-process">Compilation Process</h2>
-<h4 id="from-source-to-apk">From Source to APK</h4>
-<p><img alt="compilation process" src="https://github.com/user-attachments/assets/3c60090d-9804-417b-b2d1-727e578697b0"></p>
-<h4 id="1-source-code-compilation">1. Source Code Compilation</h4>
+<h2 id="compilation-process">
+  Compilation Process
+  <a class="anchor" href="#compilation-process">#</a>
+</h2>
+<h4 id="from-source-to-apk">
+  From Source to APK
+  <a class="anchor" href="#from-source-to-apk">#</a>
+</h4>
+<p><img src="https://github.com/user-attachments/assets/3c60090d-9804-417b-b2d1-727e578697b0" alt="compilation process" /></p>
+<h4 id="1-source-code-compilation">
+  1. Source Code Compilation
+  <a class="anchor" href="#1-source-code-compilation">#</a>
+</h4>
 <pre tabindex="0"><code>Source Files (.java, .kotlin)
         ↓
 Java Bytecode (.class)
         ↓
 DEX Files (.dex)
-</code></pre><h4 id="2-resource-processing">2. Resource Processing</h4>
+</code></pre><h4 id="2-resource-processing">
+  2. Resource Processing
+  <a class="anchor" href="#2-resource-processing">#</a>
+</h4>
 <pre tabindex="0"><code>Resource Files
         ↓
 AAPT2 Processing
         ↓
 Compiled Resources
-</code></pre><h4 id="3-final-packaging">3. Final Packaging</h4>
+</code></pre><h4 id="3-final-packaging">
+  3. Final Packaging
+  <a class="anchor" href="#3-final-packaging">#</a>
+</h4>
 <pre tabindex="0"><code>DEX Files + Compiled Resources + Native Libraries
         ↓
 APK Packaging
@@ -284,9 +388,18 @@ ZIP Alignment
 <li>R8: Modern replacement for ProGuard, handling code optimization and obfuscation</li>
 <li>Both tools are designed for modern Android development while maintaining compatibility with the DEX format</li>
 </ul>
-<h2 id="android-runtime-evolution">Android Runtime Evolution</h2>
-<h3 id="historical-progression">Historical Progression</h3>
-<h4 id="1-dalvik-virtual-machine">1. Dalvik Virtual Machine</h4>
+<h2 id="android-runtime-evolution">
+  Android Runtime Evolution
+  <a class="anchor" href="#android-runtime-evolution">#</a>
+</h2>
+<h3 id="historical-progression">
+  Historical Progression
+  <a class="anchor" href="#historical-progression">#</a>
+</h3>
+<h4 id="1-dalvik-virtual-machine">
+  1. Dalvik Virtual Machine
+  <a class="anchor" href="#1-dalvik-virtual-machine">#</a>
+</h4>
 <ul>
 <li>Original Android runtime</li>
 <li>Register-based architecture</li>
@@ -294,7 +407,10 @@ ZIP Alignment
 <li>Optimized for mobile constraints</li>
 <li>Battery-efficient design</li>
 </ul>
-<h4 id="2-android-runtime-art">2. Android Runtime (ART)</h4>
+<h4 id="2-android-runtime-art">
+  2. Android Runtime (ART)
+  <a class="anchor" href="#2-android-runtime-art">#</a>
+</h4>
 <ul>
 <li>Replaced Dalvik in Android 5.0</li>
 <li>Ahead-Of-Time compilation</li>
@@ -302,7 +418,10 @@ ZIP Alignment
 <li>Better memory management</li>
 <li>Reduced battery impact</li>
 </ul>
-<h4 id="3-modern-art-android-70">3. Modern ART (Android 7.0+)</h4>
+<h4 id="3-modern-art-android-70">
+  3. Modern ART (Android 7.0+)
+  <a class="anchor" href="#3-modern-art-android-70">#</a>
+</h4>
 <ul>
 <li>Hybrid compilation (JIT + AOT)</li>
 <li>Profile-guided compilation</li>
@@ -310,9 +429,15 @@ ZIP Alignment
 <li>Enhanced garbage collection</li>
 <li>Improved memory management</li>
 </ul>
-<h3 id="runtime-characteristics">Runtime Characteristics</h3>
-<p><img alt="runtime comparision" src="https://github.com/user-attachments/assets/dd068fc3-4c02-4f8f-a4c9-cf7ffdf58043"></p>
-<h4 id="dalvik-vs-art-comparison">Dalvik vs. ART Comparison</h4>
+<h3 id="runtime-characteristics">
+  Runtime Characteristics
+  <a class="anchor" href="#runtime-characteristics">#</a>
+</h3>
+<p><img src="https://github.com/user-attachments/assets/dd068fc3-4c02-4f8f-a4c9-cf7ffdf58043" alt="runtime comparision" /></p>
+<h4 id="dalvik-vs-art-comparison">
+  Dalvik vs. ART Comparison
+  <a class="anchor" href="#dalvik-vs-art-comparison">#</a>
+</h4>
 <ul>
 <li>Compilation approach
 <ul>
@@ -339,13 +464,19 @@ ZIP Alignment
 </ul>
 </li>
 </ul>
-<h4 id="format-vs-runtime-separation">Format vs Runtime Separation:</h4>
+<h4 id="format-vs-runtime-separation">
+  Format vs Runtime Separation:
+  <a class="anchor" href="#format-vs-runtime-separation">#</a>
+</h4>
 <ul>
 <li>The .dex format is independent of the runtime (Dalvik/ART)</li>
 <li>ART reads and executes the same DEX bytecode format</li>
 <li>This separation allowed Google to evolve the runtime without breaking compatibility</li>
 </ul>
-<h4 id="platform-architecture">Platform Architecture:</h4>
+<h4 id="platform-architecture">
+  Platform Architecture:
+  <a class="anchor" href="#platform-architecture">#</a>
+</h4>
 <ul>
 <li>
 <p>The DEX format remains fundamental to how Android organizes compiled code</p>
@@ -360,60 +491,96 @@ ZIP Alignment
 <p>The relationship between Dalvik and ART is not about replacement but evolution - ART improved how the bytecode is executed while preserving the crucial DEX format that is the foundation of Android&rsquo;s application architecture.</p>
 </li>
 </ul>
-<h2 id="apk-analysis">APK Analysis</h2>
-<h3 id="using-apk-analyzer">Using APK Analyzer</h3>
-<p><img alt="image" src="https://github.com/user-attachments/assets/83238bab-74fe-4b66-8896-18bef2664675"></p>
-<h3 id="there-are-three-ways-to-access-the-apk-analyzer-when-a-project-is-open">There are three ways to access the APK Analyzer when a project is open:</h3>
+<h2 id="apk-analysis">
+  APK Analysis
+  <a class="anchor" href="#apk-analysis">#</a>
+</h2>
+<h3 id="using-apk-analyzer">
+  Using APK Analyzer
+  <a class="anchor" href="#using-apk-analyzer">#</a>
+</h3>
+<p><img src="https://github.com/user-attachments/assets/83238bab-74fe-4b66-8896-18bef2664675" alt="image" /></p>
+<h3 id="there-are-three-ways-to-access-the-apk-analyzer-when-a-project-is-open">
+  There are three ways to access the APK Analyzer when a project is open:
+  <a class="anchor" href="#there-are-three-ways-to-access-the-apk-analyzer-when-a-project-is-open">#</a>
+</h3>
 <ul>
 <li>Drag an APK or app bundle into the Editor window of Android Studio.</li>
 <li>Switch to the Project view in the Project window, then double-click the APK in the default build/output/apks/ directory.</li>
 <li>Select Build &gt; Analyze APK in the menu bar, then select your APK or app bundle.</li>
 </ul>
-<h4 id="1-basic-analysis">1. Basic Analysis</h4>
+<h4 id="1-basic-analysis">
+  1. Basic Analysis
+  <a class="anchor" href="#1-basic-analysis">#</a>
+</h4>
 <ul>
 <li>File size inspection</li>
 <li>Component breakdown</li>
 <li>Resource examination</li>
 <li>Manifest analysis</li>
 </ul>
-<h4 id="2-advanced-analysis">2. Advanced Analysis</h4>
+<h4 id="2-advanced-analysis">
+  2. Advanced Analysis
+  <a class="anchor" href="#2-advanced-analysis">#</a>
+</h4>
 <ul>
 <li>DEX file inspection</li>
 <li>Method count verification</li>
 <li>Resource duplication check</li>
 <li>Native library examination</li>
 </ul>
-<h4 id="3-size-analysis">3. Size Analysis</h4>
+<h4 id="3-size-analysis">
+  3. Size Analysis
+  <a class="anchor" href="#3-size-analysis">#</a>
+</h4>
 <ul>
 <li>Raw file sizes</li>
 <li>Download size</li>
 <li>Installation size</li>
 <li>Component size contribution</li>
 </ul>
-<h2 id="size-optimization">Size Optimization</h2>
-<h3 id="optimization-strategies">Optimization Strategies</h3>
-<h4 id="1-code-optimization">1. Code Optimization</h4>
+<h2 id="size-optimization">
+  Size Optimization
+  <a class="anchor" href="#size-optimization">#</a>
+</h2>
+<h3 id="optimization-strategies">
+  Optimization Strategies
+  <a class="anchor" href="#optimization-strategies">#</a>
+</h3>
+<h4 id="1-code-optimization">
+  1. Code Optimization
+  <a class="anchor" href="#1-code-optimization">#</a>
+</h4>
 <ul>
 <li>Proguard/R8 configuration</li>
 <li>Dead code elimination</li>
 <li>Code shrinking</li>
 <li>Multidex optimization</li>
 </ul>
-<h4 id="2-resource-optimization">2. Resource Optimization</h4>
+<h4 id="2-resource-optimization">
+  2. Resource Optimization
+  <a class="anchor" href="#2-resource-optimization">#</a>
+</h4>
 <ul>
 <li>Image compression</li>
 <li>Resource shrinking</li>
 <li>Drawable optimization</li>
 <li>Alternative resources management</li>
 </ul>
-<h4 id="3-native-library-optimization">3. Native Library Optimization</h4>
+<h4 id="3-native-library-optimization">
+  3. Native Library Optimization
+  <a class="anchor" href="#3-native-library-optimization">#</a>
+</h4>
 <ul>
 <li>Architecture-specific inclusion</li>
 <li>Library consolidation</li>
 <li>Unnecessary library removal</li>
 <li>Version optimization</li>
 </ul>
-<h3 id="real-world-example-photo-filter-app">Real-World Example: Photo Filter App</h3>
+<h3 id="real-world-example-photo-filter-app">
+  Real-World Example: Photo Filter App
+  <a class="anchor" href="#real-world-example-photo-filter-app">#</a>
+</h3>
 <p>Initial APK Structure:</p>
 <ul>
 <li>Base APK size: 8.2MB</li>
@@ -443,7 +610,10 @@ ZIP Alignment
 <li>Dynamic feature module (filters): 1.5MB</li>
 <li>Architecture-specific libraries: Download only what&rsquo;s needed</li>
 </ul>
-<h3 id="real-world-example-language-resource-organization-not-a-real-app-just-for-understanding">Real-World Example: Language Resource Organization (Not a real app, just for Understanding)</h3>
+<h3 id="real-world-example-language-resource-organization-not-a-real-app-just-for-understanding">
+  Real-World Example: Language Resource Organization (Not a real app, just for Understanding)
+  <a class="anchor" href="#real-world-example-language-resource-organization-not-a-real-app-just-for-understanding">#</a>
+</h3>
 <pre tabindex="0"><code>Common Structure Issue:
 /res
   /drawable
@@ -487,38 +657,62 @@ ZIP Alignment
 <li>Dynamic feature module (filters): 1.5MB</li>
 <li>Architecture-specific libraries: Download only what&rsquo;s needed</li>
 </ul>
-<h2 id="best-practices-for-your-app">Best Practices for your app</h2>
-<h3 id="development-guidelines">Development Guidelines</h3>
-<h4 id="1-size-management">1. Size Management</h4>
+<h2 id="best-practices-for-your-app">
+  Best Practices for your app
+  <a class="anchor" href="#best-practices-for-your-app">#</a>
+</h2>
+<h3 id="development-guidelines">
+  Development Guidelines
+  <a class="anchor" href="#development-guidelines">#</a>
+</h3>
+<h4 id="1-size-management">
+  1. Size Management
+  <a class="anchor" href="#1-size-management">#</a>
+</h4>
 <ul>
 <li>Regular size monitoring</li>
 <li>Dependency management</li>
 <li>Resource optimization</li>
 <li>Code efficiency</li>
 </ul>
-<h4 id="2-performance-optimization">2. Performance Optimization</h4>
+<h4 id="2-performance-optimization">
+  2. Performance Optimization
+  <a class="anchor" href="#2-performance-optimization">#</a>
+</h4>
 <ul>
 <li>Runtime consideration</li>
 <li>Memory management</li>
 <li>Battery efficiency</li>
 <li><a href="https://developer.android.com/topic/performance/appstartup/analysis-optimization#java">Startup time optimization</a></li>
 </ul>
-<h4 id="3-security-considerations">3. Security Considerations</h4>
+<h4 id="3-security-considerations">
+  3. Security Considerations
+  <a class="anchor" href="#3-security-considerations">#</a>
+</h4>
 <ul>
 <li>Proper signing</li>
 <li><a href="https://developer.android.com/build/shrink-code">ProGuard implementation</a></li>
 <li>Resource protection</li>
 <li>Security best practices</li>
 </ul>
-<h3 id="maintenance-guidelines">Maintenance Guidelines</h3>
-<h4 id="1-regular-monitoring">1. Regular Monitoring</h4>
+<h3 id="maintenance-guidelines">
+  Maintenance Guidelines
+  <a class="anchor" href="#maintenance-guidelines">#</a>
+</h3>
+<h4 id="1-regular-monitoring">
+  1. Regular Monitoring
+  <a class="anchor" href="#1-regular-monitoring">#</a>
+</h4>
 <ul>
 <li>Size tracking</li>
 <li>Performance metrics</li>
 <li>User feedback</li>
 <li>Crash analytics</li>
 </ul>
-<h2 id="conclusion">Conclusion</h2>
+<h2 id="conclusion">
+  Conclusion
+  <a class="anchor" href="#conclusion">#</a>
+</h2>
 <p>Understanding APK structure, compilation, and analysis is crucial for Android development. This knowledge enables:</p>
 <ul>
 <li>Better app optimization</li>
@@ -526,214 +720,124 @@ ZIP Alignment
 <li>Efficient size management</li>
 <li>Enhanced user experience</li>
 </ul>
-<h2 id="citation">Citation</h2>
+<h2 id="citation">
+  Citation
+  <a class="anchor" href="#citation">#</a>
+</h2>
 <pre tabindex="0"><code>[1]: Android Developers. &#34;APK Analyzer&#34;. Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/tools/apkanalyzer
 [2]: Android Developers. &#34;Analyze your build with APK Analyzer&#34;. Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/studio/debug/apk-analyzer
 [3]: Android Developers. &#34;App resources overview&#34;. Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/guide/topics/resources/providing-resources
 [4]: Android Developers. &#34;Application Fundamentals&#34;. Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/guide/components/fundamentals
 [5]: Android Developers. &#34;App Manifest Overview&#34;. Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/guide/topics/manifest/manifest-intro
 [6]: Android Developers. &#34;AAPT2&#34;. Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/tools/aapt2
-</code></pre>
-      </div>
-    </article>
-
-    <hr />
-
-    <div class="post-info">
-      
+</code></pre></div>
+</article>
+ 
       
 
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-          <polyline points="14 2 14 8 20 8"></polyline>
-          <line x1="16" y1="13" x2="8" y2="13"></line>
-          <line x1="16" y1="17" x2="8" y2="17"></line>
-          <polyline points="10 9 9 9 8 9"></polyline>
-        </svg>
-        1076 Words
-      </p>
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
 
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="16" y1="2" x2="16" y2="6"></line>
-          <line x1="8" y1="2" x2="8" y2="6"></line>
-          <line x1="3" y1="10" x2="21" y2="10"></line>
-        </svg>
-        
-          2025-01-23 15:54
-        
 
-         
-          
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
         
-      </p>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
+
     
-    <hr /><script src="https://utteranc.es/client.js"
-repo="Hasaber8/Hasaber8.github.io"
-issue-term="pathname"
-theme="github-dark"
-crossorigin="anonymous"
-async>
-</script>
-      <hr />
-      <div class="sharing-buttons">
+    <aside class="book-toc">
+      <div class="book-toc-content">
         
-<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=%2fposts%2f2025%2f01%2fhigh-level-guide-to-android-apk-structure-compilation-and-analysis%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
-  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-    </div>
-  </div>
-</a>
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-contents">Table of Contents</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#what-is-an-apk">What is an APK</a>
+      <ul>
+        <li><a href="#key-characteristics">Key Characteristics</a></li>
+      </ul>
+    </li>
+    <li><a href="#apk-structure">APK Structure</a>
+      <ul>
+        <li><a href="#core-components">Core Components</a></li>
+      </ul>
+    </li>
+    <li><a href="#compilation-process">Compilation Process</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#android-runtime-evolution">Android Runtime Evolution</a>
+      <ul>
+        <li><a href="#historical-progression">Historical Progression</a></li>
+        <li><a href="#runtime-characteristics">Runtime Characteristics</a></li>
+      </ul>
+    </li>
+    <li><a href="#apk-analysis">APK Analysis</a>
+      <ul>
+        <li><a href="#using-apk-analyzer">Using APK Analyzer</a></li>
+        <li><a href="#there-are-three-ways-to-access-the-apk-analyzer-when-a-project-is-open">There are three ways to access the APK Analyzer when a project is open:</a></li>
+      </ul>
+    </li>
+    <li><a href="#size-optimization">Size Optimization</a>
+      <ul>
+        <li><a href="#optimization-strategies">Optimization Strategies</a></li>
+        <li><a href="#real-world-example-photo-filter-app">Real-World Example: Photo Filter App</a></li>
+        <li><a href="#real-world-example-language-resource-organization-not-a-real-app-just-for-understanding">Real-World Example: Language Resource Organization (Not a real app, just for Understanding)</a></li>
+      </ul>
+    </li>
+    <li><a href="#best-practices-for-your-app">Best Practices for your app</a>
+      <ul>
+        <li><a href="#development-guidelines">Development Guidelines</a></li>
+        <li><a href="#maintenance-guidelines">Maintenance Guidelines</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#citation">Citation</a></li>
+  </ul>
+</nav>
 
 
-<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=%2fposts%2f2025%2f01%2fhigh-level-guide-to-android-apk-structure-compilation-and-analysis%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
-  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
-      <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=High-Level%20Guide%20to%20Android%20APK%3a%20Structure%2c%20Compilation%2c%20and%20Analysis&amp;caption=High-Level%20Guide%20to%20Android%20APK%3a%20Structure%2c%20Compilation%2c%20and%20Analysis&amp;canonicalUrl=%2fposts%2f2025%2f01%2fhigh-level-guide-to-android-apk-structure-compilation-and-analysis%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
-  <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small">
-    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="mailto:?subject=High-Level%20Guide%20to%20Android%20APK%3a%20Structure%2c%20Compilation%2c%20and%20Analysis&amp;body=%2fposts%2f2025%2f01%2fhigh-level-guide-to-android-apk-structure-compilation-and-analysis%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
-  <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=%2fposts%2f2025%2f01%2fhigh-level-guide-to-android-apk-structure-compilation-and-analysis%2f&amp;media=%2fposts%2f2025%2f01%2fhigh-level-guide-to-android-apk-structure-compilation-and-analysis%2f;description=High-Level%20Guide%20to%20Android%20APK%3a%20Structure%2c%20Compilation%2c%20and%20Analysis" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
-  <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fposts%2f2025%2f01%2fhigh-level-guide-to-android-apk-structure-compilation-and-analysis%2f&amp;title=High-Level%20Guide%20to%20Android%20APK%3a%20Structure%2c%20Compilation%2c%20and%20Analysis&amp;summary=High-Level%20Guide%20to%20Android%20APK%3a%20Structure%2c%20Compilation%2c%20and%20Analysis&amp;source=%2fposts%2f2025%2f01%2fhigh-level-guide-to-android-apk-structure-compilation-and-analysis%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
-  <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=%2fposts%2f2025%2f01%2fhigh-level-guide-to-android-apk-structure-compilation-and-analysis%2f&amp;resubmit=true&amp;title=High-Level%20Guide%20to%20Android%20APK%3a%20Structure%2c%20Compilation%2c%20and%20Analysis" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
-  <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=%2fposts%2f2025%2f01%2fhigh-level-guide-to-android-apk-structure-compilation-and-analysis%2f;title=High-Level%20Guide%20to%20Android%20APK%3a%20Structure%2c%20Compilation%2c%20and%20Analysis" target="_blank" rel="noopener" aria-label="" title="Share on xing">
-  <div class="resp-sharing-button resp-sharing-button--xing resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="whatsapp://send?text=High-Level%20Guide%20to%20Android%20APK%3a%20Structure%2c%20Compilation%2c%20and%20Analysis%20%2fposts%2f2025%2f01%2fhigh-level-guide-to-android-apk-structure-compilation-and-analysis%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
-  <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=%2fposts%2f2025%2f01%2fhigh-level-guide-to-android-apk-structure-compilation-and-analysis%2f&amp;t=High-Level%20Guide%20to%20Android%20APK%3a%20Structure%2c%20Compilation%2c%20and%20Analysis" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
-  <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=High-Level%20Guide%20to%20Android%20APK%3a%20Structure%2c%20Compilation%2c%20and%20Analysis&amp;url=%2fposts%2f2025%2f01%2fhigh-level-guide-to-android-apk-structure-compilation-and-analysis%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
-  <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-    </div>
-  </div>
-</a>
-
+ 
       </div>
-
+    </aside>
     
-    <div class="pagination">
-        
-
-        <div class="pagination__buttons">
-            
-
-            
-            <span class="button next">
-                <a href="/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/">
-                    <span class="button__text">Motorola One Power aka Chef Custom Rom Flashing Guide</span>
-                    <span class="button__icon">→</span>
-                </a>
-            </span>
-            
-        </div>
-    </div>
-
-    
-    
-
-    
-
-    
-
   </main>
 
-            </div>
-
-            
-                <footer class="footer">
-    
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2024</span>
-            <span><a href="/">Rohan Hasabe</a></span>
-            <span></span>
-            <span><a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
-            
-        </div>
-    </div>
-    
-    
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
-        </div>
-
-        
-
-
-
-<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
-
-
-
-
-    </body>
+  
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
