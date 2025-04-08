@@ -10,13 +10,6 @@
     <lastBuildDate>Thu, 23 Jan 2025 21:24:00 +0530</lastBuildDate>
     <atom:link href="https://hasaber8.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>$whoami</title>
-      <link>https://hasaber8.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hasaber8.github.io/about/</guid>
-      <description>&lt;p&gt;Hey! I&amp;rsquo;m Rohan Hasabe, a 22-year-old student currently pursuing my master&amp;rsquo;s degree in CS @ NEU, Boston. I previously worked at Esper as an SDE II.&lt;/p&gt;&#xA;&lt;p&gt;If you find someone with the username &lt;code&gt;Hasaber8&lt;/code&gt; on any platform, you can be mostly sure it&amp;rsquo;s me.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Contact Me</title>
       <link>https://hasaber8.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
