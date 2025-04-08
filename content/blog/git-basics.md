@@ -1,7 +1,7 @@
----
-title: "Git Basics Part - 1 (UNO)"
-date: 2020-05-28 21:24:00 +0530
----
++++
+title = "Git Basics Part - 1 (UNO)"
+date = "2020-05-28T21:24:00+05:30"
++++
 
 ## Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer!
 

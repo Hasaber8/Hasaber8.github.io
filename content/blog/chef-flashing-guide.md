@@ -1,7 +1,7 @@
----
-title: "Motorola One Power aka Chef Custom Rom Flashing Guide"
-date: 2020-07-07 10:24:00 +0530
----
++++
+title = "Motorola One Power aka Chef Custom Rom Flashing Guide"
+date = "2020-07-07T10:24:00+05:30"
++++
 
 ### In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!)
 
@@ -72,5 +72,3 @@ fastboot boot <twrp.img>
 ![IMG_20200707_193358](https://user-images.githubusercontent.com/43720061/86811764-e86ad200-c09b-11ea-8926-fcee2e744188.jpg)
 
 ## If you have any further doubts or issues join the Motorola One Power Group on Telegram:- (https://t.me/Hasaber8chat)
-
-

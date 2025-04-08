@@ -1,7 +1,7 @@
----
-title: "Opensource and Monetization"
-date: 2019-06-24T03:30:00+05:30
----
++++
+title = "Opensource and Monetization"
+date = "2019-06-24T03:30:00+05:30"
++++
 
 Seems like these don’t go hand in hand, does it?
 

@@ -1,7 +1,7 @@
----
-title: "High-Level Guide to Android APK: Structure, Compilation, and Analysis"
-date: 2025-01-23 21:24:00 +0530
----
++++
+title = "High-Level Guide to Android APK: Structure, Compilation, and Analysis"
+date = "2025-01-23T21:24:00+05:30"
++++
 
 ## Table of Contents
 1. [Introduction to APKs](#what-is-an-apk)
@@ -92,7 +92,7 @@ An APK file is essentially a ZIP archive that contains multiple files and direct
 ![compilation process](https://github.com/user-attachments/assets/3c60090d-9804-417b-b2d1-727e578697b0)
 
 #### 1. Source Code Compilation
-```
+```text
 Source Files (.java, .kotlin)
         ↓
 Java Bytecode (.class)
@@ -101,7 +101,7 @@ DEX Files (.dex)
 ```
 
 #### 2. Resource Processing
-```
+```text
 Resource Files
         ↓
 AAPT2 Processing
@@ -110,7 +110,7 @@ Compiled Resources
 ```
 
 #### 3. Final Packaging
-```
+```text
 DEX Files + Compiled Resources + Native Libraries
         ↓
 APK Packaging
@@ -341,4 +341,3 @@ Understanding APK structure, compilation, and analysis is crucial for Android de
 [4]: Android Developers. "Application Fundamentals". Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/guide/components/fundamentals
 [5]: Android Developers. "App Manifest Overview". Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/guide/topics/manifest/manifest-intro
 [6]: Android Developers. "AAPT2". Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/tools/aapt2
-```
