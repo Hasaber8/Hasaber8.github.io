@@ -2,35 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>https://hasaber8.github.io/</loc>
     <lastmod>2025-01-31T21:24:52-05:00</lastmod>
   </url><url>
-    <loc>/valentine/</loc>
+    <loc>https://hasaber8.github.io/valentine/</loc>
     <lastmod>2025-01-31T21:24:52-05:00</lastmod>
   </url><url>
-    <loc>/posts/high-level-apk-guide/</loc>
+    <loc>https://hasaber8.github.io/posts/high-level-apk-guide/</loc>
     <lastmod>2025-01-23T21:24:00+05:30</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>https://hasaber8.github.io/posts/</loc>
     <lastmod>2025-01-23T21:24:00+05:30</lastmod>
   </url><url>
-    <loc>/posts/chef-flashing-guide/</loc>
+    <loc>https://hasaber8.github.io/posts/chef-flashing-guide/</loc>
     <lastmod>2020-07-07T10:24:00+05:30</lastmod>
   </url><url>
-    <loc>/posts/git-basics/</loc>
+    <loc>https://hasaber8.github.io/posts/git-basics/</loc>
     <lastmod>2020-05-28T21:24:00+05:30</lastmod>
   </url><url>
-    <loc>/posts/opensource-and-monetisation/</loc>
+    <loc>https://hasaber8.github.io/posts/opensource-and-monetisation/</loc>
     <lastmod>2019-06-24T03:30:00+05:30</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>https://hasaber8.github.io/about/</loc>
   </url><url>
-    <loc>/categories/</loc>
-  </url><url>
-    <loc>/contact/</loc>
-  </url><url>
-    <loc>/series/</loc>
-  </url><url>
-    <loc>/tags/</loc>
+    <loc>https://hasaber8.github.io/contact/</loc>
   </url>
 </urlset>

@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: /sitemap.xml
+Sitemap: https://hasaber8.github.io/sitemap.xml

@@ -2,52 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rohan Hasabe</title>
-    <link>/</link>
+    <link>https://hasaber8.github.io/</link>
     <description>Recent content on Rohan Hasabe</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <copyright>Copyright © 2024, Rohan Hasabe.</copyright>
     <lastBuildDate>Thu, 23 Jan 2025 21:24:00 +0530</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hasaber8.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>High-Level Guide to Android APK: Structure, Compilation, and Analysis</title>
-      <link>/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/</link>
+      <link>https://hasaber8.github.io/posts/high-level-apk-guide/</link>
       <pubDate>Thu, 23 Jan 2025 21:24:00 +0530</pubDate>
-      <guid>/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/</guid>
-      <description>&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#what-is-an-apk&#34;&gt;Introduction to APKs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#apk-structure&#34;&gt;APK Structure&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#compilation-process&#34;&gt;Compilation Process&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#android-runtime-evolution&#34;&gt;Android Runtime Evolution&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#apk-analysis&#34;&gt;APK Analysis&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/#size-optimization&#34;&gt;Size Optimization&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-an-apk&#34;&gt;What is an APK&lt;/h2&gt;&#xA;&lt;p&gt;An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.&lt;/p&gt;</description>
+      <guid>https://hasaber8.github.io/posts/high-level-apk-guide/</guid>
+      <description>&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://hasaber8.github.io/posts/high-level-apk-guide/#what-is-an-apk&#34;&gt;Introduction to APKs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://hasaber8.github.io/posts/high-level-apk-guide/#apk-structure&#34;&gt;APK Structure&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://hasaber8.github.io/posts/high-level-apk-guide/#compilation-process&#34;&gt;Compilation Process&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://hasaber8.github.io/posts/high-level-apk-guide/#android-runtime-evolution&#34;&gt;Android Runtime Evolution&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://hasaber8.github.io/posts/high-level-apk-guide/#apk-analysis&#34;&gt;APK Analysis&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://hasaber8.github.io/posts/high-level-apk-guide/#size-optimization&#34;&gt;Size Optimization&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-an-apk&#34;&gt;What is an APK&lt;/h2&gt;&#xA;&lt;p&gt;An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Motorola One Power aka Chef Custom Rom Flashing Guide</title>
-      <link>/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/</link>
+      <link>https://hasaber8.github.io/posts/chef-flashing-guide/</link>
       <pubDate>Tue, 07 Jul 2020 10:24:00 +0530</pubDate>
-      <guid>/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/</guid>
+      <guid>https://hasaber8.github.io/posts/chef-flashing-guide/</guid>
       <description>&lt;h3 id=&#34;in-this-guide-we-will-be-installing-lineageos-official-build-same-guide-can-be-used-to-flash-any-other-custom-rom&#34;&gt;In this guide we will be installing LineageOS official build. (Same guide can be used to flash any other custom rom!)&lt;/h3&gt;&#xA;&lt;h2 id=&#34;prerequisite-&#34;&gt;Prerequisite:-&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Download LineageOS builds for chef from here:- (&lt;a href=&#34;https://download.lineageos.org/chef&#34;&gt;https://download.lineageos.org/chef&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;As Google apps are not included with the Rom download them from here:- (&lt;a href=&#34;https://opengapps.org/)&#34;&gt;https://opengapps.org/)&lt;/a&gt;, select ARM64 Android10 Nano Gapps.&lt;/li&gt;&#xA;&lt;li&gt;Official TWRP builds from:- (&lt;a href=&#34;https://dl.twrp.me/chef/twrp-3.5.0_9-0-chef.img.html&#34;&gt;https://dl.twrp.me/chef/twrp-3.5.0_9-0-chef.img.html&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;Copy-Partition Zip; VERY IMPORTANT FOR FLASHING ROM COMING FROM STOCK. (Get from telegram group)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img alt=&#34;Screenshot 2020-07-07 at 19 08 56&#34; src=&#34;https://user-images.githubusercontent.com/43720061/86805570-9a52d000-c095-11ea-8375-878d876ab01d.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Git Basics Part - 1 (UNO)</title>
-      <link>/posts/2020/05/git-basics-part-1-uno/</link>
+      <link>https://hasaber8.github.io/posts/git-basics/</link>
       <pubDate>Thu, 28 May 2020 21:24:00 +0530</pubDate>
-      <guid>/posts/2020/05/git-basics-part-1-uno/</guid>
+      <guid>https://hasaber8.github.io/posts/git-basics/</guid>
       <description>&lt;h2 id=&#34;git-is-a-free-and-open-source-distributed-version-control-system-designed-to-handle-everything-from-small-to-very-large-projects-with-speed-and-efficiency-which-can-be-installed-on-your-windowsmacos-xlinux-computer&#34;&gt;Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency, which can be installed on your Windows/MacOS X/Linux computer!&lt;/h2&gt;&#xA;&lt;h2 id=&#34;about-version-control&#34;&gt;About Version Control&lt;/h2&gt;&#xA;&lt;h4 id=&#34;what-is-version-control-and-why-should-you-care-version-control-is-a-system-that-records-changes-to-a-file-or-set-of-files-over-time-so-that-you-can-recall-specific-versions-later-for-the-examples-in-this-book-you-will-use-software-source-code-as-the-files-being-version-controlled-though-in-reality-you-can-do-this-with-nearly-any-type-of-file-on-a-computer&#34;&gt;What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.&lt;/h4&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;For Windows Computers, go ahead and download the Git client from &lt;a href=&#34;https://git-scm.com/download/win&#34;&gt;https://git-scm.com/download/win&lt;/a&gt; , just accept all the permissions (basically keep clicking ok until the installation is done), don’t change anything you don’t know.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Opensource and Monetization</title>
-      <link>/posts/2019/06/opensource-and-monetization/</link>
+      <link>https://hasaber8.github.io/posts/opensource-and-monetisation/</link>
       <pubDate>Mon, 24 Jun 2019 03:30:00 +0530</pubDate>
-      <guid>/posts/2019/06/opensource-and-monetization/</guid>
+      <guid>https://hasaber8.github.io/posts/opensource-and-monetisation/</guid>
       <description>&lt;p&gt;Seems like these don’t go hand in hand, does it?&lt;/p&gt;&#xA;&lt;p&gt;Lemme view it from my perspective.&lt;/p&gt;&#xA;&lt;p&gt;Recently there was an android kernel developer who tried to monetize his kernel in the most inappropriate way possible. It became disastrous and he became a meme in that process. He was forced to leave development, forever.&lt;/p&gt;&#xA;&lt;p&gt;So, is monetizing opensource software cancerous?&lt;/p&gt;&#xA;&lt;p&gt;Red Hat is the global leader in open source software solutions — and has a clear strategy in how to generate revenue. They package the popular open source operating system Linux as Red Hat Enterprise Linux and deliver it to enterprises with a promise of 10 years of support. Open source projects like Linux can literally change every day, so that’s a tall order.&lt;/p&gt;</description>
     </item>
     <item>
       <title>$whoami</title>
-      <link>/about/</link>
+      <link>https://hasaber8.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/about/</guid>
+      <guid>https://hasaber8.github.io/about/</guid>
       <description>&lt;p&gt;Hey! I&amp;rsquo;m Rohan Hasabe, a 22-year-old student currently pursuing my master&amp;rsquo;s degree in CS @ NEU, Boston. I previously worked at Esper as an SDE II.&lt;/p&gt;&#xA;&lt;p&gt;If you find someone with the username &lt;code&gt;Hasaber8&lt;/code&gt; on any platform, you can be mostly sure it&amp;rsquo;s me.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact Me</title>
-      <link>/contact/</link>
+      <link>https://hasaber8.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/contact/</guid>
+      <guid>https://hasaber8.github.io/contact/</guid>
       <description>&lt;p&gt;I would be available on &lt;a href=&#34;https://t.me/Hasaber8&#34;&gt;Telegram&lt;/a&gt;. Best would be ping me there for relevant things, please don&amp;rsquo;t spam me. If you don&amp;rsquo;t have Telegram, sorry! For any formal correspondence, Email : [hasabe.r@northeastern.edu](mailto: &lt;a href=&#34;mailto:hasabe.r@northeastern.edu&#34;&gt;hasabe.r@northeastern.edu&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
   </channel>
