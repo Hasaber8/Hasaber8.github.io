@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://hasaber8.github.io/images/favicon.png" />
+<title>High-Level Guide to Android APK: Structure, Compilation, and Analysis | Rohan Hasabe</title>
+<meta name="title" content="High-Level Guide to Android APK: Structure, Compilation, and Analysis" />
+<meta name="description" content="Table of Contents
+
+Introduction to APKs
+APK Structure
+Compilation Process
+Android Runtime Evolution
+APK Analysis
+Size Optimization
+
+Introduction
+This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.
+What is an APK
+An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:url" content="https://hasaber8.github.io/high-level-guide-to-android-apk-structure-compilation-and-analysis/">
+  <meta property="og:site_name" content="Rohan Hasabe">
+  <meta property="og:title" content="High-Level Guide to Android APK: Structure, Compilation, and Analysis">
+  <meta property="og:description" content="Table of Contents Introduction to APKs APK Structure Compilation Process Android Runtime Evolution APK Analysis Size Optimization Introduction This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.
+What is an APK An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2025-01-23T21:24:00+05:30">
+    <meta property="article:modified_time" content="2025-01-23T21:24:00+05:30">
+    <meta property="og:image" content="https://hasaber8.github.io/images/share.png">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://hasaber8.github.io/images/share.png">
+  <meta name="twitter:title" content="High-Level Guide to Android APK: Structure, Compilation, and Analysis">
+  <meta name="twitter:description" content="Table of Contents Introduction to APKs APK Structure Compilation Process Android Runtime Evolution APK Analysis Size Optimization Introduction This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.
+What is an APK An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.">
+
+
+
+
+  <meta itemprop="name" content="High-Level Guide to Android APK: Structure, Compilation, and Analysis">
+  <meta itemprop="description" content="Table of Contents Introduction to APKs APK Structure Compilation Process Android Runtime Evolution APK Analysis Size Optimization Introduction This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.
+What is an APK An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.">
+  <meta itemprop="datePublished" content="2025-01-23T21:24:00+05:30">
+  <meta itemprop="dateModified" content="2025-01-23T21:24:00+05:30">
+  <meta itemprop="wordCount" content="1076">
+  <meta itemprop="image" content="https://hasaber8.github.io/images/share.png">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+      --width: 720px;
+      --font-main: Verdana, sans-serif;
+      --font-secondary: Verdana, sans-serif;
+      --font-scale: 1em;
+      --background-color: #fff;
+      --heading-color: #222;
+      --text-color: #444;
+      --link-color: #3273dc;
+      --visited-color:  #8b6fcb;
+      --code-background-color: #f2f2f2;
+      --code-color: #222;
+      --blockquote-color: #222;
+  }
+
+  @media (prefers-color-scheme: dark) {
+      :root {
+          --background-color: #01242e;
+          --heading-color: #eee;
+          --text-color: #ddd;
+          --link-color: #8cc2dd;
+          --visited-color:  #8b6fcb;
+          --code-background-color: #000;
+          --code-color: #ddd;
+          --blockquote-color: #ccc;
+      }
+  }
+
+  body {
+      font-family: var(--font-secondary);
+      font-size: var(--font-scale);
+      margin: auto;
+      padding: 20px;
+      max-width: var(--width);
+      text-align: left;
+      background-color: var(--background-color);
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      line-height: 1.5;
+      color: var(--text-color);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-main);
+      color: var(--heading-color);
+  }
+
+  a {
+      color: var(--link-color);
+      cursor: pointer;
+      text-decoration: none;
+  }
+
+  a:hover {
+      text-decoration: underline;
+  }
+
+  nav a {
+      margin-right: 8px;
+  }
+
+  strong, b {
+      color: var(--heading-color);
+  }
+
+  button {
+      margin: 0;
+      cursor: pointer;
+  }
+
+  time {
+   	font-family: monospace;
+    	font-style: normal;
+    	font-size: 15px;
+  }
+
+  main {
+      line-height: 1.6;
+  }
+
+  table {
+      width: 100%;
+  }
+
+  hr {
+      border: 0;
+      border-top: 1px dashed;
+  }
+
+  img {
+      max-width: 100%;
+  }
+
+  code {
+      font-family: monospace;
+      padding: 2px;
+      background-color: var(--code-background-color);
+      color: var(--code-color);
+      border-radius: 3px;
+  }
+
+  blockquote {
+      border-left: 1px solid #999;
+      color: var(--code-color);
+      padding-left: 20px;
+      font-style: italic;
+  }
+
+  footer {
+      padding: 25px 0;
+      text-align: center;
+  }
+
+  .title:hover {
+      text-decoration: none;
+  }
+
+  .title h1 {
+      font-size: 1.5em;
+  }
+
+  .inline {
+      width: auto !important;
+  }
+
+  .highlight, .code {
+      padding: 1px 15px;
+      background-color: var(--code-background-color);
+      color: var(--code-color);
+      border-radius: 3px;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      overflow-x: auto;
+  }
+
+   
+  ul.blog-posts {
+      list-style-type: none;
+      padding: unset;
+  }
+
+  ul.blog-posts li {
+      display: flex;
+  }
+
+  ul.blog-posts li span {
+      flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+      color: var(--visited-color);
+  }
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Rohan Hasabe</h2>
+</a>
+<nav><a href="/">Home</a>
+
+<a href="/about/">$whoami</a>
+
+<a href="/contact/">Contact Me</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>High-Level Guide to Android APK: Structure, Compilation, and Analysis</h1>
+<p>
+  <i>
+    <time datetime='2025-01-23'>
+      23 Jan, 2025
+    </time>
+  </i>
+</p>
+
+<content>
+  <h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#what-is-an-apk">Introduction to APKs</a></li>
+<li><a href="#apk-structure">APK Structure</a></li>
+<li><a href="#compilation-process">Compilation Process</a></li>
+<li><a href="#android-runtime-evolution">Android Runtime Evolution</a></li>
+<li><a href="#apk-analysis">APK Analysis</a></li>
+<li><a href="#size-optimization">Size Optimization</a></li>
+</ol>
+<h2 id="introduction">Introduction</h2>
+<p>This guide provides a high-level overview of the Android APK structure, compilation process, and analysis techniques. It has been compiled from various sources, including official Android documentation and community resources.</p>
+<h2 id="what-is-an-apk">What is an APK</h2>
+<p>An APK (Android Package) is the package file format used by the Android operating system for the distribution and installation of mobile applications. Think of it as a container that holds all the elements necessary for your Android app to function.</p>
+<h3 id="key-characteristics">Key Characteristics</h3>
+<ul>
+<li>Standard Android application package format</li>
+<li>Contains all application code and resources</li>
+<li>Digitally signed for security</li>
+<li>Required for app distribution via Play Store</li>
+<li>Essential for app installation on Android devices</li>
+</ul>
+<h2 id="apk-structure">APK Structure</h2>
+<p>An APK file is essentially a ZIP archive that contains multiple files and directories, each serving specific purposes.</p>
+<h3 id="core-components">Core Components</h3>
+<h4 id="1-meta-inf">1. META-INF/</h4>
+<ul>
+<li>Contains package signature information</li>
+<li>MANIFEST.MF: File containing resource signatures</li>
+<li>CERT.RSA: The certificate of the application</li>
+<li>CERT.SF: List of all resources and SHA-1 digests</li>
+</ul>
+<h4 id="2-lib">2. lib/</h4>
+<ul>
+<li>Native libraries organized by architecture</li>
+<li>Contains .so files (shared libraries)</li>
+<li>Subdirectories for different CPU architectures:
+<ul>
+<li>armeabi-v7a</li>
+<li>arm64-v8a</li>
+<li>x86</li>
+<li>x86_64</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-res">3. res/</h4>
+<ul>
+<li>Organized by resource type:
+<ul>
+<li>drawable/</li>
+<li>layout/</li>
+<li>values/</li>
+<li>raw/</li>
+<li>etc.</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-assets">4. assets/</h4>
+<ul>
+<li>Raw application assets</li>
+<li>Accessed through AssetManager</li>
+<li>Maintains original formats</li>
+<li>Often contains:
+<ul>
+<li>Fonts</li>
+<li>Game levels</li>
+<li>Textures</li>
+<li>Pre-bundled files</li>
+</ul>
+</li>
+</ul>
+<h4 id="5-androidmanifestxml">5. AndroidManifest.xml</h4>
+<ul>
+<li>Binary XML file containing app metadata</li>
+<li>Declares:
+<ul>
+<li>Package name</li>
+<li>Permissions</li>
+<li>Required features</li>
+<li>Components (Activities, Services, etc.)</li>
+<li>Supported screen sizes</li>
+<li>Required SDK versions</li>
+</ul>
+</li>
+</ul>
+<h4 id="6-classesdex">6. classes.dex</h4>
+<ul>
+<li>Dalvik Executable files</li>
+<li>Contains compiled application code</li>
+<li>Multiple DEX files possible (multidex)</li>
+</ul>
+<h4 id="7-resourcesarsc">7. resources.arsc</h4>
+<ul>
+<li>Compiled resource file</li>
+<li>Contains binary resource data</li>
+<li>Mapping of resource IDs to values</li>
+<li>Supports multiple configurations</li>
+</ul>
+<h2 id="compilation-process">Compilation Process</h2>
+<h4 id="from-source-to-apk">From Source to APK</h4>
+<p><img src="https://github.com/user-attachments/assets/3c60090d-9804-417b-b2d1-727e578697b0" alt="compilation process"></p>
+<h4 id="1-source-code-compilation">1. Source Code Compilation</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Source Files (.java, .kotlin)
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>Java Bytecode (.class)
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>DEX Files (.dex)
+</span></span></code></pre></div><h4 id="2-resource-processing">2. Resource Processing</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Resource Files
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>AAPT2 Processing
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>Compiled Resources
+</span></span></code></pre></div><h4 id="3-final-packaging">3. Final Packaging</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>DEX Files + Compiled Resources + Native Libraries
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>APK Packaging
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>APK Signing
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>ZIP Alignment
+</span></span></code></pre></div><ul>
+<li>D8: Modern converter from Java bytecode (.class) to DEX bytecode (.dex)</li>
+<li>R8: Modern replacement for ProGuard, handling code optimization and obfuscation</li>
+<li>Both tools are designed for modern Android development while maintaining compatibility with the DEX format</li>
+</ul>
+<h2 id="android-runtime-evolution">Android Runtime Evolution</h2>
+<h3 id="historical-progression">Historical Progression</h3>
+<h4 id="1-dalvik-virtual-machine">1. Dalvik Virtual Machine</h4>
+<ul>
+<li>Original Android runtime</li>
+<li>Register-based architecture</li>
+<li>Just-In-Time compilation</li>
+<li>Optimized for mobile constraints</li>
+<li>Battery-efficient design</li>
+</ul>
+<h4 id="2-android-runtime-art">2. Android Runtime (ART)</h4>
+<ul>
+<li>Replaced Dalvik in Android 5.0</li>
+<li>Ahead-Of-Time compilation</li>
+<li>Improved performance</li>
+<li>Better memory management</li>
+<li>Reduced battery impact</li>
+</ul>
+<h4 id="3-modern-art-android-70">3. Modern ART (Android 7.0+)</h4>
+<ul>
+<li>Hybrid compilation (JIT + AOT)</li>
+<li>Profile-guided compilation</li>
+<li>Adaptive optimization</li>
+<li>Enhanced garbage collection</li>
+<li>Improved memory management</li>
+</ul>
+<h3 id="runtime-characteristics">Runtime Characteristics</h3>
+<p><img src="https://github.com/user-attachments/assets/dd068fc3-4c02-4f8f-a4c9-cf7ffdf58043" alt="runtime comparision"></p>
+<h4 id="dalvik-vs-art-comparison">Dalvik vs. ART Comparison</h4>
+<ul>
+<li>Compilation approach
+<ul>
+<li>Dalvik: JIT (Just-In-Time)</li>
+<li>ART: Primarily AOT (Ahead-Of-Time)</li>
+</ul>
+</li>
+<li>Memory usage
+<ul>
+<li>Dalvik: Lower initial storage, higher runtime</li>
+<li>ART: Higher storage, lower runtime</li>
+</ul>
+</li>
+<li>Performance
+<ul>
+<li>Dalvik: Good performance with optimization</li>
+<li>ART: Better overall performance</li>
+</ul>
+</li>
+<li>Battery efficiency
+<ul>
+<li>Dalvik: More CPU usage during runtime</li>
+<li>ART: More efficient CPU usage</li>
+</ul>
+</li>
+</ul>
+<h4 id="format-vs-runtime-separation">Format vs Runtime Separation:</h4>
+<ul>
+<li>The .dex format is independent of the runtime (Dalvik/ART)</li>
+<li>ART reads and executes the same DEX bytecode format</li>
+<li>This separation allowed Google to evolve the runtime without breaking compatibility</li>
+</ul>
+<h4 id="platform-architecture">Platform Architecture:</h4>
+<ul>
+<li>
+<p>The DEX format remains fundamental to how Android organizes compiled code</p>
+</li>
+<li>
+<p>Maintaining this format ensures compatibility across the entire Android ecosystem</p>
+</li>
+<li>
+<p>Tools, workflows, and existing apps continue to work without disruption</p>
+</li>
+<li>
+<p>The relationship between Dalvik and ART is not about replacement but evolution - ART improved how the bytecode is executed while preserving the crucial DEX format that is the foundation of Android&rsquo;s application architecture.</p>
+</li>
+</ul>
+<h2 id="apk-analysis">APK Analysis</h2>
+<h3 id="using-apk-analyzer">Using APK Analyzer</h3>
+<p><img src="https://github.com/user-attachments/assets/83238bab-74fe-4b66-8896-18bef2664675" alt="image"></p>
+<h3 id="there-are-three-ways-to-access-the-apk-analyzer-when-a-project-is-open">There are three ways to access the APK Analyzer when a project is open:</h3>
+<ul>
+<li>Drag an APK or app bundle into the Editor window of Android Studio.</li>
+<li>Switch to the Project view in the Project window, then double-click the APK in the default build/output/apks/ directory.</li>
+<li>Select Build &gt; Analyze APK in the menu bar, then select your APK or app bundle.</li>
+</ul>
+<h4 id="1-basic-analysis">1. Basic Analysis</h4>
+<ul>
+<li>File size inspection</li>
+<li>Component breakdown</li>
+<li>Resource examination</li>
+<li>Manifest analysis</li>
+</ul>
+<h4 id="2-advanced-analysis">2. Advanced Analysis</h4>
+<ul>
+<li>DEX file inspection</li>
+<li>Method count verification</li>
+<li>Resource duplication check</li>
+<li>Native library examination</li>
+</ul>
+<h4 id="3-size-analysis">3. Size Analysis</h4>
+<ul>
+<li>Raw file sizes</li>
+<li>Download size</li>
+<li>Installation size</li>
+<li>Component size contribution</li>
+</ul>
+<h2 id="size-optimization">Size Optimization</h2>
+<h3 id="optimization-strategies">Optimization Strategies</h3>
+<h4 id="1-code-optimization">1. Code Optimization</h4>
+<ul>
+<li>Proguard/R8 configuration</li>
+<li>Dead code elimination</li>
+<li>Code shrinking</li>
+<li>Multidex optimization</li>
+</ul>
+<h4 id="2-resource-optimization">2. Resource Optimization</h4>
+<ul>
+<li>Image compression</li>
+<li>Resource shrinking</li>
+<li>Drawable optimization</li>
+<li>Alternative resources management</li>
+</ul>
+<h4 id="3-native-library-optimization">3. Native Library Optimization</h4>
+<ul>
+<li>Architecture-specific inclusion</li>
+<li>Library consolidation</li>
+<li>Unnecessary library removal</li>
+<li>Version optimization</li>
+</ul>
+<h3 id="real-world-example-photo-filter-app">Real-World Example: Photo Filter App</h3>
+<p>Initial APK Structure:</p>
+<ul>
+<li>Base APK size: 8.2MB</li>
+<li>Components:
+<ul>
+<li>Basic UI resources: 0.5MB</li>
+<li>Filter processing library (arm64-v8a): 4MB</li>
+<li>Sample filter images: 2.5MB</li>
+<li>Other resources: 1.2MB</li>
+</ul>
+</li>
+</ul>
+<p>After Optimization:</p>
+<ol>
+<li>Implemented resource shrinking
+<ul>
+<li>Removed unused sample images</li>
+<li>Compressed remaining images</li>
+</ul>
+</li>
+<li>Split native libraries by architecture</li>
+<li>Implemented dynamic feature delivery for filters</li>
+</ol>
+<p>Final Result:</p>
+<ul>
+<li>Base APK: 2.8MB</li>
+<li>Dynamic feature module (filters): 1.5MB</li>
+<li>Architecture-specific libraries: Download only what&rsquo;s needed</li>
+</ul>
+<h3 id="real-world-example-language-resource-organization-not-a-real-app-just-for-understanding">Real-World Example: Language Resource Organization (Not a real app, just for Understanding)</h3>
+<pre tabindex="0"><code>Common Structure Issue:
+/res
+  /drawable
+    - app_icon.png (1MB - high res)
+    - background.jpg (2MB)
+  /values
+    - strings.xml (English)
+  /values-es
+    - strings.xml (Spanish)
+  /values-fr
+    - strings.xml (French)
+  /values-de
+    - strings.xml (German)
+</code></pre><p>Optimized Structure:</p>
+<ol>
+<li>Implemented drawable density splits</li>
+<li>Used language packs for non-primary languages</li>
+<li>Optimized image assets</li>
+</ol>
+<p>Results:</p>
+<ul>
+<li>Original APK size: 4.8MB</li>
+<li>Optimized base APK (English only): 1.2MB</li>
+<li>Each language pack: ~200KB</li>
+<li>Users download only needed languages</li>
+</ul>
+<p>After Optimization:</p>
+<ol>
+<li>Implemented resource shrinking
+<ul>
+<li>Removed unused sample images</li>
+<li>Compressed remaining images</li>
+</ul>
+</li>
+<li>Split native libraries by architecture</li>
+<li>Implemented dynamic feature delivery for filters</li>
+</ol>
+<p>Final Result:</p>
+<ul>
+<li>Base APK: 2.8MB</li>
+<li>Dynamic feature module (filters): 1.5MB</li>
+<li>Architecture-specific libraries: Download only what&rsquo;s needed</li>
+</ul>
+<h2 id="best-practices-for-your-app">Best Practices for your app</h2>
+<h3 id="development-guidelines">Development Guidelines</h3>
+<h4 id="1-size-management">1. Size Management</h4>
+<ul>
+<li>Regular size monitoring</li>
+<li>Dependency management</li>
+<li>Resource optimization</li>
+<li>Code efficiency</li>
+</ul>
+<h4 id="2-performance-optimization">2. Performance Optimization</h4>
+<ul>
+<li>Runtime consideration</li>
+<li>Memory management</li>
+<li>Battery efficiency</li>
+<li><a href="https://developer.android.com/topic/performance/appstartup/analysis-optimization#java">Startup time optimization</a></li>
+</ul>
+<h4 id="3-security-considerations">3. Security Considerations</h4>
+<ul>
+<li>Proper signing</li>
+<li><a href="https://developer.android.com/build/shrink-code">ProGuard implementation</a></li>
+<li>Resource protection</li>
+<li>Security best practices</li>
+</ul>
+<h3 id="maintenance-guidelines">Maintenance Guidelines</h3>
+<h4 id="1-regular-monitoring">1. Regular Monitoring</h4>
+<ul>
+<li>Size tracking</li>
+<li>Performance metrics</li>
+<li>User feedback</li>
+<li>Crash analytics</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Understanding APK structure, compilation, and analysis is crucial for Android development. This knowledge enables:</p>
+<ul>
+<li>Better app optimization</li>
+<li>Improved performance</li>
+<li>Efficient size management</li>
+<li>Enhanced user experience</li>
+</ul>
+<h2 id="citation">Citation</h2>
+<pre tabindex="0"><code>[1]: Android Developers. &#34;APK Analyzer&#34;. Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/tools/apkanalyzer
+[2]: Android Developers. &#34;Analyze your build with APK Analyzer&#34;. Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/studio/debug/apk-analyzer
+[3]: Android Developers. &#34;App resources overview&#34;. Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/guide/topics/resources/providing-resources
+[4]: Android Developers. &#34;Application Fundamentals&#34;. Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/guide/components/fundamentals
+[5]: Android Developers. &#34;App Manifest Overview&#34;. Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/guide/topics/manifest/manifest-intro
+[6]: Android Developers. &#34;AAPT2&#34;. Android Documentation. Retrieved January 26, 2025, from https://developer.android.com/tools/aapt2
+</code></pre>
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>
