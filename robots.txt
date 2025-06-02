@@ -1,2 +1,1 @@
-User-Agent: *
-Sitemap: https://hasaber8.github.io/sitemap.xml
+User-agent: *

@@ -2,27 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://hasaber8.github.io/contact/</loc>
-  </url><url>
-    <loc>https://hasaber8.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2025-01-31T21:24:52-05:00</lastmod>
   </url><url>
-    <loc>https://hasaber8.github.io/valentine/</loc>
+    <loc>/valentine/</loc>
     <lastmod>2025-01-31T21:24:52-05:00</lastmod>
   </url><url>
-    <loc>https://hasaber8.github.io/blog/</loc>
+    <loc>/posts/2025/01/high-level-guide-to-android-apk-structure-compilation-and-analysis/</loc>
     <lastmod>2025-01-23T21:24:00+05:30</lastmod>
   </url><url>
-    <loc>https://hasaber8.github.io/high-level-guide-to-android-apk-structure-compilation-and-analysis/</loc>
+    <loc>/posts/</loc>
     <lastmod>2025-01-23T21:24:00+05:30</lastmod>
   </url><url>
-    <loc>https://hasaber8.github.io/motorola-one-power-aka-chef-custom-rom-flashing-guide/</loc>
+    <loc>/posts/2020/07/motorola-one-power-aka-chef-custom-rom-flashing-guide/</loc>
     <lastmod>2020-07-07T10:24:00+05:30</lastmod>
   </url><url>
-    <loc>https://hasaber8.github.io/git-basics-part-1-uno/</loc>
+    <loc>/posts/2020/05/git-basics-part-1-uno/</loc>
     <lastmod>2020-05-28T21:24:00+05:30</lastmod>
   </url><url>
-    <loc>https://hasaber8.github.io/opensource-and-monetization/</loc>
+    <loc>/posts/2019/06/opensource-and-monetization/</loc>
     <lastmod>2019-06-24T03:30:00+05:30</lastmod>
+  </url><url>
+    <loc>/about/</loc>
+  </url><url>
+    <loc>/categories/</loc>
+  </url><url>
+    <loc>/contact/</loc>
+  </url><url>
+    <loc>/series/</loc>
+  </url><url>
+    <loc>/tags/</loc>
   </url>
 </urlset>

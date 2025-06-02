@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Will You Be My Valentine? on Rohan Hasabe</title>
-    <link>https://hasaber8.github.io/valentine/</link>
+    <link>/valentine/</link>
     <description>Recent content in Will You Be My Valentine? on Rohan Hasabe</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <copyright>Copyright © 2024, Rohan Hasabe.</copyright>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://hasaber8.github.io/valentine/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/valentine/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
