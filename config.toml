@@ -58,30 +58,13 @@ ignoreErrors = ["error-disable-taxonomy"]
   [[params.social]]
       name = "Linkedin"
       icon = "lab la-linkedin-in la-2x"
-      url = "https://www.linkedin.com/in/rohan-hasabe-489021193"
+      url = "https://www.linkedin.com/in/hasaber8"
   [[params.social]]
       name = "Twitter"
       icon = "lab la-twitter la-2x"
       url = "https://twitter.com/hasaber8"
-  [[params.social]]
-      name = "Telegram"
-      icon = "lab la-telegram la-2x"
-      url = "https://t.me/Hasaber8"
 
 [languages]
   [languages.en]
       subtitle  = ""
       weight    = 1
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name       = "about me"
-    url        = "about/"
-  [[menu.main]]
-    identifier = "blog"
-    name       = "blog"
-    url        = "blog/"
-  [[menu.main]]
-    identifier = "contact"
-    name       = "contact"
-    url        = "contact/"

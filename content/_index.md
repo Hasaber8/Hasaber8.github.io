@@ -2,11 +2,9 @@
 title = "Rohan Hasabe"
 +++
 
-# Hey there! 👋
+## CS @ Northeastern University, Boston
 
-**CS @ Northeastern University, Boston**
-
-I'm Rohan Hasabe, a 22-year-old student currently pursuing my master's degree in Computer Science @ Northeastern University, Boston. I previously worked at Esper as an SDE II.
+I'm Rohan Hasabe, a 24-year-old student currently pursuing my master's degree in Computer Science @ Northeastern University, Boston.
 
 This is my personal space on the web where I share my thoughts, projects, and learnings.
 
