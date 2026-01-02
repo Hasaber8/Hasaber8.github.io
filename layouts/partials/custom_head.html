@@ -1,3 +1,6 @@
+<!-- Line Awesome icons for social links -->
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
 <style>
   /* Left-align all blog pages (listing and posts) */
   {{ if eq .Section "blog" }}
@@ -6,4 +9,20 @@
     margin-right: auto;
   }
   {{ end }}
+
+  /* Social links styling */
+  .social-links {
+    margin-bottom: 15px;
+  }
+
+  .social-links a {
+    color: var(--text-color);
+    margin: 0 10px;
+    transition: color 0.2s ease;
+  }
+
+  .social-links a:hover {
+    color: var(--link-color);
+    text-decoration: none;
+  }
 </style>

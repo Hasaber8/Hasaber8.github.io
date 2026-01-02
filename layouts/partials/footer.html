@@ -1,0 +1,10 @@
+{{ if .Site.Params.social }}
+<div class="social-links">
+  {{ range .Site.Params.social }}
+  <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .name }}">
+    <i class="{{ .icon }}"></i>
+  </a>
+  {{ end }}
+</div>
+{{ end }}
+{{ if ne .Site.Params.hideMadeWithLine true }}Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>{{ end }}
