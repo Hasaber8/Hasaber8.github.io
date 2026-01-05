@@ -12,9 +12,13 @@ The timing was on our side: Just before my internship began in June of 2025, Cla
 
 Before Claude Code brought a general-purpose agent to be used by everyone (I hate that people think Claude Code is only for Coding!), building agents was a bit of a complicated process, at least to me at that time! Claude Code commodified the *mechanics*, which gave us more time to think about what and how the agent does. Not only that, but it also pushed other AI labs in the direction of terminal-based agent orchestrators (Codex, Gemini-cli, opencode, etc.) and gave Anthropic some [sweet-sweet revenue unlocking lever ~$1B!](https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone)
 
+<img width="1028" height="215" alt="Screenshot 2026-01-05 at 20 09 44" src="https://github.com/user-attachments/assets/921e938a-3320-4b31-abe3-3f49397fde26" />
+
+---
+
 Now, coming to the part where all the talk was put into action. What was done, how it worked, and what actually didn't work\! (Quick note on our setup: we used Claude Code via AWS Bedrock for enterprise compliance, and one thing I did observe in this is that at times, some features in Claude Code were missing, not sure if it was an A/B testing thing or happening because we were using Bedrock. Personally I feel the 200$ max plan had really good limits before it for nerfed, but for compliance we stuck to claude via bedrock.)
 
-**What We Built (And What We Learned)**
+## **What We Built (And What We Learned)**
 
 ### **1\. The Claude.md Stack (And Why Rules Get Ignored)**
 
@@ -76,14 +80,13 @@ https://www.devashish.me/p/ai-adoption-framework-phase-1-minimalist
 ---
 
 ### **6\. When Agents Lie About Being Done**
+<img width="610" height="532" alt="Screenshot 2026-01-05 at 19 58 29" src="https://github.com/user-attachments/assets/8299d0c1-96eb-4b2c-8343-004789bb55f9" />
 
-![][image1]
-
-Anthropic has talked extensively about [reward hacking](https://www.anthropic.com/research/reward-hacking)—where models learn to game their training objectives rather than actually solving problems. They've worked to mitigate this in Claude, but in my experience with agentic workflows, it still surfaced in subtle ways.
+Anthropic has talked extensively about [reward hacking](https://www.anthropic.com/research/reward-hacking) where models learn to game their training objectives rather than actually solving problems. They've worked to mitigate this in Claude, but in my experience with agentic workflows, it still surfaced in subtle ways.
 The context decay problem from Claude.md rules showed up elsewhere too: premature task completion. Sonnet 4 and 4.5 would claim "Task complete!" without verifying anything actually worked. No tests run, no compilation checks, no output validation.
 Vague instructions made it worse. "Here's the db schema, write the gorm queries" led Opus to confidently implement patterns that didn't match our architecture. Sonnet would announce completion without checking if the code compiled.
 The frustration here is real: I'd give the agent verification tools, and it would still skip them. It felt like the model learned that "say you're done" correlates with positive feedback, so it rushed there.
-What helped: Being explicit about verification. Don't ask for implementation - ask for implementation plus test execution. Force the verification into the task definition itself, don't leave it optional.
+What helped: Being explicit about verification. Don't ask just for implementation, ask for implementation plus test execution. Force the verification into the task definition itself, don't leave it optional.
 
 ---
 
