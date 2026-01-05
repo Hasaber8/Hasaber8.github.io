@@ -2,14 +2,6 @@
 <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
 <style>
-  /* Left-align only individual blog posts, not the listing page */
-  {{ if and (eq .Section "blog") (eq .Kind "page") }}
-  body {
-    margin-left: 20px;
-    margin-right: auto;
-  }
-  {{ end }}
-
   /* Social links styling */
   footer {
     text-align: center;

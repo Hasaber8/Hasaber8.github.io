@@ -92,8 +92,6 @@ What helped: Being explicit about verification. Don't ask just for implementatio
 
 All things considered, these experiments helped me massively to understand how agents work fundamentally, what makes them work better, and what breaks them\! Here are a few link of posts/users which helped me a lot in my discovery phase of agentic coding\! But x.com in general has been my \#1 source for tips and tricks wrt agents\!
 
-(In my opinion \- might not be popular \- The question isn't whether agents will replace developers, it's which tasks benefit from **always-on enforcement** (Cursor-style) vs. **flexible context** (Claude Code). We're still figuring out the boundary.)
-
 1. [https://x.com/trq212](https://x.com/trq212) \- Claude Code @anthropicai, posts a lot of tips about general usage and new features; but also replies to people with feedback.  
 2.  [https://x.com/iannuttall](https://x.com/iannuttall) \- Just great tips and tricks across the board with coding agents\!  
 3. [https://x.com/bcherny](https://x.com/bcherny) \- Creator of Claude, posts a lot of tips.  
