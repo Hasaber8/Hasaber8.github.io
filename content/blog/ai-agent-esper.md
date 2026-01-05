@@ -46,19 +46,22 @@ Lately, [Continuous-Claude-v2](https://github.com/parcadei/Continuous-Claude-v2)
 
 ### **3\. Personal Code Review Agents**
 
-Every engineer got their own code review agent. We generated `personal_agent.md` files that teammates could invoke via `/agents` in Claude Code for pre-PR reviews. These agent markdown files were generated in multiple ways, with one of colleagues, Nazeel, using his historical GitHub comments to scrape and teach the agent on how he comments, the language, and the things he focuses on in the PR\!
+Every engineer got their own code review agent. We generated `personal_agent.md` files that teammates could invoke via `/agents` in Claude Code for pre-PR reviews. These agent markdown files were generated in multiple ways, with one of my colleague, Nazeel, using his GitHub PR comments to teach the agent on how he comments, the language he uses, and the things he focuses on in his PR reviews\!
 
-**Personalization mattered more than we expected**. Generic review agents give you generic advice. Personal agents learned each engineer's patterns, preferred style, and common mistakes \- making reviews feel like feedback from a teammate who actually knew your code, not a linter with opinions.
+**Personalization mattered more than we expected**. Generic review agents give you generic advice. Personal agents learned each engineer's patterns, and preferred style of comments\- making reviews feel like feedback from a teammate who actually knew your code, not a linter with opinions.
 
 ---
 
 ### **4\. Building the Esper MCP Server**
 
-Built the MCP server *using* language-specific agents (Golang) \+ TDD. The workflow: I'd write code in specific patterns, then have the agent (Codex in this case) understand and replicate the pattern across the codebase.
+I built the Esper MCP server *using* language-specific agents (Golang) \+ TDD. \n
+**The workflow:** I'd write code in specific patterns, then have the agent (Codex in this case) understand and replicate the pattern across the codebase.
 
-Teaching by example beats instruction when the pattern is complex. Writing 2-3 examples of the pattern I wanted, then letting the agent generalize, worked far better than trying to explain it in natural language. It broke down when patterns were too context-dependent or required domain knowledge the agent didn't have \- at that point, the examples alone weren't enough.
+Teaching by example beats instruction when the pattern is complex. Writing 2-3 examples of the pattern I wanted, then letting the agent generalize, worked far better than trying to explain it in natural language. The agents broke down when patterns were too context-dependent or required domain knowledge it didn't have \- at which point, the examples alone weren't enough.
 
-The way I executed Esper MCP was a bit different from the traditional MCP setup, due to the tenant-based nature of Esper, auth was a bit complicated, and I relied on the already in place token generation method we had. This way I ended by building a small CLI tool for the mcp which handled the auth and had some other handy tools\! The tools in the MCP arent a straight 1:1 for the APIs Esper provided, from experiences of multiple customer facing people there were certain workflows which users triggered which were a combination of multiple APIs. So I turned these workflows into specific tools in the MCP; one example was to detect "Device Blueprint Drift", this required multiple different API calls which could be consolidated into a simple MCP tool call!
+The way I went about building the Esper MCP was a bit different from the traditional MCP setup. Due to the tenant-based nature of Esper, auth was a bit complicated so I relied on the already in place token generation method we had. This way I ended by building a small CLI tool for the mcp which handled the auth and had some other handy commands\! 
+
+The MCP tools aren't a direct 1:1 mapping of Esper's APIs. Based on feedback from customer-facing teams, we identified common user workflows that required multiple API calls and consolidated them into single MCP tools. For example, detecting 'Device Blueprint Drift' previously required several API calls. We turned that entire workflow into one simple tool.
 
 Another aim was keep the descriptions as tight as possible (to save context\!) but give the LLM the exact info it needs to trigger the tool at the correct time. We kept iterating on this and made quite good progress.
 
@@ -83,10 +86,11 @@ https://www.devashish.me/p/ai-adoption-framework-phase-1-minimalist
 <img width="610" height="532" alt="Screenshot 2026-01-05 at 19 58 29" src="https://github.com/user-attachments/assets/8299d0c1-96eb-4b2c-8343-004789bb55f9" />
 
 Anthropic has talked extensively about [reward hacking](https://www.anthropic.com/research/reward-hacking) where models learn to game their training objectives rather than actually solving problems. They've worked to mitigate this in Claude, but in my experience with agentic workflows, it still surfaced in subtle ways.
-The context decay problem from Claude.md rules showed up elsewhere too: premature task completion. Sonnet 4 and 4.5 would claim "Task complete!" without verifying anything actually worked. No tests run, no compilation checks, no output validation.
-Vague instructions made it worse. "Here's the db schema, write the gorm queries" led Opus to confidently implement patterns that didn't match our architecture. Sonnet would announce completion without checking if the code compiled.
+
+The context decay problem from Claude.md rules showed up elsewhere too: premature task completion. Sonnet 4 and 4.5 would claim "Task complete!" without verifying anything actually worked. No tests run, no compilation checks, no output validation.Vague instructions made it worse. "Here's the db schema, write the gorm queries" led Opus to confidently implement patterns that didn't match our architecture. Sonnet would announce completion without checking if the code compiled.
 The frustration here is real: I'd give the agent verification tools, and it would still skip them. It felt like the model learned that "say you're done" correlates with positive feedback, so it rushed there.
-What helped: Being explicit about verification. Don't ask just for implementation, ask for implementation plus test execution. Force the verification into the task definition itself, don't leave it optional.
+
+**What helped:** Being explicit about verification. Don't ask just for implementation, ask for implementation plus test execution. Force the verification into the task definition itself, don't leave it optional.
 
 ---
 
