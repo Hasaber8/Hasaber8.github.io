@@ -1,0 +1,11 @@
+/* Remove any background boxes from homepage title and subtitle */
+main[aria-role="main"] h1,
+main[aria-role="main"] p {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+/* Ensure proper spacing */
+main[aria-role="main"] > div {
+    background: none !important;
+}

@@ -1,11 +1,12 @@
 languageCode = "en-us"
 title = "Rohan Hasabe"
-theme = "hugo-bearblog"
+theme = "hello-friend-ng"
+baseurl = "https://rohanhasabe.com"
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
-rssLimit  = 10  # Maximum number of items in the RSS feed.
+rssLimit = 10  # Maximum number of items in the RSS feed.
 
 [markup]
   [markup.goldmark]
@@ -14,8 +15,6 @@ rssLimit  = 10  # Maximum number of items in the RSS feed.
 
 [pagination]
 pagerSize = 10
-
-# disqusShortname = ""
 
 archetypeDir = "archetypes"
 contentDir   = "content"
@@ -48,33 +47,53 @@ ignoreErrors = ["error-disable-taxonomy"]
   name = "Rohan Hasabe"
 
 [params]
-  # Date format for blog posts
-  dateFormat = "Jan 2, 2006"
-  # Metadata mostly used in document's head
-  # 
+  author = "Rohan Hasabe"
+  homeSubtitle = "CS @ Northeastern University, Boston"
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
   description = "Rohan Hasabe's personal website"
   keywords = "portfolio, blog, programming"
+  contentTypeName = "blog"
+  defaultTheme = "dark"
+  copyright = "Rohan Hasabe"
 
-  # Social icons
-  [[params.social]]
-      name = "GitHub"
-      icon = "lab la-github-square la-2x"
-      url = "https://github.com/Hasaber8"
-  [[params.social]]
-      name = "Linkedin"
-      icon = "lab la-linkedin-in la-2x"
-      url = "https://www.linkedin.com/in/hasaber8"
-  [[params.social]]
-      name = "Twitter"
-      icon = "lab la-twitter la-2x"
-      url = "https://twitter.com/hasaber8"
+  customCSS = ["/custom.css"]
+
+  [params.logo]
+    logoText     = "$ rohanhasabe"
+    logoHomeLink = "/"
 
 [languages]
   [languages.en]
       subtitle  = ""
       weight    = 1
+      copyright = 'Rohan Hasabe'
 
-[[menu.main]]
-  name = "Resume"
-  url = "/resume/"
-  weight = 1
+[menu]
+  [[menu.main]]
+    name = "About"
+    weight = 1
+    url = "/about"
+  [[menu.main]]
+    name = "Blog"
+    weight = 2
+    url = "/blog"
+  [[menu.main]]
+    name = "Resume"
+    weight = 3
+    url = "/resume"
+
+[[params.social]]
+    name = "GitHub"
+    icon = "fa fa-github fa-2x"
+    url = "https://github.com/Hasaber8"
+[[params.social]]
+    name = "Linkedin"
+    icon = "fa fa-linkedin fa-2x"
+    url = "https://www.linkedin.com/in/hasaber8"
+[[params.social]]
+    name = "Twitter"
+    icon = "fa fa-twitter fa-2x"
+    url = "https://twitter.com/hasaber8"
