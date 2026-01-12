@@ -1,8 +1,6 @@
 languageCode = "en-us"
 title = "Rohan Hasabe"
 theme = "hello-friend-ng"
-baseurl = "https://rohanhasabe.com"
-
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
