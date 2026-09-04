@@ -2,7 +2,9 @@
 title = "Rohan Hasabe"
 +++
 
-## CS @ Northeastern University, Boston
+## Software Engineer 3 @ Esper
+
+I build AI-driven infrastructure, distributed systems, backend services, and device-management tooling. I hold an MS in Computer Science from Northeastern University.
 
 This is my personal space on the web where I share my thoughts, projects, and learnings.
 

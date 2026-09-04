@@ -46,13 +46,13 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 [params]
   author = "Rohan Hasabe"
-  homeSubtitle = "CS @ Northeastern University, Boston"
+  homeSubtitle = "Software Engineer 3 @ Esper | AI, Distributed Systems, Backend"
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
-  description = "Rohan Hasabe's personal website"
-  keywords = "portfolio, blog, programming"
+  description = "Rohan Hasabe is a Software Engineer at Esper working on AI infrastructure, distributed systems, backend services, and device management."
+  keywords = "Rohan Hasabe, software engineer, Esper, AI infrastructure, distributed systems, backend, Android, device management"
   contentTypeName = "blog"
   defaultTheme = "dark"
   copyright = "Rohan Hasabe"
